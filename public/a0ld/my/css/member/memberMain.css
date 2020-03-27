@@ -1,0 +1,12 @@
+/** navbar **/
+.navbar.navbarBlue{background:#223e94;}
+.navbar-brand img {max-height:40px;}
+
+/*text*/
+.orangeGradientText{
+  background:-webkit-linear-gradient(#f6d365, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+
+/*modal*/
+.modal {z-index: 10040;}

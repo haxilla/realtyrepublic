@@ -1,5 +1,38 @@
 (function ($) {
   $(document).ready(function(){
+    /*
+    $('#landingCarousel').bind('slide.bs.carousel', function (e) {
+        console.log('slide event!');
+    });
+    */
+    $("a#lightGradientCreate").click(function(e){
+        $('#agentListModal').modal('hide');
+    });
+    //resets any previous red outline errors
+    $('input').click(function(e){
+        $('.clearForm input').css({'border':'none'});
+        //clear error div
+        $('.print-error-msg').find("ul").html('');
+        $('.print-error-msg').hide();
+        $('.showErrors').hide();
+    });
+    //joinNow modal clear
+    $('#joinNowModalIndex').click(function(e){
+        $('.showErrors').hide();
+    });
+    //joinNow modal clear
+    $('#forgotPasswordModalIndex').click(function(e){
+        $('.showErrors').hide();
+    });
+    //login modal
+    $('input#agtUnameLoginModal').click(function(e){
+        $('.loginModalMessage').show();
+        $('.loginModalError').hide();
+    });
+    $('input#thePasswordLoginModal').click(function(e){
+        $('.loginModalMessage').show();
+        $('.loginModalError').hide();
+    });
 
     // turn on navbar for page refresh
     // not at page start
@@ -29,28 +62,14 @@
     }
 
     $('a#agentWallPhoto').click(function(e){
+
       //set var
       var ajid=$(this).data( "ajid" );
       var theURL="/agentWall?ajid="+ajid;
       //ajax request html
       publicOverlay(theURL)
     });
-    $('#joinNowFree').click(function(e){
-      var theURL="/joinNow";
-      publicOverlay(theURL);
-    });
-    $('body').on('click', '.emailButton',function(e){
-      var theURL="/emailUs";
-      publicOverlay(theURL);
-    });
-    $('.privacyLink').click(function(e){
-      var theURL="/privacyPolicy";
-      publicOverlay(theURL);
-    });
-    $('.subscribeLink').click(function(e){
-      var theURL="/pubSubscribe";
-      publicOverlay(theURL);
-    });
+
     //clear errors on input click
     $('body').on('click',
     '.publicOverlay textarea, .publicOverlay input',
@@ -72,12 +91,10 @@
         */
   			success: function(response){
   				//add contents
-          $('.publicOverlay').hide();
           $('.publicOverlay .render').html("");
           $('.publicOverlay .render').html(response);
           $('body').addClass('disable-scroll');
           $('.publicOverlay').show();
-          $('.firstField').focus();
           $.getScript("https://www.google.com/recaptcha/api.js");
           $('.alert-danger').hide();
   			},
@@ -87,7 +104,7 @@
   		});
   	}
 
-    $('body').on('click','.publicOverlayClose, .privacyOK', function(e){
+    $('body').on('click','.publicOverlayClose', function(e){
       $('.publicOverlay').hide();
       $("body").removeClass("disable-scroll");
     });
@@ -252,8 +269,6 @@
         });
     });
 
-
-
     $('.startPurchase').click(function(e){
         //get theID from div
         theID = $(this).attr('id');
@@ -273,7 +288,6 @@
         $('#startPurchaseModal').modal();
 
     });
-
     //join now modal click
     $('.getStartedButton').click(function(e){
         //prevent default

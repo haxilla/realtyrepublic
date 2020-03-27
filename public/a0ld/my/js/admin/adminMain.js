@@ -2,7 +2,7 @@ $(document).ready(function(e){
 
 	$('.submenuNav,.navTopDrop').click(function(e){
 		//get droptitle
-		var menuClass=$(this).data("droptitle");
+		var menuClass=$(this).data("droptitle");		
 		var dropArrow=$(this).children('a.dropTitle').children('i.dropArrow');
 		var dropTitle=$(this).children('a.dropTitle');
 		//hide all
@@ -30,7 +30,7 @@ $(document).ready(function(e){
 			dropArrow.addClass('hidden');
 		}
 	});
-
+    
 	//toggle side menu
 	$('.menuIcon').click(function(e){
 		$('.responsiveMenu').toggle();
@@ -82,8 +82,8 @@ $(document).ready(function(e){
 			dataType: "html",   //expect html to be returned
 			beforeSend: function() {
 				//reset perfectScrollbar
-      	$(".responseOverlay").perfectScrollbar("destroy");
-			},
+            	$(".responseOverlay").perfectScrollbar("destroy");
+            },
 			success: function(response){
 				//add contents
 				$('.responseOverlayContent').html(response);
@@ -107,16 +107,16 @@ $(document).ready(function(e){
 	$(document).mouseup(function(e){
 		//set container
 		var container = $(".dropItems");
-		// if the target of the click isn't the container
+		// if the target of the click isn't the container 
 		// nor a descendant of the container
-		if (!container.is(e.target)
+		if (!container.is(e.target) 
 		&& container.has(e.target).length === 0){
 			container.hide();
 			$('.submenuNav').css({"background":"none"});
 			$('.dropArrow').removeClass('hidden');
 			$('.dropTitle').removeClass('fontBold');
 		}
-	});
+	}); 
 
 	//on window scroll
 	//hide any open dropdowns with scrollHide

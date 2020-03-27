@@ -1,0 +1,269 @@
+/*effects*/
+  /* paperStack */
+    .paperStack3{
+      box-shadow:
+      /* The top layer shadow */
+      0 1px 1px rgba(0,0,0,0.15),
+      /* The second layer */
+      0 10px 0 -5px #eee,
+      /* The second layer shadow */
+      0 10px 1px -4px rgba(0,0,0,0.15),
+       /* The third layer */
+      0 20px 0 -10px #eee,
+      /* The third layer shadow */
+      0 20px 1px -9px rgba(0,0,0,0.15);}
+
+
+/* backgrounds */
+  .background-whiteBrick{background-image:url(/images/whitebrick.png);}
+  .background-darktweed{background-image:url(/images/patterns/darktweed.jpg);}
+  .background-darktweed2{background-image:url(/images/patterns/darktweed2.jpg);}
+  .background-gray808080{background:#808080 !important;}
+  .background-gray222222{background:#222222 !important;}
+  .background-transBlack6{background:rgba(0,0,0,.6) !important;}
+  .background-lightGradient1{background-image: linear-gradient(to right bottom,
+    #f2ecff, #f3ecff, #f4ecff, #f6ebff, #f7ebff);}
+  .background-gray222Gradient{background-image:linear-gradient(to left bottom,
+    #222222, #29292a, #303032, #36373a, #3d3f43);}
+
+
+/* background Gradients */
+  .darkSpaceGrad{background-image:linear-gradient(to top, #2c3840, #232f31,
+    #1d2523, #191b19, #111110);}
+  .orangeGrad{background-image:linear-gradient(to top, #f6d365, #fda085);}
+
+/** Gradient Animation **/
+.blueSmokeGradAni{
+  background: linear-gradient(146deg, #223e94, #303030);
+  background-size: 400% 400%;
+  -webkit-animation: gradientChange 30s ease infinite;
+  -moz-animation: gradientChange 30s ease infinite;
+  -o-animation: gradientChange 30s ease infinite;
+  animation: gradientChange 30s ease infinite;}
+
+.sunsetGradAni{
+  background: linear-gradient(146deg, #f38e00, #014b87, #ff0000);
+  background-size: 400% 400%;
+  -webkit-animation: gradientChange 180s ease infinite;
+  -moz-animation: gradientChange 180s ease infinite;
+  -o-animation: gradientChange 180s ease infinite;
+  animation: gradientChange 180s ease infinite;
+  color:#fff;}
+
+.blueGraysAni{
+  background: linear-gradient(146deg, #303030, #494b50, #5f6971);
+  background-size: 800% 800%;
+  -webkit-animation: gradientChange 180s ease infinite;
+  -moz-animation: gradientChange 180s ease infinite;
+  -o-animation: gradientChange 180s ease infinite;
+  animation: gradientChange 180s ease infinite;
+  color:#fff;}
+
+/** too light **/
+.allBlueGradAni{
+  background: linear-gradient(146deg, #243a66, #00acc8);
+  background-size: 400% 400%;
+  -webkit-animation: gradientChange 90s ease infinite;
+  -moz-animation: gradientChange 90s ease infinite;
+  -o-animation: gradientChange 90s ease infinite;
+  animation: gradientChange 90s ease infinite;}
+
+.ceremonyGradAni{
+  background: linear-gradient(146deg, #7ebcf9, #7bf274, #cecac2);
+  background-size: 400% 400%;
+  color:#333;
+  -webkit-animation: gradientChange 90s ease infinite;
+  -moz-animation: gradientChange 90s ease infinite;
+  -o-animation: gradientChange 90s ease infinite;
+  animation: gradientChange 90s ease infinite;}
+
+@-webkit-keyframes gradientChange {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@-moz-keyframes gradientChange {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+@keyframes gradientChange {
+    0%{background-position:4% 0%}
+    50%{background-position:97% 100%}
+    100%{background-position:4% 0%}
+}
+
+/* Video background cover */
+.video-container {overflow: hidden;position: relative;}
+video {min-width: 100%;min-height:100%;position:absolute;z-index:-2;opacity:.3;}
+
+/* Block Quote */
+  .quote-card {
+    background:#fff;
+    color:#222222;
+    padding:20px;
+    padding-left:50px;
+    box-sizing:border-box;
+    box-shadow:0 2px 4px rgba(34, 34, 34, 0.12);
+    position:relative;
+    overflow:hidden;
+    min-height:120px;}
+  .quote-card p {
+    font-size:22px;
+    line-height:1.5;
+    margin:0;
+    max-width:80%;}
+  .quote-card cite {
+    font-size:16px;
+    margin-top:10px;
+    display:block;
+    font-weight:200;
+    opacity:0.8;}
+  .quote-card:before {
+    font-family:Georgia, serif;
+    content: "\201c";
+    position:absolute;
+    top:10px;
+    left:10px;
+    font-size:5em;
+    color:rgba(238, 238, 238, 0.8);
+    font-weight:normal;}
+  .quote-card:after {
+    font-family:Georgia, serif;
+    content: "\201d";
+    position:absolute;
+    bottom:-110px;
+    line-height:100px;
+    right:-32px;
+    font-size:25em;
+    color:rgba(238, 238, 238, 0.8);
+    font-weight:normal;}
+
+/*------------------*/
+/*  SKEW CLOCKWISE  */
+/*------------------*/
+.skew-cc{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to right bottom, #823A9C 49%, #fff 50%),
+	linear-gradient(-50deg, #ffffff 16px, #000 0);
+}
+/*-------------------------*/
+/* SKEW COUNTER CLOCKWISE  */
+/*-------------------------*/
+.skew-c{
+  width:100%;
+  height:100px;
+  position:absolute;
+  left:0px;
+  background: linear-gradient(to left bottom, #fff 49%, #823A9C 50%);
+}
+.colour-block {
+  background:#823A9C;
+  width:60%;
+  padding:7% 20% 10% 20%;
+  color:#fff;
+}
+.white-block {
+  background:#fff;
+  width:60%;
+  padding:7% 20% 10% 20%;
+  color:#823A9C;
+}
+
+/************************************
+Old Navbars
+*************************************/
+.background-transBlack6.top-nav-collapse{background:#222 !important;}
+.navbar-light.top-nav-collapse{background:#000 !important;}
+.navbar.background-transBlack6 .dropdown-menu{background:#222 !important;}
+.navbar.background-gray808080 .dropdown-menu{background:#808080 !important;}
+.navbar .dropdown-menu a{color:#fff !important;}
+.navbar-dark li a{color:#fff !important;font-weight:bold;}
+.navbar-dark.navbar-brand{color:#fff !important;font-size:150%;}
+.navbar-brand.noBrand{display:none;}
+.navbar.navbarBlue{background:#223e94;}
+/** Mega-menu Dropdown **/
+.mega-menu{width:800px;overflow:hidden;padding:10px;}
+
+/* Big Triangle */
+svg#bigTriangleColor{
+    pointer-events: none;}
+svg:not(:root) {
+    overflow: hidden;}
+#bigTriangleColor path{
+  fill: #efedff;
+  stroke: #efedff;
+  stroke-width: 2;}
+/* header */
+svg#bigTriangleHeader{
+    pointer-events: none;}
+svg:not(:root) {
+    overflow: hidden;}
+#bigTriangleHeader path{
+  fill: #223e94;
+  stroke: #223e94;
+  stroke-width: 2;}
+
+/* Section Class Rules */
+.sectionDivide{
+  position: relative;
+  background: #efedff;
+  text-align: center;
+  display:block;}
+.sectionDivide::before,.sectionDivide::after{
+    position: absolute;
+    content: '';
+    pointer-events: none;}
+/* circles */
+.whiteCircle60px{width:60px;height:60px;border-radius:50%;padding:10px;
+  background:#fff;margin:0 auto;}
+/* section dividers */
+/* 3 triangles */
+  .ss-style-multitriangles::before{
+      top: -25px;
+      background: inherit;
+      box-shadow: -50px 50px 0 #fff, 50px -50px 0 #efedff;}
+  .ss-style-multitriangles::before,.ss-style-multitriangle::after{
+      left: 50%;
+      width: 50px;
+      height: 50px;
+      background:#efedff;
+      -webkit-transform: translateX(-50%) rotate(45deg);
+      transform: translateX(-50%) rotate(45deg);}
+/* notches right & left */
+.ss-style-roundEdges::before{
+  left: -125px;}
+.ss-style-roundEdges::after {
+    right: -125px;}
+.ss-style-roundEdges::before,.ss-style-roundEdges::after{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #fff;
+    top: -100px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);}
+
+/*
+img.agentWallImg{height:115px !important;width:100% !important;
+	object-fit:cover !important;}
+*/
+
+/* removed from html of original landing */
+/*****************************************/
+/* .coreFeatures .iconDesc p{border-bottom:2px solid #fff;
+	padding-bottom:15px;} */
+/*.coreFeatures.container-fluid{background:#efedff;} */
+/* .coreFeatures .tiframe{background:rgba(255,255,255,.5);
+	border:2px solid #fff;height:55px;width:55px;border-radius:50%;}*/
+/*.container-fluid .coreFeatures{padding:25px;} */
+/* .coreFeatures p{margin-top:5px;line-height:1.5em;padding:0 50px}; */
+/* .coreFeatures {border-right:1px solid #efedff;padding-right:15px;}*/
+/* .coreFeatures iconTile{padding-top:25px;} */
+/* .coreFeatures iconHeader{font-weight:bold;padding:15px 0;} */
+/* .coreFeatureRow {padding-bottom:15px;border-bottom:1px solid #efedff;
+	margin-bottom:30px;text-align:center;margin-left:0;margin-right:0;} */
+/* .coreFeatures .ticon{font-size:36pt;} */

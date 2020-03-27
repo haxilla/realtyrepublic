@@ -17,12 +17,12 @@ $(function(){
     });
 
 	// to fix issue with carousel not showing in inactive tab
-  $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 		$('.topViewSlide').slick('setPosition',0);
         $('.newAddSlide').slick('setPosition',0);
 	});
 
-  //show arrows when stage hovered
+    //show arrows when stage hovered
 	$('.slick-stage').hover(function(e){
 		theID=$(this).attr("id");
 		$('#'+theID+' .slickLeft').toggleClass('hidden');
@@ -88,7 +88,7 @@ $(function(){
 		if(lastSlide){
 			currentDiv.addClass('spread100left moveLeft100 padRight1');
 			prevDiv.addClass('moveLeft100');}
-
+		
 	},function(e){
 
 		var currentImg=$(this);

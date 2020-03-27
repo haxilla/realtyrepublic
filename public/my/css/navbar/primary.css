@@ -1,0 +1,48 @@
+
+/* navbar primary */
+.public.navBase{position:fixed;top:0;z-index:3000;width:100%;height:50px;
+	background:none;color:#fff;text-align:center;}
+.navWrapper{padding:0 15px;}
+.navLeft{float:left;line-height:50px;}
+.navRight{float:right;line-height:50px;display:none;}
+.navBrandLink img{width:175px;line-height:50px;}
+.navLI{display:inline-block;}
+/* navMenu Hamburger Icon */
+.navMenuIcon, .smallSearchIcon{display:inline-block;width:30px;height:30px;line-height:30px;
+	background:rgba(255,255,255,.8);border-radius:50%;text-align:center;
+	margin-right:15px;font-size:1.1em;padding-top:1px;cursor:pointer;
+	color:#223e94;}
+.signupDiv{display:inline-block;height:30px;line-height:30px;background:rgba(255,255,255,.8);
+color:#223e94;border-radius:2em;padding:0 10px;margin-right:15px;}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+ .navRight{display:inline-block;}
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	.navWrapper{width:1200px;margin:0 auto;padding:0;}
+}
+
+/* custom */
+@media(min-width:1300px){
+	.navWrapper{width:1300px;}
+}
+
+@media(min-width:1400px){
+	.navWrapper{width:1400px;}
+}
+
+@media(min-width:1500px){
+	.navWrapper{width:1500px;}
+}
