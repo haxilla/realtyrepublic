@@ -1,0 +1,393 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sysID",
+				"xSysID"
+			],
+			[
+				"over",
+				"overflow-y\tproperty"
+			],
+			[
+				"flex",
+				"flex-direction\tproperty"
+			],
+			[
+				"obje",
+				"object-fit\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/websites/freshInstall/app/functions/mdbxTrial/createNewAccount.php",
+			"settings":
+			{
+				"buffer_size": 1486,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control:",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 119.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": true,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/websites/freshInstall",
+		"/C/websites/freshInstall/app",
+		"/C/websites/freshInstall/app/functions",
+		"/C/websites/freshInstall/app/functions/mdbxTrial"
+	],
+	"file_history":
+	[
+		"/C/websites/freshInstall/app/functions/mdbxTrial/retsQueries/glvarListingSearch.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/glvar/importListings.php",
+		"/C/websites/freshInstall/app/functions/imageControl/trimWhitespace3.php",
+		"/C/websites/freshInstall/app/functions/imageControl/trimWhitespace.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/glvar/listingVariables.php",
+		"/C/websites/freshInstall/app/members/newFlyer/newPhotoUpload.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/trialCheckNV.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/variables/theListVariablesAZ.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/mdbxTrialCheckController.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/makeDirectories.php",
+		"/C/websites/freshInstall/app/members/keygens/mdbxGenPswd.php",
+		"/C/websites/freshInstall/app/functions/imageControl/trimWhitespace2.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/theListVariablesGLVAR.php",
+		"/C/websites/freshInstall/app/models/rets/glvarListing.php",
+		"/C/websites/freshInstall/app/rets/searches/agents/getAgent_byMLSID.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/trialErrorModal.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/index.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/scripts/landingErrors.blade.php",
+		"/C/websites/freshInstall/app/models/rets/glvarOffice.php",
+		"/C/websites/freshInstall/app/rets/phretsql_office.php",
+		"/C/websites/freshInstall/app/routeIncludes/mdbxAdminRoutes.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxAdmin/adminRetsController.php",
+		"/C/websites/freshInstall/app/rets/examples/offsetV1_office.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/trialCheck.php",
+		"/C/websites/freshInstall/app/models/rets/glvar.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/sections/freeTrialForm.blade.php",
+		"/C/websites/freshInstall/app/functions/mdbxTrial/trialCheckAZ.php",
+		"/C/websites/freshInstall/app/rets/queries/rets_comparison.php",
+		"/C/websites/freshInstall/app/rets/examples/offsetV1_agents.php",
+		"/C/websites/freshInstall/app/models/admin/retsLog.php",
+		"/C/websites/freshInstall/app/rets/examples/offsetV1_property.php",
+		"/C/websites/freshInstall/app/rets/includes/login.php",
+		"/C/websites/freshInstall/app/rets/function/create_table_sql_from_metadata.php",
+		"/C/websites/freshInstall/app/rets/examples/offsetV2_property.php",
+		"/C/websites/freshInstall/app/rets/examples/offsetV1-workingMatrixDate.php",
+		"/C/websites/freshInstall/app/models/admin/adminOption.php",
+		"/C/websites/freshInstall/app/rets/searches/agents/getAgents_all.php",
+		"/C/websites/freshInstall/app/rets/examples/offsets.php",
+		"/C/websites/freshInstall/app/rets/examples/offsetV1.php",
+		"/C/websites/freshInstall/app/rets/files/blank.php",
+		"/C/websites/freshInstall/app/rets/phrets.php",
+		"/C/websites/freshInstall/app/rets/phretsql_prop.php",
+		"/C/websites/freshInstall/app/rets/phretsql_agent.php",
+		"/C/websites/freshInstall/app/rets/includes",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxMember/mdbxMemberPurchaseController.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxMember/mdbxEditController.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxMember/mdbxAccountController.php",
+		"/C/websites/freshInstall/app/rets/getRetsAPI.php",
+		"/C/websites/freshInstall/vendor/troydavisson/phrets/src/Session.php",
+		"/C/websites/freshInstall/vendor/autoload.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/mdbxPublicLoginController.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxMember/memberNewFlyerController.php",
+		"/C/websites/freshInstall/app/routeIncludes/mdbxMemberRoutes.php",
+		"/C/websites/freshInstall/resources/views/mdbxMember/fullPages/newFlyerStarter.blade.php",
+		"/C/websites/freshInstall/app/Providers/AppServiceProvider.php",
+		"/C/websites/freshInstall/public/corejs/smartystreetsDL.js",
+		"/C/websites/freshInstall/resources/views/mdbxMember/scripts/mdbxSmartyScripts.blade.php",
+		"/C/websites/freshInstall/app/models/core/propagentmeta.php",
+		"/C/websites/freshInstall/app/models/core/propflyer.php",
+		"/C/websites/freshInstall/resources/views/mdbxMember/fullPages/mdbxPrint.blade.php",
+		"/C/websites/freshInstall/app/flyerVariables/campaignCounts.php",
+		"/C/websites/freshInstall/resources/views/mdbxMember/fullPages/mdbxLanding.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxMember/navigation/mdbxSidebar.blade.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxMember/mdbxFlyerBranchController.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxMember/memberSendEmailController.php",
+		"/C/websites/freshInstall/app/models/core/propagent.php",
+		"/C/websites/freshInstall/app/accountVariables/accountInfo.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxAdmin/mdbxAdminOptionController.php",
+		"/C/websites/freshInstall/vendor/laravel/framework/src/Illuminate/Auth/CreatesUserProviders.php",
+		"/C/websites/freshInstall/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/websites/freshInstall/app/Http/Middleware/Authenticate.php",
+		"/C/websites/freshInstall/app/Http/Middleware/EncryptCookies.php",
+		"/C/websites/rosemary/app/Http/Middleware/RedirectIfAuthenticated.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/mdbxTrialRequestController.php",
+		"/C/websites/freshInstall/app/functions/email/variables/emailModes.php",
+		"/C/websites/freshInstall/.env",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/publicEmailAgentController.php",
+		"/C/websites/freshInstall/app/flyerVariables/existingFlyerCheck.php",
+		"/C/websites/rosemary/.env",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/joinNowModal.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/elements/captchav2.blade.php",
+		"/C/websites/freshInstall/app/functions/email/sendEmailTemplate.php",
+		"/C/websites/freshInstall/resources/lang/en/validation.php",
+		"/C/websites/freshInstall/app/functions/inputHelpers/captchaV2validate.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/sections/memberSinceSideBySide.blade.php",
+		"/C/websites/freshInstall/public/customCSS/main.css",
+		"/C/websites/freshInstall/public/customJS/landing.js",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/elements/solidBlueGetStartedSubmit.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/ojoinNowModal.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/scripts/slickCarousel.blade.php",
+		"/C/websites/freshInstall/app/functions/inputHelpers/agentInfoValidate.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/navigation/pubNavTopSolidBlue.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/headersFooters/pubHeaderSkinny.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/fullPages/newAccessRequest.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/forms/trialAgentFields.blade.php",
+		"/C/websites/freshInstall/resources/views/layouts/simple.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/forms/0ld/otrialAgentFields.blade.php",
+		"/C/websites/rosemary/resources/views/mdbxPublic/includes/trialAgentFields.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/elements/flyerAddressFormButton.blade.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/mdbxPropFlyerController.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/sections/publicFooter.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/elements/flyerAddressFormButtonDark.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/elements/emailFormButton.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/elements/solidBlueCreateSubmit.blade.php",
+		"/C/websites/rosemary/resources/views/modals/freeTrialModal.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/agentWallModal.blade.php",
+		"/C/websites/rosemary/app/routeIncludes/mdbxPublicRoutes.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/publicAgentController.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/0ld/omdbxTrialCheckController.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/omdbxTrialCheckController.php",
+		"/C/websites/freshInstall/app/queries/baseQuery.php",
+		"/C/websites/freshInstall/app/models/core/pubContact.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/sections/multiSlideMostViews.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/contactSuccessModal.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/agentWallContactSuccess.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/sections/carouselBackgroundTall.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/contactFailModal.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/0ld/moreInfoModal.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/modals/agentWallModalv3.blade.php",
+		"/C/websites/freshInstall/app/Http/Controllers/mdbxPublic/0ld/opublicEmailAgentController.php",
+		"/C/websites/freshInstall/public/customJS/dimensionHelper.js",
+		"/C/websites/rosemary/public/corejs/mdb/vendor/tinymce/jquery.tinymce.min.js",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/oindexv1.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/elements/propInfo/addressControlStack.blade.php",
+		"/C/websites/freshInstall/resources/views/mdbxPublic/includes/forms/agentInfoForm.blade.php",
+		"/C/websites/freshInstall/app/synch/agentPhotoLogo/functions/getAgtLogo.php",
+		"/C/websites/freshInstall/app/synch/agentPhotoLogo/agentLogo/agentLogoLoop.php",
+		"/C/websites/freshInstall/app/synch/agentPhotoLogo/queries/oldAgentQueries.php"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 134.0,
+		"where_history":
+		[
+			"C:\\websites\\freshInstall",
+			"C:\\websites\\rosemary\\vendor"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"auth::",
+			"guard('web')",
+			"admin.login",
+			"auth.login"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/websites/freshInstall/app/functions/mdbxTrial/createNewAccount.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": true,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 3,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 153.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 53.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 150.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "freshinstall.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 380.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

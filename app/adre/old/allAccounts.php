@@ -1,0 +1,29 @@
+<?php
+//defaultArray
+// FILE NOT IN USE //
+$allAccounts[]=[
+   'totalRemCredsFound'=>0,
+   'totalFlyersFound'=>0,
+   'mostRemCreds'=>0,
+   'mostRemCredsAccount'=>0,
+   'remCredsAmount'=>0,
+   'mostFlyerCount'=>0,
+   'mostFlyersAccount'=>0,
+   'earliestAccount'=>0,
+   'earliestStartDate'=>\Carbon\Carbon::now(),
+   'lastLoginAccount'=>0,
+   'lastLoginDate'=>\Carbon\Carbon::now()->subDays(8000),
+   'unlimitedAccount'=>0,
+   'unlimitedActive'=>0,
+   'unlimitedActiveAccount'=>0,
+   'creditAccount'=>0,
+   'creditActive'=>0,
+   'creditActiveAmount'=>0,
+   'creditActiveAccount'=>0,
+   'oddball'=>0,
+   'oddballAccount'=>0,
+   'accountConflict'=>0,
+   'imagesOK'=>0,
+];
+//start accountDetails
+$accountDetails=array();

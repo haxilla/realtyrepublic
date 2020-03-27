@@ -1,0 +1,31 @@
+body{min-height:1000px;}
+
+#main-wrapper .page-wrapper{
+	max-width:100% !important;
+	background-color:none;
+	min-height:100vh;
+	background-image: linear-gradient(to bottom, #233242, #23394b, #214054, #1e475d, #194f65, #14566c, #0d5e72, #036578, #006d7e, #007583, #007e87, #00868b);
+}
+
+
+
+/* smallest queries on top - order matters! */
+@media (min-width: 325px) {
+
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+
+
+
+

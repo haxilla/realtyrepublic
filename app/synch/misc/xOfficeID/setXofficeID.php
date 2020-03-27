@@ -1,0 +1,63 @@
+<?php
+$officeNameSearch=trim($getOffice['officeName']);
+$officeAddressSearch=trim($getOffice['officeAddress1']);
+$officeName5=substr($officeNameSearch,0,5);
+$officeAddress5=substr($officeAddressSearch,0,5);
+//officeAddressCode
+$officeAddressCode=$officeAddressSearch;
+$officeAddressCode=str_replace(' ', '', $officeAddressCode);
+$officeAddressCode=str_replace('.', '', $officeAddressCode);
+$officeAddressCode=str_replace('-', '', $officeAddressCode);
+$officeAddressCode=str_replace('#', '', $officeAddressCode);
+$officeAddressCode=str_replace('/', '', $officeAddressCode);
+$officeAddressCode=str_replace('\\', '', $officeAddressCode);
+$officeAddressCode=str_replace('&', '', $officeAddressCode);
+$officeAddressCode=str_replace('"', '', $officeAddressCode);
+$officeAddressCode=str_replace('(', '', $officeAddressCode);
+$officeAddressCode=str_replace(')', '', $officeAddressCode);
+$officeAddressCode=str_replace(',', '', $officeAddressCode);
+$officeAddressCode=str_replace('@', '', $officeAddressCode);
+$officeAddressCode=str_replace('<', '', $officeAddressCode);
+$officeAddressCode=str_replace('>', '', $officeAddressCode);
+$officeAddressCode=str_replace('\'', '', $officeAddressCode);
+$officeAddressCode=strtolower($officeAddressCode);
+//officeNameCode
+$officeNameCode=$officeNameSearch;
+$officeNameCode=str_replace(' ', '', $officeNameCode);
+$officeNameCode=str_replace('.', '', $officeNameCode);
+$officeNameCode=str_replace('-', '', $officeNameCode);
+$officeNameCode=str_replace('#', '', $officeNameCode);
+$officeNameCode=str_replace('/', '', $officeNameCode);
+$officeNameCode=str_replace('\\', '', $officeNameCode);
+$officeNameCode=str_replace('&', '', $officeNameCode);
+$officeNameCode=str_replace('"', '', $officeNameCode);
+$officeNameCode=str_replace('(', '', $officeNameCode);
+$officeNameCode=str_replace(')', '', $officeNameCode);
+$officeNameCode=str_replace(',', '', $officeNameCode);
+$officeNameCode=str_replace('@', '', $officeNameCode);
+$officeNameCode=str_replace('<', '', $officeNameCode);
+$officeNameCode=str_replace('>', '', $officeNameCode);
+$officeNameCode=str_replace('\'', '', $officeNameCode);
+$officeNameCode=strtolower($officeNameCode);
+//trim code
+$officeNameCode5=substr($officeNameCode,0,5);
+$officeAddressCode5=substr($officeAddressCode,0,5);
+//xOfficeID
+$xOfficeID=$officeNameCode5.$officeAddressCode5;
+$xOfficeID=str_replace(' ', '', $xOfficeID);
+$xOfficeID=str_replace('.', '', $xOfficeID);
+$xOfficeID=str_replace('-', '', $xOfficeID);
+$xOfficeID=str_replace('#', '', $xOfficeID);
+$xOfficeID=str_replace('/', '', $xOfficeID);
+$xOfficeID=str_replace('\\', '', $xOfficeID);
+$xOfficeID=str_replace('&', '', $xOfficeID);
+$xOfficeID=str_replace('"', '', $xOfficeID);
+$xOfficeID=str_replace('(', '', $xOfficeID);
+$xOfficeID=str_replace(')', '', $xOfficeID);
+$xOfficeID=str_replace(',', '', $xOfficeID);
+$xOfficeID=str_replace('@', '', $xOfficeID);
+$xOfficeID=str_replace('<', '', $xOfficeID);
+$xOfficeID=str_replace('>', '', $xOfficeID);
+$xOfficeID=str_replace('\'', '', $xOfficeID);
+$xOfficeID=strtolower($xOfficeID);
+$tempOfficeID=$xOfficeID;

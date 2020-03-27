@@ -1,0 +1,26 @@
+<?php
+
+return view('mdbxMember.fullPages.mdbxLanding', [
+   'propInfo'           => $propInfo,
+   'officeID'           => $officeID,
+   'idFly'              => $idFly,
+   'graphic_words'      => $graphic_words,
+   'graphic_textcolor'  => $graphic_textcolor,
+   'graphic_style'      => $graphic_style,
+   'flyer_background'   => $flyer_background,
+   'hlGraphic'          => $hlGraphic,
+   'theTemplate'        => $theTemplate,
+   'bullets_LH'         => $bullets_LH,
+   'theHeadline'        => $theHeadline,
+   'display'            => 'screen',
+   'showLight'          => $showLight,
+   'fromURL1'           => $fromURL1,
+   'fromURL2'           => $fromURL2,
+   'fromURL3'           => $fromURL3,
+   'agtPhoto'           => $agtPhoto,
+   'agtLogo'            => $agtLogo,
+   'zipDir'             => $zipDir,
+   'mlsDir'             => $mlsDir,
+   'totalPhotos'        => $totalPhotos,
+   'enc'                => $enc,
+]);

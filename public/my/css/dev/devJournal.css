@@ -1,0 +1,244 @@
+.darkPanel{background:rgba(0,0,0,.6);color:#fff;}
+/* .devIndex{background:rgba(34, 62, 148, .5)} */
+.devIndex{background-image:url('/images/patterns/papyrus.png');}
+.devIndex .navbarBuffer{margin-top:60px !important;padding:0 !important;}
+.devTask.fixedMenu{position:fixed;width:100%;z-index:2800;
+	background:#223e94;text-align:center;}
+.devTask.fixedMenu .inlineBlock.devMenu{cursor:pointer;
+	border-right:1px solid rgba(255,255,255,.3);}
+.devTask.fixedMenu .inlineBlock.devMenu:hover{background:rgba(255,255,255,.3);
+	border:none;}
+.devTask .scrollTop:hover{opacity:.7;cursor:pointer;}
+.devTask .buffer{padding-top:55px;}
+.devTask .taskback{display:none;}
+
+.devTask.fixedMenu .dropMenuBox{display:none;background:#efedff;
+	text-align:left;position:fixed;}
+.devTask.fixedMenu .dropMenuBox a{color:#464555;text-decoration:none;display:block;}
+.devTask.fixedMenu .dropMenuBox .menuItem{padding:5px 10px;}
+.devTask.fixedMenu .dropMenuBox .menuItem:hover{background:rgba(255,255,255,.7);}
+
+.noScroll::-webkit-scrollbar {display:none;}
+.noResize{resize:none;}
+.adminInfo img{height:25px;width:25px;border-radius:50%;}
+.taskPanelHeader{padding:10px;margin-bottom:10px;}
+
+.taskBox{margin-bottom:25px;background:rgba(34, 62, 148,.7);}
+.taskBox .dropMenuBox a{display:block;}
+.taskBox .taskstepBlock{display:none;}
+.taskboxFooter:hover .taskOptions{display:inline-block;}
+.taskboxFooter{padding:10px;position:relative;}
+.taskboxFooter .adminInfo.inlineBlock{cursor:pointer;}
+
+.taskadd input,.tasksearch input{width:100%;padding:0 15px;
+	background:none;border:none;outline:none;}
+.taskadd.dropMenuBox{width:100%;top:60px;left:0;z-index:2850;padding:15px 0;}
+.taskComment{padding:10px;margin:10px;}
+.taskCommentNew{background:rgba(0,153,0,.3) !important;}
+.taskCommentCheck{width:10%;vertical-align:top;padding-top:3px;padding-left:3px;}
+.taskCommentText{width:87%;}
+
+/* task & link delete */
+.taskDelete,
+.linkDelete{visibility:hidden;}
+.taskDeleteDiv:hover,
+.linkDeleteDiv:hover{cursor:pointer;}
+.taskDeleteDiv:hover .taskDelete,
+.linkDeleteDiv:hover .linkDelete{visibility:visible;background:#900;}
+
+.taskFlag:hover{background:rgba(255,255,255,.3);cursor:pointer;}
+.taskInfo{padding-bottom:10px;}
+.tasklinkDiv{background:rgba(0,0,0,.5);margin:15px 0;padding:0 10px;
+	border-radius:1.5em;display:inline-block;margin-right:5px;text-align:center;}
+.tasklinkDiv a{color:#fff;}
+.tasksearch.dropMenuBox{width:100%;top:60px;left:0;z-index:2850;padding:15px 0;}
+.taskshowBox{background:#223e94;padding:20px;}
+.taskstepFrame{display:none;}
+.linksFrame{margin-left:15px;}
+
+
+/* type,section & authlevel */
+/****************************/
+/**/
+.taskauthlevel{display:none;}
+.tasktype.inlineBlock:hover,
+.tasksection.inlineBlock:hover,
+.taskauthlevel.inlineBlock:hover{cursor:pointer;}
+
+.reloadPage.inlineBlock:hover{cursor:pointer;opacity:.7;}
+/**/
+.tasktype.dropMenuBox,
+.tasksection.dropMenuBox,
+.taskauthlevel .dropMenuBox{display:none;background:#efedff;text-align:left;
+	position:absolute;z-index:3000;}
+/**/
+.tasktype.dropMenuBox .menuItem,
+.tasksection.dropMenuBox .menuItem,
+.taskauthlevel .dropMenuBox .menuItem{cursor:pointer;}
+/**/
+.tasktype.dropMenuBox .menuItem:hover,
+.tasksection.dropMenuBox .menuItem:hover,
+.taskauthlevel .dropMenuBox .menuItem:hover{background:rgba(255,255,255,.7);}
+/**/
+.tasktype.dropMenuBox a,
+.tasksection.dropMenuBox a,
+.taskauthlevel .dropMenuBox a{color:#464555;text-decoration:none;
+	display:block;padding:5px 10px;}
+
+.taskMenu .inlineBlock{text-align:center;}
+.taskOptions{display:none;vertical-align:middle;}
+.taskboxFrame:hover .taskheaderMenu .taskOptions{display:inline-block;}
+.taskheaderMenu .taskOptions:hover{cursor:pointer;opacity:.7;}
+.taskOptions .dropMenuBox{display:none;text-align:left;background:#efedff;
+	position:absolute;z-index:2850;}
+
+/* dropMenuColumn */
+.taskOptions .dropMenuColumn, 
+.tasksection .dropMenuColumn{display:inline-block;padding:5px 10px;}
+
+.taskOptions .dropMenuBox .menuItem{padding:5px 10px;cursor:pointer;}
+.taskOptions .dropMenuBox .menuItem:hover{background:rgba(255,255,255,.7);}
+.taskOptions .dropMenuBox a{color:#464555;text-decoration:none;}
+.taskfooterMenu .taskOptions .small.circle.inlineBlock:hover{background:rgba(255,255,255,.3);
+	cursor:pointer;}
+.taskresultItem{padding:5px;}
+.taskresultItem:hover{background:rgba(255,255,255,1);}
+.taskstatus .angleDown,.tasksection .angleDown{font-size:.7em;}
+
+/* taskBadge & badge colors */
+.taskBadge{padding:0 10px;border-radius:2em;vertical-align:middle;
+	text-align:center;display:inline-block;}
+.taskBadge.taskDate{background:rgba(255,255,255,.2)}
+.taskBadgeCore{background:#fff;color:rgba(0,0,0,.8);}
+.taskBadgeNew{background:#090;color:#fff;}
+.taskBadgeNone{background:rgba(255,255,255,.2);color:#fff;}
+.taskBadgeFeature{background:#223e94;color:#fff;}
+.taskBadgeExcuse,.taskBadgeTip{color:#fff;background:#000;}
+.taskBadgeBug{background:#900;color:#fff;}
+.taskBadgeTest{background:#ff8000;color:#fff;}
+.taskBadgeFilter{border:1px solid #fff;}
+
+/* add comments */
+.inputDiv{display:none;}
+
+/* for comments to display without page refresh */
+.ajaxComment{visibility:hidden;}
+.ajaxNewComment{visibility:hidden;}
+
+/* editing */
+	/* links */
+	.smaller.circle.linkEdit:hover{opacity:.7;cursor:pointer;}
+
+	/* task */
+	.taskEdit{display:none;}
+	.taskEditField{width:100%;border:none;padding:5px;
+		color:#fff;margin:0;background:none;background:rgba(255,255,255,.1);
+		padding:5px 15px;}
+	.taskEditDiv{display:inline-block;width:93%;}
+	.taskDeleteDiv{display:inline-block;width:5%;height:25px;
+		text-align:right;vertical-align:top;position:relative;}
+	.taskDeleteButton{background:#900;color:#fff;text-align:center;
+		border-radius:50%;font-size:.5em;width:15px;height:15px;
+		position:absolute;top:0;right:-5px;padding-top:2px;padding-right:1px;
+		cursor:pointer;visibility:hidden;}
+	.taskDeleteDiv:hover{cursor:pointer;}
+	.taskDeleteDiv:hover .taskDeleteButton{visibility:visible;}
+	.largerField{height:90px;}
+
+	/* comments */
+	.commentAddField,
+	.linkField{width:100%;background:rgba(255,255,255,.2);
+		color:#fff;padding:5px 15px;border:none;}
+	.commentEdit{display:none;}
+	.commentEditField{width:100%;border:none;padding:5px;
+		color:#fff;margin:0;background:none;}
+	.commentEditDiv{display:inline-block;width:93%;}
+	.commentDeleteDiv{display:inline-block;width:5%;height:25px;
+		text-align:right;vertical-align:top;position:relative;}
+	.commentDeleteButton{background:#900;color:#fff;text-align:center;
+		border-radius:50%;font-size:.5em;width:15px;height:15px;
+		position:absolute;top:0;right:-5px;padding-top:2px;padding-right:1px;
+		cursor:pointer;visibility:hidden;}
+	.commentDeleteDiv:hover{cursor:pointer;}
+	.commentDeleteDiv:hover .commentDeleteButton{visibility:visible;}
+
+	/* details */
+	.taskdetailEdit{display:none;}
+
+/* pagination */
+.page-link{background:rgba(0,0,0,.5);border:none;
+	color:#fff;}
+.page-item.disabled .page-link{background:none;border:none;}
+
+/*********************/
+/* custom checkmark  */
+/*********************/
+.checkContainer {display: block;position: relative;padding-left:25px;
+  margin-bottom: 20px;cursor: pointer;
+  -webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;
+  user-select: none;}
+/* Hide the browser's default checkbox */
+.checkContainer input {position: absolute;opacity: 0;cursor: pointer;
+  height: 0;width: 0;}
+/* Create a custom checkbox */
+.checkmark {position: absolute;top: 0;left: 0;height: 20px;width: 20px;
+  background-color:rgba(255,255,255,.1);border-radius:50%;}
+/* On mouse-over, add a grey background color */
+.checkContainer:hover input ~ .checkmark {background-color:rgba(255,255,255,.3);}
+/* When the checkbox is checked, add a blue background */
+.checkContainer input:checked ~ .checkmark {background-color:rgba(255,255,255,.3);}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {content: "";position: absolute;display: none;}
+/* Show the checkmark when checked */
+.checkContainer input:checked ~ .checkmark:after {display: block;}
+/* Style the checkmark/indicator */
+.checkContainer .checkmark:after {left:8px;top:2px;width:6px;
+  height: 15px;border: solid white;border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);
+  transform: rotate(45deg);}
+
+/* placeholder */
+.taskAddField::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba(255,255,255,.2);
+  opacity: 1; /* Firefox */}
+.taskAddField:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgba(255,255,255,.2);}
+.taskAddField::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgba(255,255,255.2);}
+
+
+/* smallest queries on top - order matters! */
+@media (min-width: 325px){
+
+}
+
+@media(min-width:400px){
+	.devIndex .navbarBuffer{margin-top:70px !important;padding:0 !important;}
+	.taskadd.dropMenuBox{top:70px;}
+	.tasksearch.dropMenuBox{top:70px;}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+	.taskCommentCheck{width:5%;}
+	.taskCommentText{width:93%;}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+	.roundedResponsive{border-radius:2em;}
+	.devIndex .navbarBuffer{margin-top:110px !important;padding:0 !important;}
+	.taskadd.dropMenuBox{top:110px;}
+	.tasksearch.dropMenuBox{top:110px;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+	.taskCommentCheck{width:2%;}
+	.taskCommentText{width:97%;}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+
+}

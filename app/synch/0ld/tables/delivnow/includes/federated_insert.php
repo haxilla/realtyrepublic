@@ -1,0 +1,114 @@
+<?php
+
+//drop
+Schema::dropIfExists('propdelivnow');
+//re-create
+$results=DB::select( DB::raw("
+  create table propdelivnow
+  like propdelivs
+"));
+
+// ** notify synch of table drop
+//
+//
+//
+
+// ** BEGIN INSERT
+// Insert
+DB::select( DB::raw("
+  INSERT INTO propdelivnow
+    (
+    propflyer_id,
+    emSubject,
+    emArea,
+    emStart,
+    emComplete,
+    emRequest,
+    cid,
+    propagent_id,
+    emArea_display,
+    campLabel,
+    totalEmails,
+    lastEI,
+    startRow,
+    campCreated,
+    template,
+    priority,
+    rush,
+    rushDate,
+    amtEmails,
+    delay,
+    resumeURL,
+    emailsLeft,
+    closingLine,
+    removeLink,
+    warp15,
+    warp6,
+    emAlt,
+    suspend,
+    authorized,
+    camp_order,
+    gmail_done,
+    cox_done,
+    msn_done,
+    yahoo_done,
+    aol_done,
+    misc_done,
+    emalt_msn,
+    emalt_yahoo,
+    emalt_cox,
+    emalt_aol,
+    admin_add,
+    authNum,
+    remCreds,
+    server,
+    free
+    )
+  SELECT
+    ufid,
+    emailSubject,
+    emailarea,
+    emailstarted,
+    emailfinished,
+    emailrequested,
+    campaignid,
+    umid,
+    emailarea_display,
+    camplabel,
+    totalemails,
+    lastei,
+    sentsofar,
+    campcreated,
+    template,
+    priority,
+    rush,
+    rushdate,
+    amtemails,
+    delay,
+    resumeurl,
+    emailsleft,
+    closingline,
+    removelink,
+    warp15,
+    warp6,
+    emAlt,
+    suspend,
+    authorized,
+    camp_order,
+    gmail_done,
+    cox_done,
+    msn_done,
+    yahoo_done,
+    aol_done,
+    misc_done,
+    emalt_msn,
+    emalt_yahoo,
+    emalt_cox,
+    emalt_aol,
+    admin_add,
+    authNum,
+    remcreds,
+    server,
+    free
+  FROM  remailsynch.remaildeliveriesnow_federated
+"));

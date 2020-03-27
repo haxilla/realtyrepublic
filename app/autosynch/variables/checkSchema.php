@@ -1,0 +1,12 @@
+<?php
+/*
+if(Schema::connection('deletes')
+->hasTable($tableMains)){
+	$checkSchema="deletes";
+}elseif(Schema::connection('rememaildb'){
+->hasTable($tableMains)){
+	$checkSchema="rememaildb"
+}elseif(Schema::hasTable($tableMains)){
+	$checkSchema="remuserdb";
+}else{
+	dd('error-line12-checkSchema.php');}

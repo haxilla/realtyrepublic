@@ -1,0 +1,60 @@
+<?php
+
+use App\models\synch\synchLog;
+
+$findNext=synchLog::where('synchID','=',$synchID)
+->first();
+
+if(!$findNext['propagentSynch']){
+	$currentSynch="propagent";
+}elseif(!$findNext['agtofficeSynch']){
+	$currentSynch="agtoffice";
+}elseif(!$findNext['propflyerSynch']){
+	$currentSynch="propflyer";
+}elseif(!$findNext['propflyerstatSynch']){
+	$currentSynch="propflyerstat";
+}elseif(!$findNext['propmappingSynch']){
+	$currentSynch="propmapping";
+}elseif(!$findNext['propmetaSynch']){
+	$currentSynch="propmeta";
+}elseif(!$findNext['propremarkSynch']){
+	$currentSynch="propremark";
+}elseif(!$findNext['propstyleSynch']){ 
+	$currentSynch="propstyle";
+}elseif(!$findNext['propphotoSynch']){
+	$currentSynch="propphoto";
+}elseif(!$findNext['propdelivSynch']){
+	$currentSynch="propdeliv";
+}elseif(!$findNext['propdelivnowSynch']){
+	$currentSynch="propdelivnow";
+}elseif(!$findNext['allorderSynch']){
+	$currentSynch="allorder";
+}elseif(!$findNext['emailremovalSynch']){
+	$currentSynch="emailremoval";
+}elseif(!$findNext['etrackSynch']){
+	$currentSynch="etrack";
+}elseif(!$findNext['deletepropflyerSynch']){
+	$currentSynch="deletepropflyer";}
+elseif(!$findNext['deletepropflyerstatSynch']){
+	$currentSynch="deletepropflyerstat";
+}elseif(!$findNext['deletepropmappingSynch']){
+	$currentSynch="deletepropmapping";
+}elseif(!$findNext['deletepropmetaSynch']){
+	$currentSynch="deletepropmeta";
+}elseif(!$findNext['deletepropremarkSynch']){
+	$currentSynch="deletepropremark";
+}elseif(!$findNext['deletepropphotoSynch']){
+	$currentSynch="deletepropphoto";
+}elseif(!$findNext['deletepropstyleSynch']){
+	$currentSynch="deletepropstyle";
+}elseif(!$findNext['propphotoDownloadSynch']){
+	$currentSynch="propphotoDownload";
+}elseif(!$findNext['propphotoResizeSynch']){
+	$currentSynch="propphotoResize";
+}elseif(!$findNext['agentphotoDownloadSynch']){
+	$currentSynch="agentphotoDownload";
+}elseif(!$findNext['agentlogoDownloadSynch']){
+	$currentSynch="agentlogoDownload";
+}else{
+	$currentSynch="complete";
+}
