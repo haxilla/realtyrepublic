@@ -1,23 +1,12 @@
 <?php
 //mdbxPublicLoginController
 
-  //OverlayController
-    //publicAgentInfo
-    Route::get('/agentWall',[
-      'as'     => 'public.agentWall',
-      'uses'   => 'thePublic\overlayController@agentWall']);
-    Route::get('/joinNow',[
-      'as'     => 'public.joinNow',
-      'uses'   => 'thePublic\overlayController@joinNow']);
-    Route::get('/emailUs',[
-      'as'     => 'public.joinNow',
-      'uses'   => 'thePublic\overlayController@emailUs']);
-    Route::get('/pubSubscribe',[
-      'as'     => 'public.pubSubscribe',
-      'uses'   => 'thePublic\overlayController@pubSubscribe']);
-    Route::get('/privacyPolicy',[
-      'as'     => 'public.privacyPolicy',
-      'uses'   => 'thePublic\overlayController@privacyPolicy']);
+
+   //publicAgentInfo
+   Route::get('/agentWebInfo',[
+      'as'     => 'public.agentWebInfo',
+      'uses'   => 'mdbxPublic\publicAgentController@ajaxAgentInfo']);
+
 
    //member login ** do not delete **
    Route::get('/login', [
@@ -69,7 +58,10 @@
    Route::get('/faq', [
       'as'=>'public.faq',
       'uses' => 'mdbxPublic\mdbxPropFlyerController@faq']);
-
+   //contactUsPage
+   Route::get('/contactUsPage',[
+      'as'=>'public.contactUsPage',
+      'uses'=>'mdbxPublic\mdbxPropFlyerController@contactUsPage']);
    //contactUsBanner
    Route::post('/contactUsPost', [
       'as'=>'public.contactUsPost',
