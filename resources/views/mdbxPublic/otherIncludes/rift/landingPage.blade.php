@@ -1,0 +1,1 @@
+<img src="/images/blanklandingMockup.jpg" class="img-fluid">

@@ -1,0 +1,6 @@
+<div>
+  <input type="text" style="background:#fff;border:none !important;
+  padding:5px 10px;margin:5px;text-align:center;border-radius:2em;
+  width:350px;"
+  placeholder="Enter Your Email">
+</div>
