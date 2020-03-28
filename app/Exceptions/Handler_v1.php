@@ -1,4 +1,4 @@
-<?php
+ -?php
 
 namespace App\Exceptions;
 
@@ -6,7 +6,7 @@ use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Arr;
-use Auth; 
+use Auth;
 
 class Handler_v1 extends ExceptionHandler
 {
