@@ -8,12 +8,12 @@ $currentSynch=request('currentSynch');
 if(!$synchType||!$currentSynch){
 	dd('error-line9-synchStart.php');}
 
-// sets synchID & status 
-// 'new' or 'resume' 
+// sets synchID & status
+// 'new' or 'resume'
 include('log/startLog.php');
 
 //synchOne or synchAll
-if($synchType=='synchOne' 
+if($synchType=='synchOne'
 && $status=='resume'){
 
 	include('synchTable.php');
@@ -37,13 +37,10 @@ if($synchType=='synchOne'
 $idArray = array(
   'status'          => $status,
   'synchID'         => $synchID,
-  'synchType'	 	=> $synchType,
-  'currentSynch' 	=> $currentSynch,
-  'page'			=> 'synchStart'
+  'synchType'	 			=> $synchType,
+  'currentSynch' 		=> $currentSynch,
+  'page'						=> 'synchStart'
 );
 
 echo json_encode($idArray);
 exit();
-
-
-
