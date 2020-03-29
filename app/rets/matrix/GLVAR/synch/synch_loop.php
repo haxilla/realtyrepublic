@@ -19,14 +19,14 @@ while($maxrows2){
 	//local save
 	$pdo = \DB::connection('rets')
 	->getPdo();
-	//load data 
+	//load data
 	//for linux created file only use \n for line endings
 	//for windows created files \r\n
 	$pdo->exec("
-		LOAD DATA INFILE '/var/www/html/larasites/realtyrepublic/app/rets/$retsSystem/$mlsName/files/$thisSynch/$fileName'
+		LOAD DATA INFILE '/var/www/html/larasites/realtyemails/app/rets/$retsSystem/$mlsName/files/$thisSynch/$fileName'
 		INTO TABLE $mainTable
-		FIELDS TERMINATED BY ',' 
-		ENCLOSED BY '\"' 
+		FIELDS TERMINATED BY ','
+		ENCLOSED BY '\"'
 		LINES TERMINATED BY '\\n'
 		IGNORE 1 LINES;
 	");
