@@ -35,7 +35,6 @@ class deployController extends Controller
               exit();}
 
             //dd('error-line18-deployController-remstage');
-            //just a test to trigger auto deploy;
 
         }
 
