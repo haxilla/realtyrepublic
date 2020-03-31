@@ -32,7 +32,7 @@ class deployController extends Controller
 
             if(!$localToken){
               echo "presecret";
-              echo config('app.app_deploy_secret');
+              echo config('app.APP_DEPLOY_SECRET');
               echo "no localToken";
               exit();}
 
