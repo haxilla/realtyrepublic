@@ -20,7 +20,23 @@ class deployController extends Controller
         $localHash = 'sha1=' . hash_hmac('sha1', $githubPayload, $localToken, false);
 
         if(!$githubHash||!$localHash||!$localToken){
-            dd('error-line18-deployController-remstage');}
+
+
+            if(!$githubHash){
+              echo "no githubhash";
+              exit();}
+
+            if(!$localHash){
+              echo "no localHash";
+              exit();}
+
+            if(!$localToken){
+              echo "no localToken";
+              exit();}
+
+            //dd('error-line18-deployController-remstage');
+
+        }
 
 
         if (hash_equals($githubHash, $localHash)) {
