@@ -4,6 +4,8 @@
 ->statement("
   ALTER TABLE GLVAR_Homes
   MODIFY PhotoModificationTimestamp timestamp;
+  ALTER TABLE GLVAR_Homes
+  MODIFY PriceChangeTimestamp timestamp;
 ");
 
 /*
