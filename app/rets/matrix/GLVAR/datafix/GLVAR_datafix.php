@@ -1,5 +1,12 @@
 <?php
 
+\DB::connection('rets')
+->statement("
+  ALTER TABLE GLVAR_Homes
+  MODIFY PhotoModificationTimestamp timestamp;
+");
+
+/*
 //GLVAR_Homes changes
 Schema::connection('rets')
 ->table('GLVAR_Homes', function (Blueprint $table) {
@@ -28,3 +35,4 @@ Schema::connection('rets')
 		$table->timestamp('OriginalEntryTimestamp')->change();
 		$table->timestamp('NODDate')->change();
 });
+*/
