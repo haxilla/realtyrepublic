@@ -2,22 +2,28 @@
 
 // ** RETS **//
 //retsController
-   //index
-   Route::get('/rets',[
-      'as'=>'rets.index',
-      'uses' => 'rets\retsController@index']);
-   //addRets
-   Route::post('/rets/retsAdd',[
-      'as'=>'rets.retsAdd',
-      'uses' => 'rets\retsController@retsAdd']);
-   //retsDelete
-   Route::post('/rets/retsDelete',[
-      'as'=>'rets.retsDelete',
-      'uses' => 'rets\retsController@retsDelete']);
-   //retsDisplay
-   Route::get('/rets/retsDisplay',[
-      'as'=>'rets.retsDisplay',
-      'uses' => 'rets\retsController@retsDisplay']);
+  //index
+  Route::get('/rets',[
+    'as'=>'rets.index',
+    'uses' => 'rets\retsController@index']);
+  //addRets
+  Route::post('/rets/retsAdd',[
+    'as'=>'rets.retsAdd',
+    'uses' => 'rets\retsController@retsAdd']);
+  //retsDelete
+  Route::post('/rets/retsDelete',[
+    'as'=>'rets.retsDelete',
+    'uses' => 'rets\retsController@retsDelete']);
+  //retsDisplay
+  Route::get('/rets/retsDisplay',[
+    'as'=>'rets.retsDisplay',
+    'uses' => 'rets\retsController@retsDisplay']);
+  //retsDisplay
+  Route::get('/rets/GLVAR_datafix',[
+     'as'=>'rets.GLVAR_datafix',
+     'uses' => 'rets\retsController@GLVAR_datafix']);
+
+
 
 //retsSynchController
    //retsCompare
