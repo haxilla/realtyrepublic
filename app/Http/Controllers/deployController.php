@@ -36,8 +36,7 @@ class deployController extends Controller
               exit();}
 
             // dd('error-line18-deployController-remstage');
-            // adding this for auto deploy
-            // check secret now
+          
         }
 
 
