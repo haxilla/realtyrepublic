@@ -4,8 +4,11 @@
 ->statement("
   ALTER TABLE GLVAR_Homes
   MODIFY PhotoModificationTimestamp timestamp;
+");
+\DB::connection('rets')
+->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY PriceChangeTimestamp timestamp;
+  MODIFY TStatusDate timestamp;
 ");
 
 /*
