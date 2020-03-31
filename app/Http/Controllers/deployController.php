@@ -31,12 +31,13 @@ class deployController extends Controller
               exit();}
 
             if(!$localToken){
+              echo "presecret";
               echo config('app.deploy_secret');
               echo "no localToken";
               exit();}
 
             // dd('error-line18-deployController-remstage');
-          
+
         }
 
 
