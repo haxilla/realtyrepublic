@@ -31,6 +31,7 @@ class deployController extends Controller
               exit();}
 
             if(!$localToken){
+              echo config('app.deploy_secret');
               echo "no localToken";
               exit();}
 
