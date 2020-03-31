@@ -50,7 +50,8 @@ class deployController extends Controller
         	$ref=$payload->ref;
         	if($ref=='refs/heads/master'){
         		$root_path = base_path();
-                  		$process = new Process('cd ' . $root_path . '; ./deploy.sh');
+                  		//$process = new Process('cd ' . $root_path . '; ./deploy.sh');
+                      $process = Process::fromShellCommandline('cd ' . $root_path . '; ./deploy.sh');
                   		$process->run(function ($type, $buffer) {
                      			echo $buffer;
                   		});
