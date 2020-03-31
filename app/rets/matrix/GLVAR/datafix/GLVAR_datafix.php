@@ -1,9 +1,10 @@
 <?php
 
+//mains
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY PhotoModificationTimestamp timestamp;
+  MODIFY PhotoModificationTimestamp datetime null;
 ");
 \DB::connection('rets')
 ->statement("
@@ -13,40 +14,40 @@
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY StatusChangeTimestamp timestamp;
+  MODIFY StatusChangeTimestamp datetime null;
 ");
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY ProviderModificationTimestamp timestamp;
+  MODIFY ProviderModificationTimestamp datetime null;
 ");
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY PriceChangeTimestamp timestamp;
+  MODIFY PriceChangeTimestamp datetime null;
 ");
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY PriceChgDate timestamp;
+  MODIFY PriceChgDate datetime null;
 ");
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY OriginalEntryTimestamp timestamp;
+  MODIFY OriginalEntryTimestamp datetime null;
 ");
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY NODDate timestamp;
+  MODIFY NODDate datetime null;
 ");
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes
-  MODIFY MatrixModifiedDT timestamp;
+  MODIFY MatrixModifiedDT datetime null;
 ");
 
-
+//backup
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes_backup
