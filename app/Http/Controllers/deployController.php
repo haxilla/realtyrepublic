@@ -34,8 +34,8 @@ class deployController extends Controller
               echo "no localToken";
               exit();}
 
-            //dd('error-line18-deployController-remstage');
-
+            // dd('error-line18-deployController-remstage');
+            // adding this for auto deploy
         }
 
 
