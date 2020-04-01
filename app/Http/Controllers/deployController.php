@@ -40,10 +40,7 @@ class deployController extends Controller
             // permissions - checknow
         }
 
-
         if (hash_equals($githubHash, $localHash)) {
-
-
         	$json=$_POST['payload'];
         	$payload=json_decode($json);
 
