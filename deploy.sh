@@ -22,7 +22,7 @@ php artisan config:clear
 # restart queues
 php artisan -v queue:restart
 
-#test#
+#delete#
 
 # update database
 php artisan migrate --force
