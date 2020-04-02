@@ -1,55 +1,16 @@
 <?php
 
-//mains
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY PhotoModificationTimestamp datetime null;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY TStatusDate timestamp;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY StatusChangeTimestamp datetime null;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY ProviderModificationTimestamp datetime null;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY PriceChangeTimestamp datetime null;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY PriceChgDate datetime null;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY OriginalEntryTimestamp datetime null;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY NODDate datetime null;
-");
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes
-  MODIFY MatrixModifiedDT datetime null;
-");
+//Homes
+include('homes/main.php');
+include('homes/backup.php');
+include('homes/synch.php');
 
-//backup
-\DB::connection('rets')
-->statement("
-  ALTER TABLE GLVAR_Homes_backup
-  MODIFY PhotoModificationTimestamp datetime null;
-");
+//agents
+include('agents/main.php');
+include('agents/backup.php');
+include('agents/synch.php');
+
+//offices
+include('offices/main.php');
+include('offices/backup.php');
+include('offices/synch.php');
