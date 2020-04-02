@@ -5,7 +5,7 @@
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes_synch
-  MODIFY PhotoModificationTimestamp datetime null;
+  MODIFY PhotoModificationTimestamp datetimeselec null;
 ");
 \DB::connection('rets')
 ->statement("
