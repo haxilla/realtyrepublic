@@ -10,7 +10,7 @@
 \DB::connection('rets')
 ->statement("
   ALTER TABLE GLVAR_Homes_synch
-  MODIFY TStatusDate timestamp;
+  MODIFY TStatusDate datetime null;
 ");
 \DB::connection('rets')
 ->statement("
