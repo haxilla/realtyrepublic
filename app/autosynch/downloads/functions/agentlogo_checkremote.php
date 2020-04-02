@@ -17,4 +17,4 @@ if (strpos( $header_response[0],"404") !== false) {
 
 //error if not found
 if($notFound){
-	dd('remoteSite:',$remoteSite,'remoteURL:',$remoteURL'error-line20-agentlogo_checkremote');}
+	dd('remoteSite:',$remoteSite,'remoteURL:',$remoteURL,'error-line20-agentlogo_checkremote');}
