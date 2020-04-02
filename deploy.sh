@@ -3,6 +3,7 @@
 # activate maintenance mode
 #php artisan down
 
+echo "$USER"
 # update source code
 git pull
 
@@ -21,7 +22,7 @@ php artisan config:clear
 
 # restart queues
 php artisan -v queue:restart
-#*# delete this ##
+#*# delete this #ls#
 
 # update database
 php artisan migrate --force
