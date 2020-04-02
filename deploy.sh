@@ -23,6 +23,17 @@ php artisan config:clear
 php artisan -v queue:restart
 #deletc test#
 
+
+
+
+
+
+
+
+
+
+
+
 # update database
 php artisan migrate --force
 	# --force		Required to run when in production.
