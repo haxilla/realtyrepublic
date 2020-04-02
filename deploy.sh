@@ -21,7 +21,7 @@ php artisan config:clear
 
 # restart queues
 php artisan -v queue:restart
-#delete
+#deletc test#
 
 # update database
 php artisan migrate --force
