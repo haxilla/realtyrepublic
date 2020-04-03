@@ -19,7 +19,7 @@ $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
 $localOfficeID=$getLocalOffice['officeID'];
 
 //
-if(!$officeID){
+if(!$officeID && $officeID != 0){
 	$officeID='OID';}
 //
 if(!$localOfficeID){
