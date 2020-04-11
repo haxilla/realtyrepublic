@@ -2,7 +2,7 @@
 
 $theQuery=DB::connection('rets')
 ->select( DB::raw("
-	SELECT 
+	SELECT
 		o.Matrix_Unique_ID as idMatrix,
 		n.Matrix_Unique_ID as idMatrixNew,
 		o.Status as statusOld,
@@ -14,7 +14,7 @@ $theQuery=DB::connection('rets')
 	FROM
 		$oldHomes o
 	LEFT JOIN
-		$nowHomes n 
+		$nowHomes n
 	ON o.Matrix_Unique_ID = n.Matrix_Unique_ID
 	WHERE o.Matrix_Unique_ID is NOT NULL
 	AND n.Matrix_Unique_ID is NULL;
@@ -27,7 +27,7 @@ $removeTable=$mlsName.'_'.$retsClass.'_removed';
 if($thisTotal > 0){
 
 	if($thisTotal > 1000){
-		dd('error-line30-homeRemovedQuery.php');}
+		dd($thisTotal,'error-line30-homeRemovedQuery.php');}
 
 	foreach($theQuery as $the){
 		$removed=DB::connection('rets')
@@ -36,6 +36,6 @@ if($thisTotal > 0){
 			INSERT IGNORE into $removeTable
 			SELECT * from $oldHomes
 			WHERE Matrix_Unique_ID=$the->idMatrix
-			
+
 		"));
 	}}

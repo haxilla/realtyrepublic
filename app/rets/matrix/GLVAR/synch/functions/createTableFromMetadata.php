@@ -13,7 +13,7 @@ function create_table_sql_from_metadata($table_name, $rets_metadata, $key_field,
 		} elseif ($field->getDataType() == "Long") {
 			$sql_make .= "BIGINT(".$field->getMaximumLength().")";
 		} elseif ($field->getDataType() == "DateTime") {
-			$sql_make .= "DATETIME default '0000-00-00 00:00:00' NOT NULL";
+			$sql_make .= "DATETIME default NULL";
 		} elseif ($field->getDataType() == "Character" && $field->getMaximumLength() <= 255) {
 			$sql_make .= "VARCHAR(".$field->getMaximumLength().")";
 		} elseif ($field->getDataType() == "Character" && $field->getMaximumLength() > 255) {

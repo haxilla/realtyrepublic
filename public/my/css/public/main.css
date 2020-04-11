@@ -377,7 +377,7 @@ propInfo page
 	.freeTrial input[type="text"]::placeholder{text-align:center;}
 	.freeTrial input[type="text"]:-ms-input-placeholder{text-align:center;}
 	.freeTrial input[type="text"]::-ms-input-placeholder{text-align:center;}
-	.freeTrial input{max-width:600px;}
+	.freeTrial input{max-width:600px;text-align:center;}
 	.agentWallAltHero{display:none;}
 	.agentWallHero{display:block;}
 	.publicFooter .colWrapper.contactList{padding-top:15px;}
