@@ -8,3 +8,6 @@
   display:inline-block;color:#464555;}
 .passwordFix .progressWait{display:none;}
 .passwordFix .progress{display:none;}
+.passwordFix .scriptStartButton{border-radius:2em;background:#090;
+  border:3px solid #fff;padding:5px 15px;display:inline-block;
+  margin:15px 0;cursor:pointer;}

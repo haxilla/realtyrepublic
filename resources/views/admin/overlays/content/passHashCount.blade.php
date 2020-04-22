@@ -26,6 +26,9 @@
         d-flex position-absolute w-100">
         </small>
       </div>
+      <div class="scriptStartButton">
+        Run Script
+      </div>
     </div>
   </div>
 </div>
