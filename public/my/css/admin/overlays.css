@@ -1,4 +1,6 @@
 .passwordFix .headWrapper{position:absolute;top:15px;left:20px;}
 .passwordFix h5{font-weight:bold;}
 .passwordFix .mainContent{text-align:center;background:#464555;}
-.passwordFix .progressDiv{width:85%;margin:auto}
+.passwordFix .progressDiv{width:85%;margin:auto;padding:25px 0;}
+.passwordFix .fixCountLabel{background:#fff;border-radius:2em;
+  border:3px solid rgba(0,0,0,.5);padding:5px 15px;margin-bottom:15px;}

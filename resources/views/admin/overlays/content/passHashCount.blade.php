@@ -8,7 +8,7 @@
     </div>
   </div>
   <div class="mainContent">
-    <div>
+    <div class="fixCountLabel">
       FIXES NEEDED <span class="theCount">{{$passHashCount}}</span>
     </div>
     <div class="progressDiv">
