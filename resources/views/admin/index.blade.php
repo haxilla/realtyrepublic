@@ -20,7 +20,7 @@
         <div class="mainContainer">
             <div class="row">
                 <div class="col-12">
-                    <div class="slick-stage" id="newAddStage" 
+                    <div class="slick-stage" id="newAddStage"
                     style="z-index:100">
                         <div style="position:absolute;width:100%;top:15px;">
                             <div class="container-fluid">
@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="slick-stage" id="newAddStage" 
+                    <div class="slick-stage" id="newAddStage"
                     style="top:-40px;z-index:99">
                         <div style="position:absolute;width:100%;top:15px;">
                             <div class="container-fluid">
@@ -70,6 +70,7 @@
     @include('admin.scripts.adminScripts')
     @include('admin.scripts.slickCarousel')
     <script src="/my/js/admin/synch/synchStart.js"></script>
+    <script src="/my/js/admin/synch/passwordFix.js"></script>
     <!-- for uploading admin photo -->
     <script src="/my/js/imageTools/imageTools.js"></script>
 </body>
