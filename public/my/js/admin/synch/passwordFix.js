@@ -1,7 +1,8 @@
 $(function(){
 
-  $('.scriptStartButton a').click(function(e){
-      alert('clicked start');
+  $('body').on('click','.passwordFix .scriptStartButton',
+  function(e){
+    alert('clicked');
   });
 
 });

@@ -27,11 +27,9 @@
         </small>
       </div>
       <div class="scriptStartButton">
-        <a>
-          <span class="ticon">
-            <i class="ti-reload"></i>
-          </span>Run Script
-        </a>
+        <span class="ticon">
+          <i class="ti-reload"></i>
+        </span>Run Script
       </div>
     </div>
   </div>
