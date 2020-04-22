@@ -27,7 +27,7 @@
         </small>
       </div>
       <div class="scriptStartButton">
-        Run Script
+        <i class="ti-reload"></i>Run Script
       </div>
     </div>
   </div>
