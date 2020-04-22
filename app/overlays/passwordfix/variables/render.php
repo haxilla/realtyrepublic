@@ -10,4 +10,9 @@ $passHashCount=propagent::select('id','agtPswd')
 $html=\View::make('admin.overlays.content.passHashCount')
 ->with([
 	'passHashCount'	 => $passHashCount,
-]);
+])->render();
+
+//echo
+echo $html;
+//exit
+exit();
