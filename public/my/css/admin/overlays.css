@@ -6,3 +6,5 @@
 .passwordFix .fixCountLabel{background:#fff;border-radius:2em;
   border:3px solid rgba(0,0,0,.5);padding:5px 15px;margin-bottom:15px;
   display:inline-block;color:#464555;}
+.passwordFix .progressWait{display:none;}
+.passwordFix .progress{display:none;}

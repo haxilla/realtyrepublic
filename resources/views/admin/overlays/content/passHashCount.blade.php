@@ -14,7 +14,7 @@
     <div class="progressDiv">
       <div class="progressWait">
         <span class="progressWaitText">
-        Please wait ...
+          Please wait ...
         </span>
       </div>
       <div class="progress position-relative">
