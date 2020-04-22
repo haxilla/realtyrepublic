@@ -11,6 +11,6 @@
 .passwordFix .scriptStartButton{border-radius:2em;background:#090;
   border:3px solid #fff;padding:5px 15px;display:inline-block;
   margin:15px 0;cursor:pointer;}
-.passwordFix .scriptStartButton .ticon{background:#fff;height:20px;
-  width:20px;line-height:20px;text-align:center;color:#090;
+.passwordFix .scriptStartButton .ticon{background:#fff;height:25px;
+  width:25px;line-height:25px;text-align:center;color:#090;
   border-radius:50%;margin-right:5px;}
