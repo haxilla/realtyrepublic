@@ -26,7 +26,8 @@
         d-flex position-absolute w-100">
         </small>
       </div>
-      <div class="scriptStartButton">
+      <div class="scriptStartButton"
+      id="scriptStartButton">
         <span class="ticon">
           <i class="ti-reload"></i>
         </span>Run Script

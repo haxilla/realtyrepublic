@@ -1,6 +1,6 @@
 $(function(){
 
-  $('div.scriptStartButton').click(function(e){
+  $('#scriptStartButton').click(function(e){
       alert('clicked start');
   });
 
