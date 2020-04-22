@@ -4,7 +4,7 @@
       <h5>PASSWORD FIX</h5>
     </div>
     <div class="subHead">
-      Fixes passwords from agtPswd to bcrypted passHash
+       Adds bcrypted password from agtPswd to passHash
     </div>
   </div>
   <div class="mainContent">

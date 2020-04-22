@@ -16,8 +16,18 @@ $(function(){
       "background":"#000",
       "opacity":".5",
     });
-    //progressWait
+    //progressWait show
     $('.passwordFix .progressWait').show();
+
+    //run passwordFix script
+    passwordFix();
+
   });
 
 });
+
+function passwordFix(){
+
+  alert('run script');
+
+}
