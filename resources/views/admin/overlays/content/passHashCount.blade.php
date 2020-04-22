@@ -1,7 +1,7 @@
 <div class="passwordFix">
   <div class="headWrapper">
     <div class="mainHead">
-      PASSWORD FIX
+      <h5>PASSWORD FIX</h5>
     </div>
     <div class="subHead">
       Fixes passwords from agtPswd to bcrypted passHash

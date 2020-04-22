@@ -9,10 +9,12 @@
 <!-- themify icons -->
 <link href="/vendor/tifont/tifont.css" rel="stylesheet">
 <!-- perfect-scrollbar -->
-<link rel="stylesheet" type="text/css" 
+<link rel="stylesheet" type="text/css"
 href="/vendor/perfect-scrollbar/css/perfect-scrollbar.min.css"/>
 <!-- Custom CSS -->
 <link href="/my/css/admin/adminMain.css" rel="stylesheet">
+<link href="/my/css/admin/overlays.css" rel="stylesheet">
+
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
