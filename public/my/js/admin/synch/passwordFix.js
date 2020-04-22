@@ -2,7 +2,7 @@ $(function(){
 
   $('body').on('click','.passwordFix .scriptStartButton',
   function(e){
-    alert('clicked');
+    $('.scriptStartButton .ticon').addClass("rotating");
   });
 
 });
