@@ -1,9 +1,12 @@
 $(function(){
 
-  $('body').on('click','.passwordFix .scriptStartButton',
+  $('body').on('click','.passwordFix .startNow',
   function(e){
     //rotate icon
     $('.scriptStartButton .ticon').addClass("rotating");
+
+    //remove startNow
+    $('.scriptStartButton').removeClass('startNow');
 
     //icon css
     $('.scriptStartButton .ticon').css({
@@ -16,7 +19,7 @@ $(function(){
       "background":"#000",
       "opacity":".5",
     });
-    
+
   });
 
 });
