@@ -12,13 +12,13 @@ if($currentSynch=='complete'){
 //update query
 synchLog::where('synchID','=',$synchID)
 ->update([
-	"$column"			=> \Carbon\Carbon::now(),
-	'lastSynch'			=> $currentSynch,
+	"$column"					=> \Carbon\Carbon::now(),
+	'lastSynch'				=> $currentSynch,
 	'progressMessage'	=> "$currentSynch Complete"
 ]);
 
 //if partialSynch update
-if($synchType=='synchOne' 
+if($synchType=='synchOne'
 && $partialSynch){
 
 	//partial next or error
@@ -31,7 +31,7 @@ if($synchType=='synchOne'
 		'currentSynch'=>$partialNext,
 	]);}
 
-//last item of partial synch 
+//last item of partial synch
 if(($synchType=='synchOne' && $partialComplete)
 ||($synchType=='synchOne' && !$partialSynch)){
 
@@ -39,12 +39,12 @@ if(($synchType=='synchOne' && $partialComplete)
 	$partialSynch=0;
 	$partialNext=null;
 	$status='complete';
-	
+
 	//update query
 	synchLog::where('synchID','=',$synchID)
 	->update([
 		"synchComplete"		=> \Carbon\Carbon::now(),
-		'lastSynch'			=> $currentSynch,
+		'lastSynch'				=> $currentSynch,
 		'progressMessage'	=> "$currentSynch Complete"
 	]);}
 
@@ -52,13 +52,13 @@ if(($synchType=='synchOne' && $partialComplete)
 $lastSynch=$currentSynch;
 
 //if partialNext update
-if($synchType=='synchOne' 
+if($synchType=='synchOne'
 && $partialNext){
 	$currentSynch=$partialNext;}
 
 $tableComplete=null;
 
-if($currentSynch!="complete" 
+if($currentSynch!="complete"
 && ($synchType=='synchAll' && !$partialSynch)
 ||($synchType=='synchAll' && $partialComplete)){
 	$tableComplete=$currentSynch;

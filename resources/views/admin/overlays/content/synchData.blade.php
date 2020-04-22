@@ -10,7 +10,7 @@
 	<div class="row">
 	    <div class="col-12">
 	        <div class="table-responsive">
-	            <table class="table synchTable 
+	            <table class="table synchTable
 	            bg-charcoal text-white">
 	                <thead>
 	                    <tr class="tableLegend bg-charcoal text-white">
@@ -51,13 +51,13 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
 									role="progressbar"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
 	                        </td>
 	                    </tr>
-	                   	<tr class="synchRow propflyer propflyerstat 
+	                   	<tr class="synchRow propflyer propflyerstat
 	                   	propmapping propmeta propremark synchCounts">
 	                        <th scope="row">
 	                        	<a class="startSynch synchOne
@@ -72,7 +72,7 @@
 	                        <td>{{$propflyerCur}}</td>
 	                        <td>{{$propflyerDif}}</td>
 	                    </tr>
-	                    <tr class="synchRow propflyer propflyerstat 
+	                    <tr class="synchRow propflyer propflyerstat
 	                   	propmapping propmeta propremark synchProgress">
 	                        <th scope="row">
 	                        	<a class="smallCircleButton bg-green rotating">
@@ -89,8 +89,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -126,8 +126,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -163,8 +163,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -200,8 +200,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -237,8 +237,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -275,8 +275,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -312,8 +312,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -349,14 +349,14 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
 	                        </td>
 	                    </tr>
-	                   	<tr class="synchRow deletepropflyer deletepropflyerstat deletepropmapping deletepropmeta deletepropremark 
+	                   	<tr class="synchRow deletepropflyer deletepropflyerstat deletepropmapping deletepropmeta deletepropremark
 	                   	synchCounts">
 	                        <th scope="row">
 	                        	<a class="startSynch synchOne
@@ -371,7 +371,7 @@
 	                        <td>{{$deletepropflyerCur}}</td>
 	                        <td>{{$deletepropflyerDif}}</td>
 	                    </tr>
-	                    <tr class="synchRow deletepropflyer deletepropflyerstat 
+	                    <tr class="synchRow deletepropflyer deletepropflyerstat
 	                    deletepropmapping deletepropmeta deletepropremark synchProgress">
 	                        <th scope="row">
 	                        	<a class="smallCircleButton bg-green rotating">
@@ -388,11 +388,11 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped 
-									progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped
+									progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
-									<small class="progressText justify-content-center 
+									<small class="progressText justify-content-center
 									d-flex position-absolute w-100"></small>
 								</div>
 	                        </td>
@@ -427,8 +427,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -464,8 +464,8 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -479,7 +479,7 @@
 	<div class="row" style="margin-top:15px;margin-bottom:15px;">
 	    <div class="col-12">
 	        <div class="table-responsive">
-	            <table class="table synchTable bg-charcoal 
+	            <table class="table synchTable bg-charcoal
 	            text-white synchDownload">
 	                <thead>
 	                    <tr class="tableLegend">
@@ -489,7 +489,7 @@
 	                </thead>
 	                <tbody>
 	                    <tr class="propphotoDownload synchCounts">
-	                    	<th scope="row">	                        	
+	                    	<th scope="row">
 	                    		<a class="startSynch synchOne
 	                        	smallCircleButton hover bg-green">
 	                        		<div class="propphotoDownload">
@@ -516,10 +516,10 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped 
-									progress-bar-animated bg-success" role="progressbar" 
+									<div class="progress-bar progress-bar-striped
+									progress-bar-animated bg-success" role="progressbar"
 									style="width: 50%;"></div>
-									<small class="progressText justify-content-center 
+									<small class="progressText justify-content-center
 									d-flex position-absolute w-100"></small>
 								</div>
 	                        </td>
@@ -553,10 +553,10 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped 
-									progress-bar-animated bg-success" role="progressbar" 
+									<div class="progress-bar progress-bar-striped
+									progress-bar-animated bg-success" role="progressbar"
 									style="width: 50%;"></div>
-									<small class="progressText justify-content-center 
+									<small class="progressText justify-content-center
 									d-flex position-absolute w-100"></small>
 								</div>
 	                        </td>
@@ -589,10 +589,10 @@
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped 
-									progress-bar-animated bg-success" role="progressbar" 
+									<div class="progress-bar progress-bar-striped
+									progress-bar-animated bg-success" role="progressbar"
 									style="width: 50%;"></div>
-									<small class="progressText justify-content-center 
+									<small class="progressText justify-content-center
 									d-flex position-absolute w-100"></small>
 								</div>
 	                        </td>
@@ -610,27 +610,29 @@
 	                        <td>{{$agentlogoDownload}}</td>
 	                    </tr>
 	                    <tr class="synchRow agentlogoDownload synchProgress">
-	                        <th scope="row">
-	                        	<a class="smallCircleButton bg-green rotating">
-	                        		<div class="agentlogoDownload">
-	                        			<i class="ti-reload"></i>
-	                        		</div>
-	                        	</a>
-	                        	agentlogoDownload
-	                    	</th>
+													<th scope="row">
+														<a class="smallCircleButton bg-green rotating">
+															<div class="agentlogoDownload">
+																<i class="ti-reload"></i>
+															</div>
+														</a>
+														agentlogoDownload
+													</th>
 	                        <td colspan="4">
 	                        	<div class="progressWait">
-									<span class="progressWaitText">
-										Please wait ...
-									</span>
+															<span class="progressWaitText">
+																Please wait ...
+															</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped 
-									progress-bar-animated bg-success" role="progressbar" 
-									style="width: 50%;"></div>
-									<small class="progressText justify-content-center 
-									d-flex position-absolute w-100"></small>
-								</div>
+															<div class="progress-bar progress-bar-striped
+															progress-bar-animated bg-success"
+															role="progressbar"
+															style="width: 50%;">
+															</div>
+															<small class="progressText justify-content-center
+															d-flex position-absolute w-100"></small>
+														</div>
 	                        </td>
 	                    </tr>
 	                </tbody>
@@ -685,15 +687,15 @@
 	                    	<th scope="row">RemailFlyers</th>
 	                        <td colspan="2">
 	                        	<div class="progressWait">
-									<span class="spinner-border 
+									<span class="spinner-border
 									spinner-border-sm"></span>
 									<span class="progressWaitText">
 										Please wait,Preparing...
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -704,7 +706,7 @@
 	                        <td>0</td>
 	                        <td>0</td>
 	                        <td>
-	                        	<a class="startSynch hoverButton bg-green 
+	                        	<a class="startSynch hoverButton bg-green
 	                        	synchOne">
 	                        		<div class="remailphotosmaster">
 	                        			Reset
@@ -716,15 +718,15 @@
 	                    	<th scope="row">RemailPhotos</th>
 	                        <td colspan="2">
 	                        	<div class="progressWait">
-									<span class="spinner-border 
+									<span class="spinner-border
 									spinner-border-sm"></span>
 									<span class="progressWaitText">
 										Please wait,Preparing...
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>
@@ -747,15 +749,15 @@
 	                        <th scope="row">PropDelivs</th>
 	                        <td colspan="2">
 	                        	<div class="progressWait">
-									<span class="spinner-border 
+									<span class="spinner-border
 									spinner-border-sm"></span>
 									<span class="progressWaitText">
 										Please wait,Preparing...
 									</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
-									role="progressbar" 
+									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+									role="progressbar"
 									style="width: 50%;"></div>
 									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
 								</div>

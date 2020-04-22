@@ -55,7 +55,7 @@
 </div>
 <div class="navTop bg-primary">
     <div class="container-fluid navTopContainer">
-        <a class="navTopLink show-md-down 
+        <a class="navTopLink show-md-down
         menuIcon leftCenter">
             <i class="ti-menu"></i>
         </a>
@@ -96,7 +96,7 @@
             data-droptitle="adminMenu">
                 <a class="navTopLink dropTitle adminNavTop">
                     @if($adminInfo['adminPhoto'])
-                        <img class="adminPhotoDisplay" 
+                        <img class="adminPhotoDisplay"
                         src="/images/admin/profilePhotos/{{$adminInfo['adminPhoto']}}">
                     @else
                         <img class="adminPhotoDisplay"
@@ -134,7 +134,7 @@
     <div class="container-fluid fullHeight">
         <!-- left -->
         <ul class="submenu noStyle floatLeftLarge">
-            <li class="submenuNav responsiveBorderTop-white" 
+            <li class="submenuNav responsiveBorderTop-white"
             data-droptitle="dashboardMenu">
                 <a class="dropTitle">
                     <i class="dropTitleIcon ti-dashboard">
@@ -235,6 +235,13 @@
                             <i class="submenuIcon ti-reload">
                             </i><span>Synch</span>
                         </a>
+                    </li
+                    ><li>
+                      <a href="#" class="overlayLink"
+                      data-menuclass="passwordfix">
+                        <i class="submenuIcon ti-lock">
+                        </i><span>Password Fix</span>
+                      </a>
                     </li
                     ><li>
                         <a href="#">
