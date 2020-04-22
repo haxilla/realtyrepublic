@@ -1,4 +1,4 @@
 .passwordFix .headWrapper{position:absolute;top:15px;left:20px;}
 .passwordFix h5{font-weight:bold;}
 .passwordFix .mainContent{text-align:center;}
-.passwordFix .progressDiv{padding:25px;}
+.passwordFix .progressDiv{width:85%;margin:auto}
