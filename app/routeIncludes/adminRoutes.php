@@ -58,19 +58,22 @@ Route::get('logs', '\Melihovv\LaravelLogViewer\LaravelLogViewerController@index'
       'uses' => 'admin\adminOverlayController@index']);
 
 //adminClickSynchController
-   //progress
-   Route::get('/synch/synchProgress',[
-      'as'    => 'synch.progress',
-      'uses'  => 'admin\autoSynchController@synchProgress']);
-   //Agent - synchStart
-   Route::get('/synch/synchStart',[
-      'as'    => 'synch.synchStart',
-      'uses'  => 'admin\autoSynchController@synchStart']);
-   //Agent - synchStart
-   Route::get('/synch/synchDownloads',[
-      'as'    => 'synch.synchDownloads',
-      'uses'  => 'admin\autoSynchController@synchDownloads']);
-
+  //progress
+  Route::get('/synch/synchProgress',[
+    'as'    => 'synch.progress',
+    'uses'  => 'admin\autoSynchController@synchProgress']);
+  //Agent - synchStart
+  Route::get('/synch/synchStart',[
+    'as'    => 'synch.synchStart',
+    'uses'  => 'admin\autoSynchController@synchStart']);
+  //Agent - synchStart
+  Route::get('/synch/synchDownloads',[
+    'as'    => 'synch.synchDownloads',
+    'uses'  => 'admin\autoSynchController@synchDownloads']);
+  //Agent - passwordfix
+  Route::get('/synch/agtPswdFix',[
+     'as'    => 'synch.agtPswdFix',
+     'uses'  => 'admin\autoSynchController@agtPswdFix']);
 //bounceController
    //bounce auto
    //aka bounceIndex
@@ -96,5 +99,3 @@ Route::get('logs', '\Melihovv\LaravelLogViewer\LaravelLogViewerController@index'
    Route::get('/admin/bounceReviewDisplay',[
       'as'    => 'admin.bounceReviewDisplay',
       'uses'  => 'admin\bounceReviewController@display']);
-
-   

@@ -28,6 +28,25 @@ $(function(){
 
 function passwordFix(){
 
-  alert('run script');
+  // process the form
+  $.ajax({
+     type        : 'GET', 						  // type of HTTP request
+     url         : '/synch/agtPswdFix', // the url to navigate to
+     dataType    : 'json', 						  // data to expect from server
+     encode      : true
+  })
 
+  // using the done promise callback
+  .done(function(data){
+    if(data.status=='success'){
+      alert('all good');
+    }else{
+      alert('something fishy');
+    }
+  })
+  
+  // using the fail promise callback
+  .fail(function(data){
+    alert('error');
+  });
 }
