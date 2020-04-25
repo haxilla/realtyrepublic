@@ -19,7 +19,7 @@ $(function(){
     //progressWait show
     $('.passwordFix .progressWait').show();
 
-    $fixCount=$(this).data("fixcount");
+    var fixCount=$(this).data("fixcount");
     //run passwordFix script
     passwordFix(fixCount);
 
