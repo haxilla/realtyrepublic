@@ -3,14 +3,18 @@
 //model
 Use App\models\core\propagent;
 
+$fixCount=request('fixCount');
 //query for records
 $passHashFix=propagent::select('id','agtPswd')
 ->whereNull('passHash')
 ->whereNotNull('agtPswd')
+
+$thisCount=$passHashFix->count();
+$passHashLoop=$passHashFix->take(10)
 ->get();
 
 //loop and fix
-foreach($passHashFix as $the){
+foreach($passHashLoop as $the){
   //set values
   $agtPswd=$the->agtPswd;
   $theID=$the->id;
@@ -24,7 +28,11 @@ foreach($passHashFix as $the){
 
 //output json & exit
 $idArray = array(
-  'status'  => 'success',
+  'status'    => 'success',
+  'fixcount'  => $fixCount,
+  'thisCount' => $thisCount,
 );
+
+
 echo json_encode($idArray);
 exit();

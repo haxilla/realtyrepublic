@@ -26,7 +26,8 @@
         d-flex position-absolute w-100">
         </small>
       </div>
-      <div class="startNow scriptStartButton">
+      <div class="startNow scriptStartButton"
+      data-fixcount="{{$passHashCount}}">
         <span class="ticon">
           <i class="ti-reload"></i>
         </span>Run Script

@@ -19,19 +19,20 @@ $(function(){
     //progressWait show
     $('.passwordFix .progressWait').show();
 
+    $fixCount=$(this).data("fixcount");
     //run passwordFix script
-    passwordFix();
+    passwordFix(fixCount);
 
   });
 
 });
 
-function passwordFix(){
+function passwordFix(fixCount){
 
   // process the form
   $.ajax({
      type        : 'GET', 						  // type of HTTP request
-     url         : '/synch/agtPswdFix', // the url to navigate to
+     url         : '/synch/agtPswdFix?fixCount='+fixCount, // the url to navigate to
      dataType    : 'json', 						  // data to expect from server
      encode      : true
   })
@@ -44,7 +45,7 @@ function passwordFix(){
       alert('something fishy');
     }
   })
-  
+
   // using the fail promise callback
   .fail(function(data){
     alert('error');
