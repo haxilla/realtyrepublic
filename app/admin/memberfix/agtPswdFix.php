@@ -29,7 +29,7 @@ foreach($passHashLoop as $the){
 //output json & exit
 $idArray = array(
   'status'    => 'success',
-  'fixcount'  => $fixCount,
+  'fixCount'  => $fixCount,
   'thisCount' => $thisCount-10,
 );
 
