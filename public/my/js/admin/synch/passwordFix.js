@@ -48,7 +48,7 @@ function passwordFix(fixCount){
         $('.passwordFix span.theCount').text(thisCount);
         $('.passwordFix .progressWait').hide();
         $('.passwordFix .progress').show();
-        $('.passwordFIx .progress-bar').css({"width":thisPercent,})
+        $('.passwordFix .progress-bar').css({"width":thisPercent,})
         passwordFix(fixCount);
       }else{
         alert('Fixes Complete!');}
