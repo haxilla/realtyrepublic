@@ -38,7 +38,7 @@ function passwordFix(fixCount){
   })
 
   // using the done promise callback
-  .done(function(data){g
+  .done(function(data){
     if(data.status=='success'){
       fixCount=data.fixCount;
       if(data.thisCount>0){
