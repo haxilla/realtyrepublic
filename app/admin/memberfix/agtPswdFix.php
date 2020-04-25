@@ -10,7 +10,7 @@ $passHashFix=propagent::select('id','agtPswd')
 ->whereNotNull('agtPswd');
 
 $thisCount=$passHashFix->count();
-$thisDiff=$fixCount-$thisCount
+$thisDiff=$fixCount-$thisCount;
 $passHashLoop=$passHashFix->take(10)
 ->get();
 
