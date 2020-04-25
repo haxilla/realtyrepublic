@@ -31,7 +31,7 @@ $idArray = array(
   'status'        => 'success',
   'fixCount'      => $fixCount,
   'thisCount'     => $thisCount-10,
-  'thisPercent'   => $thisCount/$fixCount * 100,
+  'thisPercent'   => $fixCount/$thisCount * 100,
 );
 
 
