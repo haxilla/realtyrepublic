@@ -40,7 +40,10 @@ function passwordFix(fixCount){
   // using the done promise callback
   .done(function(data){
     if(data.status=='success'){
-      alert('all good');
+      fixCount=data.fixCount;
+      if(data.thisCount>0){
+        passwordFix(fixCount);
+      }
     }else{
       alert('something fishy');
     }

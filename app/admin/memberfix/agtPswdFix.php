@@ -30,7 +30,7 @@ foreach($passHashLoop as $the){
 $idArray = array(
   'status'    => 'success',
   'fixcount'  => $fixCount,
-  'thisCount' => $thisCount,
+  'thisCount' => $thisCount-10,
 );
 
 
