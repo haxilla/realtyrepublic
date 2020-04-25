@@ -38,11 +38,11 @@ function passwordFix(fixCount){
   })
 
   // using the done promise callback
-  .done(function(data){
+  .done(function(data){g
     if(data.status=='success'){
       fixCount=data.fixCount;
       if(data.thisCount>0){
-        $('.passwordFix span.theCount').html(thisCount);
+        $('.passwordFix span.theCount').text(thisCount);
         passwordFix(fixCount);
       }
     }else{
