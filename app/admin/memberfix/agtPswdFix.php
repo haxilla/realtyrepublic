@@ -10,6 +10,7 @@ $passHashFix=propagent::select('id','agtPswd')
 ->whereNotNull('agtPswd');
 
 $thisCount=$passHashFix->count();
+$thisDiff=$fixCount-$thisCount
 $passHashLoop=$passHashFix->take(10)
 ->get();
 
@@ -31,7 +32,7 @@ $idArray = array(
   'status'        => 'success',
   'fixCount'      => $fixCount,
   'thisCount'     => $thisCount-10,
-  'thisPercent'   => $fixCount/$thisCount * 100,
+  'thisPercent'   => $thisDiff/$fixCount * 100,
 );
 
 
