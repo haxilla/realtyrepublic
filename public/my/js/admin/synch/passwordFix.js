@@ -42,11 +42,13 @@ function passwordFix(fixCount){
     if(data.status=='success'){
       fixCount=data.fixCount;
       thisCount=data.thisCount;
+      thisPercent=data.thisPercent+'%';
 
       if(thisCount>0){
         $('.passwordFix span.theCount').text(thisCount);
         $('.passwordFix .progressWait').hide();
         $('.passwordFix .progress').show();
+        $('.passwordFIx .progress-bar').css({"width":thisPercent,})
         passwordFix(fixCount);
       }else{
         alert('Fixes Complete!');}
