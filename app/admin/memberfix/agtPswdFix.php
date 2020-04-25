@@ -7,7 +7,7 @@ $fixCount=request('fixCount');
 //query for records
 $passHashFix=propagent::select('id','agtPswd')
 ->whereNull('passHash')
-->whereNotNull('agtPswd')
+->whereNotNull('agtPswd');
 
 $thisCount=$passHashFix->count();
 $passHashLoop=$passHashFix->take(10)
