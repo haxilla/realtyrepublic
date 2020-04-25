@@ -41,7 +41,8 @@ function passwordFix(fixCount){
   .done(function(data){
     if(data.status=='success'){
       fixCount=data.fixCount;
-      if(data.thisCount>0){
+      thisCount=data.thisCount;
+      if(thisCount>0){
         $('.passwordFix span.theCount').text(thisCount);
         passwordFix(fixCount);
       }
