@@ -20,7 +20,7 @@
       <div class="progress position-relative">
         <div class="progress-bar progress-bar-striped
         progress-bar-animated bg-success" role="progressbar"
-        style="width: 50%;">
+        style="width: 50%;display:inline-block;">
         </div>
         <small class="progressText justify-content-center
         d-flex position-absolute w-100">
