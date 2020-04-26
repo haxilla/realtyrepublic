@@ -16,8 +16,10 @@ $(function(){
       "background":"#000",
       "opacity":".5",
     });
+
     //progressWait show
     $('.passwordFix .progressWait').show();
+    $('.passwordFix .progress').hide();
 
     var fixCount=$(this).data("fixcount");
     //run passwordFix script
