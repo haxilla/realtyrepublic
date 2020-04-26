@@ -46,15 +46,15 @@
 	                    	</th>
 	                        <td colspan="4">
 	                        	<div class="progressWait">
-									<span class="progressWaitText">
-										Please wait ...
-									</span>
+															<span class="progressWaitText">
+																Please wait ...
+															</span>
 	                        	</div>
 	                        	<div class="progress position-relative">
-									<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
-									role="progressbar"></div>
-									<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
-								</div>
+															<div class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+															role="progressbar"></div>
+															<small class="progressText justify-content-center d-flex position-absolute w-100"></small>
+														</div>
 	                        </td>
 	                    </tr>
 	                   	<tr class="synchRow propflyer propflyerstat
