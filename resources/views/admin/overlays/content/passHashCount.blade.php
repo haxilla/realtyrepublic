@@ -20,7 +20,8 @@
       <div class="progress position-relative">
         <div class="progress-bar progress-bar-striped
         progress-bar-animated bg-success"
-        role="progressbar">
+        role="progressbar" aria-valuenow="70"
+        aria-valuemin="0" aria-valuemax="100" >
         </div>
         <small class="progressText justify-content-center
         d-flex position-absolute w-100">
