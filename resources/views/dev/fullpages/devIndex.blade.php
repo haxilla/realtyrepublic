@@ -5,6 +5,7 @@
     @include('admin.headersFooters.adminHeader')
     <!-- Custom CSS -->
 	<link href="/my/css/dev/devJournal.css" rel="stylesheet">
+	<link href="/my/css/shared/common.css" rel="stylesheet">
 </head>
 <body class="devIndex">
 	<div style="background:rgba(239, 237, 255, .5)">
@@ -20,7 +21,7 @@
 							@include('dev.includes.filterBadges')
 							<!-- circle menu -->
 							<div class="small circle taskback
-							bg-white outline1-blue text-center mb10 ml10" 
+							bg-white outline1-blue text-center mb10 ml10"
 							style="color:#223e94;">
 								<i class="ti-arrow-left"></i>
 							</div>
@@ -40,7 +41,7 @@
 										<i class="ti-arrow-up"></i>
 									</div>
 								</div>
-								<div class="reloadPage darker5 
+								<div class="reloadPage darker5
 								small circle inlineBlock mr15"
 								data-tooltip="Reload" data-taskstatus="{{$taskstatus}}">
 									<i class="ti-reload"></i>
