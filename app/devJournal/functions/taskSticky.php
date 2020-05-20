@@ -33,7 +33,6 @@ if($stickyDate){
 
 $theModel::where('taskID','=',$taskID)
 ->update([
-	'lastEdit'	 =>\Carbon\Carbon::now(),
 	'stickyDate' => $stickyDate,
 	'editType'	 =>	$editType,
 ]);
