@@ -1,0 +1,113 @@
+/* member main css */
+
+/* overlay */
+.member.overlay{z-index:8000;background:rgba(0,0,0,.6);
+  width:100%;position:fixed;top:60px;height:100%;
+  display:none;}
+.member.overlay .mainWrapper{height:100%;width:100%;
+  background:#fff;margin:auto;overflow:auto}
+.member.overlay .titleBar{position:fixed;height:50px;
+  background:#efedff;width:100%;z-index:1;}
+.member.overlay .titleBar .floatLeft,
+.member.overlay .titleBar .floatRight{line-height:50px;padding:0 15px;}
+
+.member.overlay .titleBar .close,
+.uploadClose{font-size:1.15em;cursor:pointer;}
+.uploadClose{opacity:.5;}
+
+.member.overlay .titleBar .close:hover,
+.uploadClose:hover{background:rgba(255,255,255,.5);opacity:1;}
+
+.member.overlay .render{padding:0 15px;padding-top:70px;}
+.member.overlay .titleBar .pageTitle{font-size:1.35em;color:#223e94;}
+
+/* profile Form */
+.profileForm .agtUpload img{height:70px;object-fit:cover;cursor:pointer;}
+.profileForm .imagePreview{margin:15px 0;}
+.profileForm .imagePreview img{max-height:150px;border-radius:10px;}
+.profileForm .agtPhoto,
+.profileForm .agtLogo{height:120px;}
+.profileForm .agtPhoto .header,
+.profileForm .agtLogo .header{background:#efedff;padding:5px;}
+.profileForm .agtUpload .header{font-size:.85em;color:#223e94;}
+.profileForm .colWrapper{text-align:center;border:1px solid #efedff;
+  position:relative;padding:15px 0;}
+.profileForm .confirmYes{background:#223e94;border:2px solid #efedff;
+  color:#fff;padding:10px;border-radius:10px;margin-top:15px;opacity:.8;
+  width:50%;margin-left:auto;margin-right:auto;cursor:pointer;}
+.profileForm .confirmYes:hover{opacity:1;}
+.profileForm .confirmNo{background:#efedff;opacity:.5;margin-top:15px;
+  padding:10px;border-radius:10px;width:50%;margin-left:auto;margin-right:auto;
+  border:2px solid #efedff;cursor:pointer;}
+.profileForm .confirmNo:hover{border:2px solid #900;color:#900;opacity:1;}
+.profileForm input#chooseNew{display:none;}
+.profileForm .formCancel{text-align:center;margin-top:15px;
+  background:#efedff;width:100%;color:#8c8c8c;padding:10px;
+  cursor:pointer;border:2px solid #efedff;border-radius:5px;}
+.profileForm .formCancel:hover{background:#fff;border:2px solid #900;color:#900;}
+.profileForm .formSubmit{width:100%;background:#223e94;border-radius:5px;
+  border:2px solid #efedff;color:#fff;padding:10px 0;}
+.profileForm .formSubmit:hover{background:#fff;color:#223e94;
+  border:2px solid #223e94;}
+.profileForm .photoLinks{position:absolute;bottom:0;padding:5px 0;
+  width:100%;text-align:center;cursor:pointer;font-size:.85em;}
+.profileForm .photoLinks:hover{background:#f9f8ff;color:#223e94;}
+.profileForm .row.agtUpload{margin-bottom:15px;}
+.profileForm .row.uploadForm{display:none;margin-bottom:15px;}
+.profileForm .uploadConfirm{display:none;}
+.profileForm .uploadForm .formWrapper{text-align:center;}
+.profileForm .uploadItem label{display:block;}
+.profileForm .uploadItem{margin:15px 0;cursor:pointer;}
+.profileForm .uploadItem.uploadDelete{padding:10px;background:#efedff;opacity:.5;
+  width:50%;border-radius:10px;margin-left:auto;margin-right:auto;border:2px solid #efedff;}
+.profileForm .uploadItem.uploadNew{background:#223e94;border:2px solid #efedff;
+  color:#fff;border-radius:10px;padding:10px;width:50%;margin-left:auto;
+  margin-right:auto;opacity:.8}
+.profileForm .uploadItem.uploadCancel{}
+.profileForm .uploadDelete:hover{border:2px solid #900;color:#900;}
+.profileForm .uploadItem:hover{opacity:1;}
+.profileForm .uploadOptions{text-align:center;}
+.profileForm .submitBlock{margin-top:15px;margin-bottom:75px;}
+
+
+/* password Change */
+.passwordChange body{background:#efedff;}
+.passwordChange .formWrapper{max-width:550px;}
+.passwordChange .mainContent{padding-top:65px;width:100%;
+  padding-left:15px;padding-right:15px;}
+.passwordChange .mainHead{font-size:1.5em;margin-bottom:15px;}
+.passwordChange .formSubmitDiv{margin-top:15px;margin-bottom:75px;width:45%;}
+.passwordChange .formSubmit{background:#223e94;color:#fff;border:3px solid #fff;
+  width:100%;padding:10px 0;border-radius:2em;opacity:.9}
+.passwordChange .formSubmit:hover{opacity:1}
+.passwordChange .formCancelDiv{width:45%;text-align:center;}
+.passwordChange .formCancel a{color:#464555;opacity:.7;cursor:pointer;
+  text-align:center;}
+.passwordChange .formCancel a:hover{opacity:1;color:#900;}
+
+/* publicFooter */
+.memberFooter .phoneLine img{max-height:25px;}
+.memberFooter .logoDiv img{max-height:35px;}
+.memberFooter .colWrapper{padding:15px 0;}
+.memberFooter .colWrapper.contactList{padding-top:0;margin-top:0;}
+.memberFooter .contactLink:hover{text-decoration:underline;
+  color:#223e94;cursor:pointer;}
+.memberFooter .sectionWrapper{padding-bottom:15px;}
+.memberFooter .streetAddress{padding-bottom:15px;}
+.memberFooter .phoneHeader,.memberFooter .phoneLine,
+.memberFooter .streetHeader{margin-bottom:5px;}
+.memberFooter .emailButton{margin-top:15px;padding:3px 10px;
+background:#fff;color:#464555;display:inline-block;border-radius:2em;
+border:2px solid rgba(255,255,255,.3);cursor:pointer;}
+.memberFooter .colWrapper.copyright{font-size:.75em;}
+.memberFooter .policyLine .pipe{margin:0 3px;opacity:.5;}
+.privacyPolicy a{color:#223e94 !important;
+	text-decoration:underline !important;}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px){
+  .member.overlay{top:70px;}
+  .passwordChange .mainContent{padding-top:85px;padding-left:30px;padding-right:30px;}
+  .memberFooter .sectionWrapper{padding:30px;}
+}

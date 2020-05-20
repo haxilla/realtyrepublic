@@ -5,6 +5,7 @@ input:focus,select:focus,textarea:focus,button:focus{outline: none;}
 	transform:translate(-50%,-50%);}
 .absolute-right{position:absolute;right:0;}
 .absolute-right10{position:absolute;right:10px;}
+.absolute-top10{position:absolute;top:10px;}
 .container-fluid{padding-left:0;padding-right:0;}
 .displayNone{display:none !important;}
 .dim{position:fixed;z-index:2950;left:0;top:0;width:100%;

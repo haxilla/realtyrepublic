@@ -12,3 +12,8 @@
 	font-weight:bold;color:#fff;font-size:20pt;}
 .customPrev:hover{background-image: linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,.3));
 	font-weight:bold;color:#fff;font-size:20pt;}
+
+@media (min-width: 768px){
+	.customNext{top:65px;padding-top:175px;padding-bottom:175px;}
+	.customPrev{top:65px;padding-top:175px;padding-bottom:175px;}
+}

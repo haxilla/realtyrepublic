@@ -8,7 +8,7 @@ $(function() {
 		$('.agtPhotoDeleteDiv').hide();
 		//show
 		$('.addAgtPhotoDiv').show();
-		$('.agtPhotoFormDiv').show();		
+		$('.agtPhotoFormDiv').show();
 		$('.photoCancelDiv').show();
 		//reset
 		$("#agtPhotoChoice").val(null);
@@ -23,7 +23,7 @@ $(function() {
 		$('.agtLogoDeleteDiv').hide();
 		//show
 		$('.addAgtLogoDiv').show();
-		$('.agtLogoFormDiv').show();		
+		$('.agtLogoFormDiv').show();
 		$('.logoCancelDiv').show();
 		//reset
 		$("#agtLogoChoice").val(null);
@@ -84,7 +84,7 @@ $(function() {
 	$('.cancelPhotoLogo').click(function(e){
 		//reset value
 		$("#agtPhotoChoice").val(null);
-		//show		
+		//show
 		$('.photoLogoDiv').show();
 		//hide
 		$('.addAgtPhotoDiv').hide();
@@ -119,7 +119,7 @@ $(function() {
 		e.preventDefault();
 		//make ajax request to delete
 		var ajax = new XMLHttpRequest();
-		
+
 		// Setup our listener to process completed requests
 		ajax.onload = function () {
 			// Process our return data
@@ -135,7 +135,7 @@ $(function() {
 				$('.addAgtPhotoDiv').hide();
 				//show
 				$('.photoLogoDiv').show();
-				
+
 				//final display
 				$('.agentPhotoPresent').hide();
 				$('.agentPhotoDeleted').show();
@@ -155,19 +155,19 @@ $(function() {
 		e.preventDefault();
 		//make ajax request to delete
 		var ajax = new XMLHttpRequest();
-		
+
 		// Setup our listener to process completed requests
 		ajax.onload = function () {
 			// Process our return data
 			if (ajax.status >= 200 && ajax.status < 300) {
-				
+
 				// Runs when the request is successful
 				var response 	= JSON.parse(ajax.responseText);
 				var status 		= response.status
 				var message    = response.message;
 				alert(status+'! '+message)
 
-				//jquery 
+				//jquery
 				//hide
 				$('.agtLogoDeleteDiv').hide();
 				$('.addAgtLogoDiv').hide();
@@ -185,7 +185,7 @@ $(function() {
 
 			}
 		};
-		
+
 		//url to send to
 		ajax.open("GET", "/member/deleteAgentLogo");
 		ajax.send();
@@ -207,7 +207,7 @@ $(function() {
 			//preview
 			reader.readAsDataURL(input.files[0]);}
 	}
-	
+
 	//preview agtLogo
 	function agtLogoPreview(input) {
 		//check input for files
@@ -223,7 +223,7 @@ $(function() {
 			//preview
 			reader.readAsDataURL(input.files[0]);}
 	}
-	
+
 	//photo upload confirmed
 	$('.photoUploadConfirm').click(function(e){
 		//get input
@@ -296,22 +296,24 @@ $(function() {
       ajax.send(formData);
       //listener for load complete
       ajax.addEventListener("load", function (e) {
-		if (ajax.status === 200){
-			//set response
-			var response = JSON.parse(ajax.responseText);
-			//set variables
-			status=response.status;
-			//check status
-			if(status=='Success'){
-				var agtPhotoURL='/'+response.newFilePath
-				$('.photoLogoDiv').show();
-				$('.addAgtPhotoDiv').hide();
-				$('.agtProfilePhoto').attr('src', agtPhotoURL);
-				$('.agentPhotoPresent').show();
-				$('.agentPhotoDeleted').hide();
-			}else{
-				alert('error');
-			}
+
+			if (ajax.status === 200){
+				//set response
+				var response = JSON.parse(ajax.responseText);
+				//set variables
+				status=response.status;
+				//check status
+				if(status=='Success'){
+					var agtPhotoURL='/'+response.newFilePath
+					$('.photoLogoDiv').show();
+					$('.addAgtPhotoDiv').hide();
+					$('.agtProfilePhoto').attr('src', agtPhotoURL);
+					$('.agentPhotoPresent').show();
+					$('.agentPhotoDeleted').hide();
+				}else{
+					alert('error');
+				}
+
 		}else{
 			alert('error');}
 		});
@@ -337,7 +339,7 @@ $(function() {
 			status=response.status;
 			//check status
 			if(status=='Success'){
-				
+
 				//logo URL
 				var agtLogoURL='/'+response.newFilePath
 				$('.agtProfileLogo').attr('src', agtLogoURL);

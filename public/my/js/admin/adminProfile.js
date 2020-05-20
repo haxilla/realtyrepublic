@@ -9,7 +9,7 @@ $(function() {
 		$('.adminPhotoDeleteDiv').hide();
 		//show
 		$('.addAdminPhotoDiv').show();
-		$('.adminPhotoFormDiv').show();		
+		$('.adminPhotoFormDiv').show();
 		$('.photoCancelDiv').show();
 		//reset
 		$("#adminPhotoChoice").val(null);
@@ -43,7 +43,7 @@ $(function() {
 	$('body').on('click','.cancelPhotoLogo', function(e){
 		//reset value
 		$("#adminPhotoChoice").val(null);
-		//show		
+		//show
 		$('.photoLogoDiv').show();
 		//hide
 		$('.addAdminPhotoDiv').hide();
@@ -66,7 +66,7 @@ $(function() {
 		e.preventDefault();
 		//make ajax request to delete
 		var ajax = new XMLHttpRequest();
-		
+
 		// Setup our listener to process completed requests
 		ajax.onload = function () {
 			// Process our return data
@@ -117,7 +117,7 @@ $(function() {
 			//preview
 			reader.readAsDataURL(input.files[0]);}
 	}
-		
+
 	//photo upload confirmed
 	$('body').on('click','.photoUploadConfirm', function(e){
 		//get input

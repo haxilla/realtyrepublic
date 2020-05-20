@@ -1,22 +1,112 @@
 
 /* navbar primary */
+.navWrapper{padding:0 15px;}
+.navLeft{float:left;line-height:60px;}
+.navRight{float:right;line-height:60px;}
+.navBrand img, .navBrandLink img{width:175px;}
+.navLI{display:inline-block;}
+
+/* public */
+.public .navLeft{line-height:50px;}
+.public .navRight{display:none;}
 .public.navBase{position:fixed;top:0;z-index:3000;width:100%;height:50px;
 	background:none;color:#fff;text-align:center;}
-.navWrapper{padding:0 15px;}
-.navLeft{float:left;line-height:50px;}
-.navRight{float:right;line-height:50px;display:none;}
-.navBrandLink img{width:175px;line-height:50px;}
-.navLI{display:inline-block;}
-/* navMenu Hamburger Icon */
-.navMenuIcon, .smallSearchIcon{display:inline-block;width:30px;height:30px;line-height:30px;
+.public.navBase.backgroundTrans{background:transparent;}
+.public.navBase.backgroundPrimary{background:#223e94;}
+.public.navBase.navBorderBottom{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),
+	0 2px 10px 0 rgba(0,0,0,0.12)}
+.public .navMenuIcon, .public .smallSearchIcon{display:inline-block;width:30px;height:30px;line-height:30px;
 	background:rgba(255,255,255,.8);border-radius:50%;text-align:center;
 	margin-right:15px;font-size:1.1em;padding-top:1px;cursor:pointer;
 	color:#223e94;}
-.signupDiv{display:inline-block;height:30px;line-height:30px;background:rgba(255,255,255,.8);
-color:#223e94;border-radius:2em;padding:0 10px;margin-right:15px;}
+.public .signupDiv{display:inline-block;height:30px;line-height:30px;background:rgba(255,255,255,.8);
+  color:#223e94;border-radius:2em;padding:0 10px;margin-right:15px;}
+
+/* member */
+.memberNav .navBase{position:fixed;top:0;z-index:3000;
+	width:100%;height:60px;background:#223e94;color:#fff;text-align:center;}
+.memberNav ul{list-style:none !important;margin:0 !important;
+	padding:0 !important;}
+.memberNav .navWrapper{padding:0;}
+.memberNav .navBrand{position:absolute;left:50%;top:50%;
+	transform:translate(0,-50%);}
+.memberNav .navBrand img{position:relative;left:-50%;z-index:0}
+.memberNav .memberLogout a{color:#fff;text-decoration:none;}
+.memberNav .navMenuIcon{cursor:pointer;font-size:1.2em;padding:0 15px;}
+.memberNav .ticon-more{position:absolute;right:0;z-index:3050;top:50%;
+	transform:translate(0,-50%);}
+.memberNav .navMenuIconLI:hover{opacity:.7;}
+
+/* member profile */
+.memberProfileLI{display:none;}
+.memberProfile img{height:30px;width:30px;border-radius:50%;
+	border:1px solid rgba(255,255,255,.5);object-fit:cover;
+	object-position:50% 0;}
+.memberProfile .inlineBlock{padding-right:5px;}
+.memberProfile i{font-size:.7em;}
+
+/* sub searchMenu */
+.subMenuSearch{display:none;background:#efedff;position:fixed;top:60px;
+	width:100%;height:40px;}
+.subMenuSearch .fieldDiv{height:100%;}
+.subMenuSearch input{height:100% !important;border:none;margin:0;padding:0;
+	width:100%;background:#efedff;padding:0 10px;}
+.subMenuSearch form{height:100%;}
+.subMenuSearch .fixedLabel{position:absolute;line-height:40px;
+	padding-left:15px;}
+.subMenuSearch .searchClose{position:absolute;right:10px;top:0;
+	line-height:40px;cursor:pointer;}
+.subMenuSearch .searchResults{position:absolute;width:100%;
+	background:#f9f8ff;display:none;}
+.subMenuSearch .resultContainer{padding:10px 0;}
+.subMenuSearch .resultLine{height:60px;padding:0 15px;margin:5px 0;}
+.subMenuSearch .resultLine:hover{background:rgba(0,0,0,.1);cursor:pointer;}
+.subMenuSearch .resultLine img{width:75px;height:100%;object-fit:cover;}
+.subMenuSearch .resultLine .imageDiv{width:20%;height:100%;}
+.subMenuSearch .resultLine .addressDiv{width:75%;height:100%;}
+.subMenuSearch .resultLine .fullAddress{display:inline-block;vertical-align:middle;
+	padding-left:10px;}
+.subMenuSearch .resultLine .streetOnly{max-width:100%;overflow:hidden;
+	white-space:nowrap;}
+.subMenuSearch .resultLine .csz{font-size:.75em;}
+
+/* subMenu */
+.subMenu .memberProfile i,
+.subMenu .memberProfile .agentFirst{display:none;}
+.subMenu .dropMenu{display:none;position:absolute;right:0;border:2px solid #efedff;
+	width:150px;width:160px;text-align:center;line-height:40px;opacity:.9}
+.subMenu .dropMenu a{color:#464555;text-decoration:none;display:block;}
+.subMenu .dropMenu li.hover a:hover{background:#f9f8ff;color:#223e94;opacity:1;}
+.subMenu{background:#efedff;height:50px;position:fixed;top:60px;
+	border-top:1px solid rgba(0,0,0,.1);width:100%;}
+.subMenu .menuItem{display:inline-block;line-height:50px;cursor:pointer;
+	min-width:50px;text-align:center;}
+.subMenu .navSearch{padding:0 15px;}
+/*
+.subMenu .navAlert:hover{background:rgba(255,255,255,.5);color:#223e94;}
+*/
+.subMenu .navSearch i{margin-right:10px;}
+.subMenu li.memberProfile{padding:0 10px;}
+.subMenu .navAlert:hover{background:rgba(255,255,255,.5);}
+.subMenu .dropClick:hover .dropMenu{display:block;}
+
+/* limited */
+.limited .navBrand{position:static;transform:none;padding-left:10px;}
+.limited .navBrand img{position:static;}
+.limited .memberProfile .inlineBlock{margin-right:0;padding-right:0;}
+.limited .memberProfileLI{position:absolute;display:block !important;
+	right:0;padding:0 10px;}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
- .navRight{display:inline-block;}
+	.memberNav .navBase{height:70px;}
+	.memberNav .navLeft{line-height:70px;}
+	.memberNav .navRight{line-height:70px;}
+	.memberNav .navBrand img{width:auto;height:40px;}
+	.memberNav .subMenu{top:70px;}
+	.memberNav.limited .memberProfileLI{position:static;margin-right:15px}
+	.public .navRight{display:inline-block;}
+
 }
 
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -26,23 +116,23 @@ color:#223e94;border-radius:2em;padding:0 10px;margin-right:15px;}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-	
+
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-	.navWrapper{width:1200px;margin:0 auto;padding:0;}
+	.navWrapper{width:1150px;margin:0 auto;padding:0;}
 }
 
 /* custom */
 @media(min-width:1300px){
-	.navWrapper{width:1300px;}
+	.navWrapper{width:1250px;}
 }
-
+/*
 @media(min-width:1400px){
-	.navWrapper{width:1400px;}
+	.navWrapper{width:1350px;}
 }
 
 @media(min-width:1500px){
-	.navWrapper{width:1500px;}
+	.navWrapper{width:1450px;}
 }

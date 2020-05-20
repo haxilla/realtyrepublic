@@ -1,0 +1,24 @@
+/* no flexbox */
+.no-flexbox .col-4,
+.no-flexbox .col-6,
+.no-flexbox .col-8,
+.no-flexbox .col-sm-4,
+.no-flexbox .col-sm-5,
+.no-flexbox .col-sm-6,
+.no-flexbox .col-sm-7,
+.no-flexbox .col-sm-8,
+.no-flexbox .col-md-6,
+.no-flexbox .col-lg-6,
+.no-flexbox .col-xl-6{float:left;}
+.no-flexbox .navBorderBottom{box-shadow:none !important;border-bottom:3px solid rgba(0,0,0,.5);}
+.no-flexbox .background-blueGrayGradient{background: #223e94;}
+.no-flexbox .background-bluePurple{background:#223e94;}
+.no-flexbox .unlimitedSale .col-4.pricePanel{height:140px;}
+.no-flexbox .unlimitedSale .vertical-center{position:static !important;transform:none !important;}
+/* objectFit */
+.no-objectfit .carousel-item .homePhoto img{opacity:0;}
+.no-objectfit .agentWallTile a img{opacity:0;}
+.no-objectfit .newestListSection .homePhoto.imageDiv img{opacity:0;}
+.no-objectfit .newestListSection .agentImageDiv img{opacity:0;}
+/* cssvhunit */
+/* .no-cssvhunit .overlayWrapper{height:300px;overflow:scroll;} */
