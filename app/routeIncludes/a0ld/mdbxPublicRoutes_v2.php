@@ -18,36 +18,27 @@
     'as'     => 'public.privacyPolicy',
     'uses'   => 'thePublic\overlayController@privacyPolicy']);
 
-//publicFormController
-  //joinNow
-  Route::post('/joinNowSubmit',[
-    'as'   => 'public.joinNowSubmit',
-    'uses' => 'thePublic\publicFormController@joinNowSubmit']);
-  //trialAccount
-  Route::post('/freeTrialSubmit',[
-    'as'   => 'public.freeTrialSubmit',
-    'uses' => 'thePublic\publicFormController@freeTrialSubmit']);
-  //trialFormShow (unimportable)
-  Route::get('/trialFormShow',[
-    'as'    => 'public.trialFormShow',
-    'uses'  => 'thePublic\publicFormController@trialFormShow']);
-  //trialFormSubmit (unimportable)
-  Route::post('/trialFormSubmit',[
-    'as'    => 'public.trialFormSubmit',
-    'uses'  => 'thePublic\publicFormController@trialFormSubmit']);
-
-//publicSearchController
-  //searchResults
-  Route::get('/searchResults',[
-    'as'    => 'public.searchResults',
-    'uses'  => 'thePublic\publicSearchController@searchResults']);
-
 //errorController
    //trialError
    Route::get('/trialError',[
      'as'     => 'public.trialError',
      'uses'   => 'thePublic\errorController@trialError']);
 
+//publicLoginController
+   //member login ** do not delete **
+   /*
+   Route::any('/login', [
+      'as'     => 'login',
+      'uses'   => 'thePublic\publicLoginController@login']);
+   //member login
+   Route::any('/member/login', [
+      'as'     => 'member.login',
+      'uses'   => 'thePublic\publicLoginController@login']);
+      //login
+   Route::get('/member/logout', [
+      'as'     => 'member.logout',
+      'uses'   => 'thePublic\publicLoginController@logout']);
+  */
 //publicEmailAgentController
    //emailAgentPost
    Route::post('/emailAgentPost',[
@@ -160,7 +151,6 @@
       'as'=>'public.pendingTrialAddress',
       'uses' => 'mdbxPublic\mdbxTrialRequestController@pendingTrialAddress']);
 
-/*
 //trialAccountController
   //trialCheck
   Route::post('/trialAccount',[
@@ -173,7 +163,7 @@
   Route::post('/newAccessSubmit',[
     'as'=>'public.newAccessSubmit',
     'uses' => 'thePublic\trialCheckController@newAccessSubmit']);
-*/
+
    /*
    Route::post('/importableTrialCheck',[
       'as'=>'public.importableTrialCheck',

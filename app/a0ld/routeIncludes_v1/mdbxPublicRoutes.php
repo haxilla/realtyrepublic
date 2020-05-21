@@ -1,52 +1,36 @@
 <?php
+//mdbxPublicLoginController
 
-//OverlayController
-  //agentWall
-  Route::get('/agentWall',[
-    'as'     => 'public.agentWall',
-    'uses'   => 'thePublic\overlayController@agentWall']);
-  Route::get('/joinNow',[
-    'as'     => 'public.joinNow',
-    'uses'   => 'thePublic\overlayController@joinNow']);
-  Route::get('/emailUs',[
-    'as'     => 'public.emailUs',
-    'uses'   => 'thePublic\overlayController@emailUs']);
-  Route::get('/pubSubscribe',[
-    'as'     => 'public.pubSubscribe',
-    'uses'   => 'thePublic\overlayController@pubSubscribe']);
-  Route::get('/privacyPolicy',[
-    'as'     => 'public.privacyPolicy',
-    'uses'   => 'thePublic\overlayController@privacyPolicy']);
+  //OverlayController
+    //publicAgentInfo
+    Route::get('/agentWall',[
+      'as'     => 'public.agentWall',
+      'uses'   => 'thePublic\overlayController@agentWall']);
+    Route::get('/joinNow',[
+      'as'     => 'public.joinNow',
+      'uses'   => 'thePublic\overlayController@joinNow']);
+    Route::get('/emailUs',[
+      'as'     => 'public.joinNow',
+      'uses'   => 'thePublic\overlayController@emailUs']);
+    Route::get('/pubSubscribe',[
+      'as'     => 'public.pubSubscribe',
+      'uses'   => 'thePublic\overlayController@pubSubscribe']);
+    Route::get('/privacyPolicy',[
+      'as'     => 'public.privacyPolicy',
+      'uses'   => 'thePublic\overlayController@privacyPolicy']);
 
-//publicFormController
-  //joinNow
-  Route::post('/joinNowSubmit',[
-    'as'   => 'public.joinNowSubmit',
-    'uses' => 'thePublic\publicFormController@joinNowSubmit']);
-  //trialAccount
-  Route::post('/freeTrialSubmit',[
-    'as'   => 'public.freeTrialSubmit',
-    'uses' => 'thePublic\publicFormController@freeTrialSubmit']);
-  //trialFormShow (unimportable)
-  Route::get('/trialFormShow',[
-    'as'    => 'public.trialFormShow',
-    'uses'  => 'thePublic\publicFormController@trialFormShow']);
-  //trialFormSubmit (unimportable)
-  Route::post('/trialFormSubmit',[
-    'as'    => 'public.trialFormSubmit',
-    'uses'  => 'thePublic\publicFormController@trialFormSubmit']);
-
-//publicSearchController
-  //searchResults
-  Route::get('/searchResults',[
-    'as'    => 'public.searchResults',
-    'uses'  => 'thePublic\publicSearchController@searchResults']);
-
-//errorController
-   //trialError
-   Route::get('/trialError',[
-     'as'     => 'public.trialError',
-     'uses'   => 'thePublic\errorController@trialError']);
+   //member login ** do not delete **
+   Route::get('/login', [
+      'as'     => 'login',
+      'uses'   => 'mdbxPublic\mdbxPublicLoginController@login']);
+   //member login
+   Route::any('/member/login', [
+      'as'     => 'member.login',
+      'uses'   => 'mdbxPublic\mdbxPublicLoginController@login']);
+      //login
+   Route::get('/member/logout', [
+      'as'     => 'member.logout',
+      'uses'   => 'mdbxPublic\mdbxPublicLoginController@logout']);
 
 //publicEmailAgentController
    //emailAgentPost
@@ -61,14 +45,12 @@
       'uses'   => 'mdbxPublic\publicEmailAgentController@postEmailAgentModal']);
 
 //searchController
-  //flyerSearch
-  Route::post('/flyerSearch',[
-    'as'     => 'public.flyerSearch',
-    'uses'   => 'mdbxPublic\searchController@flyerSearch']);
-  //featureSearch
-  Route::post('/featureSearch',[
-    'as'     => 'public.featureSearch',
-    'uses'   => 'mdbxPublic\searchController@featureSearch']);
+   Route::post('/flyerSearch',[
+      'as'     => 'public.flyerSearch',
+      'uses'   => 'mdbxPublic\searchController@flyerSearch']);
+   Route::post('/featureSearch',[
+      'as'     => 'public.featureSearch',
+      'uses'   => 'mdbxPublic\searchController@featureSearch']);
 
 //indexController
    //index
@@ -160,28 +142,17 @@
       'as'=>'public.pendingTrialAddress',
       'uses' => 'mdbxPublic\mdbxTrialRequestController@pendingTrialAddress']);
 
-/*
 //trialAccountController
-  //trialCheck
-  Route::post('/trialAccount',[
-    'as'=>'public.trialAccountPost',
-    'uses' => 'thePublic\trialCheckController@trialCheck']);
-  Route::get('/newAccessRequest',[
-    'as'=>'public.newAccessRequest',
-    'uses' => 'thePublic\trialCheckController@newAccessRequest']);
-  //trialCheck
-  Route::post('/newAccessSubmit',[
-    'as'=>'public.newAccessSubmit',
-    'uses' => 'thePublic\trialCheckController@newAccessSubmit']);
-*/
-   /*
+   //trialCheck
+   Route::post('/trialAccount',[
+      'as'=>'public.trialAccountPost',
+      'uses' => 'mdbxPublic\mdbxTrialCheckController@trialCheck']);
    Route::post('/importableTrialCheck',[
       'as'=>'public.importableTrialCheck',
       'uses' => 'mdbxPublic\mdbxTrialCheckController@importableTrialCheck']);
    Route::get('/startImport',[
       'as'=>'public.startImport',
       'uses' => 'mdbxPublic\mdbxTrialCheckController@startImport']);
-  */
 
 //flyertrackController
    //pubPhotos
