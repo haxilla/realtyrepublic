@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
     @include('mdbxPublic.headersFooters.pubHeader')
-    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="/my/css/slick/landingSlick.css" rel="stylesheet">
     <link href="/my/css/sections/sectionDivide.css" rel="stylesheet">
-    <link href="/my/css/public/fallbacks.css" rel="stylesheet">
-
     <body style="font-family:Roboto">
         <!--Navbar-->
         @include('mdbxPublic.navigation.publicNavTop')
-        <!-- overlays -->
-        @include('mdbxPublic.overlays.publicOverlay')
-        @include('mdbxPublic.overlays.landingMenu')
-        @include('mdbxPublic.overlays.publicLogin')
-        @include('mdbxPublic.overlays.publicSearch')
-
+        <!--modals-->
+        @include('mdbxPublic.modals.overlay')
+        @include('mdbxPublic.modals.joinNowModal')
+        @include('mdbxPublic.modals.passwordChangeRequestModal')
+        @include('mdbxPublic.modals.loginModal')
+        @include('mdbxPublic.modals.agentListModal')
+        @include('mdbxPublic.modals.agentWallModal')
         <!--Landing -->
         <section>
             <div class="background-blueGrayGradient">
@@ -36,7 +34,7 @@
         <section>
           @include('mdbxPublic.sections.unlimitedSale')
         </section>
-        <section id="regularPricei">
+        <section>
           @include('mdbxPublic.sections.payPerFlyer')
         </section>
         <section>
@@ -45,13 +43,13 @@
         <section>
           @include('mdbxPublic.sections.faqContent')
         </section>
-        <section id="ourMembersi">
+        <section>
           @include('mdbxPublic.sections.memberSinceSideBySide')
         </section>
         <section>
           @include('mdbxPublic.sections.publicFooter')
+          @include('mdbxPublic.modals.startPurchaseModal')
         </section>
-
         <!-- SCRIPTS -->
         <!-- JQuery -->
         <script type="text/javascript"
@@ -67,17 +65,14 @@
 
         <!-- Misc JavaScript -->
         <script type="text/javascript"
-        src="/my/js/public/modernizr-custom2020.js"></script>
+        src="/my/js/public/modernizr-custom.js"></script>
         <!-- Perfect Scrollbar -->
         <script src="/vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"/></script>
         <!-- custom js -->
+        <script type="text/javascript" src="/my/js/public/IEfix.js"></script>
         <script type="text/javascript" src="/my/js/public/landing.js"></script>
-        <script type="text/javascript" src="/my/js/public/landingForms.js"></script>
-        <script type="text/javascript" src="/my/js/public/publicSearch.js"></script>
-
         @include('mdbxPublic.scripts.slickCarousel')
-        @include('mdbxPublic.scripts.landingMessages')
-
+        @include('mdbxPublic.scripts.landingErrors')
     </body>
 
 </html>
