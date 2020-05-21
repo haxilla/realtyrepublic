@@ -20,23 +20,21 @@
     <div class="navRight">
       <ul class="navUL">
         <li class="navLI">
-          <div class="smallSearchIcon publicSearch">
+          <div class="smallSearchIcon">
             <a>
               <i class="ti-search"></i>
             </a>
           </div>
         </li>
         <li class="navLI">
-          <div class="signupDiv joinNowFree">
+          <div class="signupDiv">
             <a>
               Sign Up
             </a>
           </div>
         </li>
-        <li class="navLI publicLogin">
-          <a>
-            Log in
-          </a>
+        <li class="navLI">
+          Log in
         </li>
       </ul>
     </div>
