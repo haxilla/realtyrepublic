@@ -20,45 +20,41 @@ class deployController extends Controller
         $localHash = 'sha1=' . hash_hmac('sha1', $githubPayload, $localToken, false);
 
         if(!$githubHash||!$localHash||!$localToken){
+            dd('error-line18-deployController-remstage');}
 
-
-            if(!$githubHash){
-              echo "no githubhash";
-              exit();}
-
-            if(!$localHash){
-              echo "no localHash";
-              exit();}
-
-            if(!$localToken){
-              echo "presecret";
-              echo config('app.deploy_secret');
-              echo "no localToken";
-              exit();}
-
-            // dd('error-line18-deployController-remstage');
-            // permissions - checknow
-        }
 
         if (hash_equals($githubHash, $localHash)) {
-        	$json=$_POST['payload'];
-        	$payload=json_decode($json);
 
-        	$ref=$payload->ref;
-        	if($ref=='refs/heads/master'){
+          //set variable
+      		$json=$_POST['payload'];
+      		$payload=json_decode($json);
+      		$ref=$payload->ref;
 
-        		$root_path = base_path();
-        		//$process = new Process('cd ' . $root_path . '; ./deploy.sh');
+          //if master branch
+      		if($ref=='refs/heads/master'){
+
+            //updated for new laravel version
+            $root_path = base_path();
             $process = Process::fromShellCommandline('cd ' . $root_path . '; ./deploy.sh');
-        		$process->run(function ($type, $buffer) {
-           			echo $buffer;
-        		});
+            $process->run(function ($type, $buffer) {
+                echo $buffer;
+            });
 
-         }else{
+      		}else{
 
+            //NOT ON MASTER BRANCH
 			      echo "$ref - Nothing pulled - Not on Master Branch";
 
-		    }
-	    }
+		      }
+
+	     }else{
+
+         //invalid hash
+         //to view uncomment below
+         //echo $localToken;
+         echo "INVALID HASH!";
+         exit();
+
+       }
     }
 }

@@ -14,7 +14,7 @@ class indexController extends Controller
   }
 
   public function index(){
-    
+
     //index query
     include(app_path().'/queries/indexQuery.php');
     include(app_path().'/queries/memberSinceQuery.php');

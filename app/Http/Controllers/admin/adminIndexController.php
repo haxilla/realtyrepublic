@@ -16,6 +16,7 @@ class adminIndexController extends Controller
       $this->middleware('auth:admin');
    }
 
+
    public function logout(){
       Auth::guard('admin')->logout();
       return \Redirect::route("admin.login");
@@ -26,16 +27,25 @@ class adminIndexController extends Controller
       //return view('admin.adminIndex');
       $adminID=Auth::guard('admin')->user()->id;
       //get admin
-      $adminInfo=adminTable::where('id','=',$adminID)
-      ->first();
+      $adminInfo = new adminTable;
+      //depending on environment
+      //if(env('APP_ENV')=='stage'){
+      //   $adminInfo->setTable('stage_admins');}
+      $adminInfo->where('id','=',$adminID);
+      $adminInfo->first();
+
       //get mostViews&newAdds queries
       include(app_path().'/queries/indexQuery.php');
       //get campaigns
       include(app_path().'/queries/admin/adminCampaignQueries.php');
       //are photos valid - returns photoData array
       include(app_path().'/functions/imageControl/isPhotoValid.php');
+      
       //check for funky accounts
-      include(app_path().'/functions/databreachCheck.php');
+      //on old server
+      if(env('APP_ENV')!='dev'){
+         include(app_path().'/functions/databreachCheck.php');}
+
 
       //view
       return view('admin.index',[
