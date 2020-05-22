@@ -1,4 +1,4 @@
- -?php
+<?php
 
 namespace App\Exceptions;
 
@@ -7,8 +7,9 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Arr;
 use Auth;
+use Throwable;
 
-class Handler_v1 extends ExceptionHandler
+class Handler_v2 extends ExceptionHandler
 {
     /**
      * A list of the exception types that are not reported.
@@ -35,7 +36,7 @@ class Handler_v1 extends ExceptionHandler
      * @param  \Exception  $exception
      * @return void
      */
-    public function report(Exception $exception)
+    public function report(Throwable $exception)
     {
         parent::report($exception);
     }
@@ -47,7 +48,7 @@ class Handler_v1 extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Exception $exception){
+    public function render($request, Throwable $exception){
 
         $class = get_class($exception);
         switch($class) {

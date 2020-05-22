@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 namespace App\Exceptions;
 
@@ -7,9 +7,8 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Support\Arr;
 use Auth;
-use Throwable;
 
-class Handler extends ExceptionHandler
+class Handler_v1 extends ExceptionHandler
 {
     /**
      * A list of the exception types that are not reported.
@@ -36,7 +35,7 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return void
      */
-    public function report(Throwable $exception)
+    public function report(Exception $exception)
     {
         parent::report($exception);
     }
@@ -48,7 +47,7 @@ class Handler extends ExceptionHandler
      * @param  \Exception  $exception
      * @return \Illuminate\Http\Response
      */
-    public function render($request, Throwable $exception){
+    public function render($request, Exception $exception){
 
         $class = get_class($exception);
         switch($class) {
@@ -56,19 +55,16 @@ class Handler extends ExceptionHandler
             $guard = Arr::get($exception->guards(), 0);
             switch ($guard) {
                 case 'admin':
-                    $login = 'admin.loginForm';
+                    $login = 'admin.login';
                     break;
                 default:
-                    $login = 'member.loginForm';
+                    $login = 'member.login';
                     break;
             }
 
-            $url=\URL::current();
-            return redirect()->route($login)
-            ->with('url',$url);
+            return redirect()->route($login);
         }
 
         return parent::render($request, $exception);
     }
-
 }
