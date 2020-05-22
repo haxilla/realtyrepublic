@@ -68,7 +68,3 @@
   Route::post('/member/profileUpload',[
     'as'    => 'member.profileUpload',
     'uses'  => 'member\profileController@profileUpload']);
-  //profileUpload
-  Route::get('/member/profileDelete',[
-    'as'    => 'member.profileDelete',
-    'uses'  => 'member\profileController@profileDelete']);
