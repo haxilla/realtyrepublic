@@ -26,7 +26,7 @@ $removeTable=$mlsName.'_'.$retsClass.'_removed';
 
 if($thisTotal > 0){
 
-	if($thisTotal > 5500){
+	if($thisTotal > 6500){
 		dd($thisTotal,'error-line30-homeRemovedQuery.php');}
 
 	foreach($theQuery as $the){
