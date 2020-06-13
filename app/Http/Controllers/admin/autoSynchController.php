@@ -25,4 +25,8 @@ class autoSynchController extends Controller
 		include(app_path().'/autosynch/synchDownloads.php');
 	}
 
+	public function agtPswdFix(){
+		include(app_path().'/mainServer/memberfix/agtPswdFix.php');
+	}
+
 }

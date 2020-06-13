@@ -1,0 +1,3 @@
+<?php
+
+$umid=$thisUmid['id'];

@@ -1,0 +1,5 @@
+<?php
+
+$badHeaderKeys=array(
+	'.cz ([',
+);
