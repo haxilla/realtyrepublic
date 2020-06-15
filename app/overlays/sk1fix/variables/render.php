@@ -14,7 +14,7 @@ $fixSK1=propmeta::select('propflyer_id')
 ->whereNull('sk1')
 ->orWhere('sk1','like','%'.'='.'%')
 ->get();
-dd($fixSK1->count());
+
 //gen password funciton
 require_once(app_path().'/members/keygens/mdbxGenPswd.php');
 

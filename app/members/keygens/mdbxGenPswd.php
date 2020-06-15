@@ -1,8 +1,9 @@
 <?php
 // seed with microseconds
 function make_seed(){
+  $randomness=rand(1,10000);
   list($usec, $sec) = explode(' ', microtime());
-  return $sec + $usec * 1000000;
+  return $sec + $usec * 1000000 + $randomness;
 }
 
 function generatePassword($length){
