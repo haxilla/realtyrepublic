@@ -16,7 +16,7 @@
     </div>
     @include('admin.overlays.mainFrame')
     <div class="wrapper">
-        @include('admin.navigation.adminNavTop')
+        @include('admin.navigation.mainServer.adminNavTop')
         <div class="mainContainer">
             <div class="row">
                 <div class="col-12">
