@@ -20,6 +20,10 @@ require_once(app_path().'/members/keygens/mdbxGenPswd.php');
 
 //local propmetas table
 foreach($localSK1 as $the){
+
+  $digits=rand(10,20);
+  $sk1=generatePassword($digits);
+
    //update
    propmeta::where('propflyer_id','=',"$the->propflyer_id")
    ->update([
