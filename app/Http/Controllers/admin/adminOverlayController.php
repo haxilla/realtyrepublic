@@ -20,7 +20,7 @@ class adminOverlayController extends Controller
 		if(!$menuClass){
 			dd('error-line21-adminOverlayController');}
 
-		include(app_path()."/$menuClass/variables/render.php");
+		include(app_path()."/overlays/$menuClass/variables/render.php");
 
 	}
 }
