@@ -23,7 +23,7 @@ foreach($fixSK1 as $the){
    //set value
    $digits=rand(10,20);
    $genPswd=generatePassword($digits);
-   $sk1="$genPswd";
+   $sk1=$genPswd;
    //update
    propmeta::where('propflyer_id','=',"$the->propflyer_id")
    ->update([
