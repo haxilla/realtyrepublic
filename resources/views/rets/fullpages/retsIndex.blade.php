@@ -12,7 +12,7 @@
     </div>
     @include('admin.overlays.mainFrame')
 	<div class="wrapper">
-		@include('admin.navigation.adminNavTop')
+		@include('admin.navigation.mainServer.adminNavTop')
 	</div>
 	<div class="px15" style="color:#223e94;">
 		<span class="inlineBlock mr15">
@@ -35,15 +35,15 @@
 		<div>
 			@foreach($retsList as $the)
 				<div class="my5">
-					<div class="inlineBlock inlineBlock small 
-					circle bg-secondary jqclick mr10 text-center" 
+					<div class="inlineBlock inlineBlock small
+					circle bg-secondary jqclick mr10 text-center"
 					data-thisclick="retsSynch"
 					data-retsid="{{$the->retsID}}">
 						<i class="ti-reload"></i>
 					</div>
-					<div class="inlineBlock small 
+					<div class="inlineBlock small
 					circle bg-secondary jqclick mr10
-					text-center" 
+					text-center"
 					data-thisclick="retsEdit"
 					data-retsid="{{$the->retsID}}"
 					data-retssystem="{{$the->retsSystem}}"
@@ -73,8 +73,8 @@
 		<div style="background:#efedff;
 		border:2px solid #eee; color:#223e94;
 		font-size:.70em"
-		class="py5-px10 inlineBlock shadowBottomFaint 
-		jqclick retsButton" 
+		class="py5-px10 inlineBlock shadowBottomFaint
+		jqclick retsButton"
 		data-thisclick="addRets">
 			ADD NEW
 		</div>
@@ -127,16 +127,16 @@
 			</div>
 			<hr class="my25">
 			<div class="text-center my25">
-				<div class="inlineBlock rounder 
-				px10 jqclick retsDeleteLink displayNone" 
+				<div class="inlineBlock rounder
+				px10 jqclick retsDeleteLink displayNone"
 				style="background:#900;color:#fff;"
-				data-thisclick="retsdelete" 
+				data-thisclick="retsdelete"
 				data-retsid="">
 					<div class="smaller circle inlineBlock"
 					style="font-size:.70em;">
 						<i class="ti-close"></i>
 					</div>
-					<div class="inlineBlock" 
+					<div class="inlineBlock"
 					style="font-size:.70em;">
 						Delete
 					<div>
