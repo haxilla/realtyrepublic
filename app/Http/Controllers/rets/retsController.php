@@ -126,6 +126,9 @@ class retsController extends Controller
 		->orderBy('logID','desc')
 		->get();
 
+    //gets adminID & authLevel
+    include(app_path().'/codeClips/getAdminAuth.php');
+
 		return view('rets.fullpages.retsDisplay',[
 			'retsList'	=> $retsList,
 			'retsLog'	  => $retsLog,
