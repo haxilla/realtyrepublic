@@ -27,9 +27,9 @@ if($checkLog){
 	// synchStart
 	$new=retsLog::create([
 		'synchAllStart'		=> \Carbon\Carbon::now(),
-		'retsID'			=> $retsID,
-		'mlsName'			=> $mlsName,
-		'nextSynch'			=> $nextSynch,
+		'retsID'					=> $retsID,
+		'mlsName'					=> $mlsName,
+		'nextSynch'				=> $nextSynch,
 	]);
 	//set variables
 	$logID=$new['logID'];}
