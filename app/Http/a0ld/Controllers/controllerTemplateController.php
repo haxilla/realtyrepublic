@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\mdbxPublic;
+namespace App\Http\a0ld\Controllers\mdbxPublic;
 use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
