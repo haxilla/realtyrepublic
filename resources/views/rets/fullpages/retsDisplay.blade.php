@@ -11,11 +11,11 @@
 	<div class="dim">
     </div>
     @include('admin.overlays.mainFrame')
-    
+
     <div class="wrapper">
-		@include('admin.navigation.adminNavTop')
+		@include('admin.navigation.mainServer.adminNavTop')
 	</div>
-	
+
 	<div class="px15" style="color:#223e94;">
 		<span class="inlineBlock mr15">
 			<h1>
@@ -43,9 +43,9 @@
 		<div style="border:1px solid #efedff;"
 		class="p15">
 			@foreach($retsLog as $the)
-				<div>	
+				<div>
 					<div class="inlineBlock">
-						Synch Date: 
+						Synch Date:
 					</div>
 					<div class="inlineBlock">
 						{{$the->synchDate}}
