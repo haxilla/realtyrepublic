@@ -10,5 +10,3 @@ $config->setLoginUrl($retsURL)
 $rets = new \PHRETS\Session($config);
 
 $connect = $rets->Login();
-
-dd($connect);
