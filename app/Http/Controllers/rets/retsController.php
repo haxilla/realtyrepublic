@@ -17,8 +17,7 @@ class retsController extends Controller
 
 	public function index(){
 
-    dd('line20-retsController');
-		//gets adminID & authLevel
+    //gets adminID & authLevel
 		include(app_path().'/codeClips/getAdminAuth.php');
 
 		//gets all available RETS systems
