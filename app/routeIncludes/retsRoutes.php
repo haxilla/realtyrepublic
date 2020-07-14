@@ -3,11 +3,10 @@
 // ** RETS **//
 //retsController
    //index
-   /*
    Route::get('/rets',[
       'as'=>'rets.index',
       'uses' => 'rets\retsController@index']);
-      */
+
    //addRets
    Route::post('/rets/retsAdd',[
       'as'=>'rets.retsAdd',
