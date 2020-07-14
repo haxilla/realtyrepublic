@@ -11,7 +11,7 @@ $(function(){
 				theURL='/rets/retsAdd?retsEdit='+retsID;
 			}else{
 				theURL='/rets/retsAdd';}
-			
+
 			retsTask(theURL,formVal);
 
 		}else if(thisClick=='retsEdit'){
@@ -84,10 +84,10 @@ $(function(){
 			headers: {
 			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 			},
-			type        : type, 						 
-			url         : theURL, 
+			type        : type,
+			url         : theURL,
 			data        : formVal,
-			dataType    : 'json', 						 
+			dataType    : 'json',
 			encode      : true
 		})
 		// using the done promise callback
@@ -121,14 +121,14 @@ $(function(){
 			headers: {
 			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 			},
-			type        : type, 						 
-			url         : progressURL, 
-			dataType    : 'json', 						 
+			type        : type,
+			url         : progressURL,
+			dataType    : 'json',
 			encode      : true
 		})
 		// using the done promise callback
 		.done(function(data){
-			
+
 			//variables
 			theStatus=data.theStatus;
 			thisCount=data.thisCount;
@@ -150,7 +150,7 @@ $(function(){
 
 			//progress bar
 			$('.rets_progress').show();
-            $('.rets_progress-bar').css({'width':thisPercent+'%'});
+      $('.rets_progress-bar').css({'width':thisPercent+'%'});
 
 			//theStatus
 			if(theStatus=='synchComplete'){
@@ -165,7 +165,7 @@ $(function(){
 				//set url
 				progressURL="/rets/retsProgress?retsID="+retsID
 				+"&logID="+logID+'&monitor='+monitor;}
-			
+
 			//continue
 			retsProgress(progressURL,type);
 
@@ -183,9 +183,9 @@ $(function(){
 			headers: {
 			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 			},
-			type        : type, 						 
-			url         : compareURL, 
-			dataType    : 'json', 						 
+			type        : type,
+			url         : compareURL,
+			dataType    : 'json',
 			encode      : true
 		})
 		// using the done promise callback
@@ -193,10 +193,10 @@ $(function(){
 
 			//variables
 			theStatus=data.theStatus;
-			
+
 			//terminate if complete
 			if(theStatus=='Complete'){
-				
+
 				// removes progress Overlay & sends alert
 				// dims all but navbar
 				$('.dim').removeClass('dimResponseOverlay');
@@ -225,9 +225,9 @@ $(function(){
 			headers: {
 			'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
 			},
-			type        : type, 						 
-			url         : synchURL, 
-			dataType    : 'json', 						 
+			type        : type,
+			url         : synchURL,
+			dataType    : 'json',
 			encode      : true
 		})
 		// using the done promise callback
@@ -239,7 +239,7 @@ $(function(){
 			nextSynch=data.nextSynch;
 
 			//if compare
-			if(theStatus=='Compare'){			
+			if(theStatus=='Compare'){
 				//sent to compareURL
 				type="GET";
 				progressURL="/rets/retsProgress?monitor=compare&retsID="
@@ -255,8 +255,8 @@ $(function(){
 				alert('retsSynch Complete!');
 				return false;}
 
-			retsSynch(synchURL,type);		
-			
+			retsSynch(synchURL,type);
+
 		})
 		.fail(function(xhr, textStatus, errorThrown){
 			console.log(errorThrown);
@@ -271,9 +271,9 @@ $(function(){
 			type: type,
 			dataType: "html",   //expect html to be returned
 			beforeSend: function() {
-				//reset perfectScrollbar
-            	$(".responseOverlay").perfectScrollbar("destroy");
-            },
+			//reset perfectScrollbar
+        $(".responseOverlay").perfectScrollbar("destroy");
+      },
 			success: function(response){
 				//add contents
 				$('.responseOverlayContent').html(response);

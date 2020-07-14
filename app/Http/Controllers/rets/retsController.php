@@ -16,16 +16,17 @@ class retsController extends Controller
    }
 
 	public function index(){
-		
+
 		//gets adminID & authLevel
 		include(app_path().'/codeClips/getAdminAuth.php');
 
 		//gets all available RETS systems
 		$retsList=retslist::all();
-		
+
 		//view
 		return view('rets.fullpages.retsIndex',[
 			'retsList'	=> $retsList,
+      'adminInfo' => $adminInfo,
 		]);
 
 	}
