@@ -128,7 +128,8 @@ class retsController extends Controller
 
 		return view('rets.fullpages.retsDisplay',[
 			'retsList'	=> $retsList,
-			'retsLog'	=> $retsLog
+			'retsLog'	  => $retsLog,
+      'adminInfo' => $adminInfo,
 		]);
 
 	}
