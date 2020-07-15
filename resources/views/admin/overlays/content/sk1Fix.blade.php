@@ -3,11 +3,11 @@
     <div class="mainHead">
       <h5>SK1 Fix</h5>
     </div>
-    <div class="subHead">
+    <div class="subHead" style="margin-bottom:15px;padding-bottom:15px;">
       <div>
         Replaces problematic SK1 IDs
       </div>
-      <div style="padding-bottom:15px;margin-bottom:15px;">
+      <div>
         Remote, Local & Archives
       </div>
     </div>
