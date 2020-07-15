@@ -87,12 +87,12 @@ Route::get('logs', '\Melihovv\LaravelLogViewer\LaravelLogViewerController@index'
       'uses'  => 'admin\bounceController@bounceDelete']);
 
 //bounceReviewController
-     //bounce review
-   Route::get('/admin/bounceReviewIndex',[
-      'as'    => 'admin.bounceReviewIndex',
-      'uses'  => 'admin\bounceReviewController@index']);
+  //bounce review
+  Route::get('/admin/bounceReviewIndex',[
+    'as'    => 'admin.bounceReviewIndex',
+    'uses'  => 'admin\bounceReviewController@index']);
 
-   //bounce review
-   Route::get('/admin/bounceReviewDisplay',[
-      'as'    => 'admin.bounceReviewDisplay',
-      'uses'  => 'admin\bounceReviewController@display']);
+  //bounce review
+  Route::get('/admin/bounceReviewDisplay',[
+    'as'    => 'admin.bounceReviewDisplay',
+    'uses'  => 'admin\bounceReviewController@display']);

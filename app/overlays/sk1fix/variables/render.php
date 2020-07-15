@@ -10,10 +10,18 @@ $fixOldFlyerSK1=oldFlyer::select('ufid')
 ->get();
 */
 
+//query
 $fixSK1=propmeta::select('propflyer_id')
 ->whereNull('sk1')
-->orWhere('sk1','like','%'.'='.'%')
-->get();
+->orWhere('sk1','like','%'.'='.'%');
+//get count
+$fixCount=$fixSK1->count();
+//notice if not needed
+if(!$fixCount){
+  dd('no fix needed');}
+
+//retrieve one record
+$fixSK1=$fixSK1->take(1)->get();
 
 //gen password funciton
 require_once(app_path().'/members/keygens/mdbxGenPswd.php');
