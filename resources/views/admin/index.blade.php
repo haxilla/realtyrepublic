@@ -69,10 +69,8 @@
     <!-- ============================================================== -->
     @include('admin.scripts.adminScripts')
     @include('admin.scripts.slickCarousel')
-    <script src="/my/js/admin/synch/synchStart.js"></script>
-    <script src="/my/js/admin/synch/mainServer/passwordFix.js"></script>
-    <script src="/my/js/admin/synch/mainServer/sk1Fix.js"></script>
-
+    <script src="/my/js/admin/mainServer/synch/synchStart.js"></script>
+    <script src="/my/js/admin/mainServer/fixes/synchFixes.js"></script>
     <!-- for uploading admin photo -->
     <script src="/my/js/imageTools/imageTools.js"></script>
 </body>
