@@ -6,5 +6,6 @@ class remailflyersmaster extends \App\Model
 {
    //set table
    protected $table='remarchives.remailflyersmaster';
+   public $timestamps = false;
 
 }
