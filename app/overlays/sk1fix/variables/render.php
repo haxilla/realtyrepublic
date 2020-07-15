@@ -42,6 +42,7 @@ foreach($fixSK1 as $the){
       'sk1'=>$sk1,
    ]);}
 
+dd($fixCount);
 /*
 //scan remote realtyemails.com
 foreach($fixOldFlyerSK1 as $the){
