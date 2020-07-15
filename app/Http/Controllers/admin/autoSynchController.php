@@ -29,4 +29,9 @@ class autoSynchController extends Controller
 		include(app_path().'/mainServer/memberfix/agtPswdFix.php');
 	}
 
+	public function sk1Fix(){
+		include(app_path().'/mainServer/memberfix/sk1Fix.php');
+	}
+
+
 }
