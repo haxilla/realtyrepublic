@@ -51,10 +51,11 @@ function theFix(theURL){
   // using the done promise callback
   .done(function(data){
     if(data.status=='success'){
+      //get vars from reply
       fixCount=data.fixCount;
       thisCount=data.thisCount;
       thisPercent=data.thisPercent+'%';
-
+      //continue if more
       if(thisCount>0){
         $('.fix span.theCount').text(thisCount);
         $('.fix .progressWait').hide();
@@ -65,12 +66,12 @@ function theFix(theURL){
         alert('Fixes Complete!');}
 
     }else{
-      alert('something fishy');
+      alert('error-line69-synchFixes.js');
     }
   })
 
   // using the fail promise callback
   .fail(function(data){
-    alert('error');
+    alert('error-line75-synchFixes.js');
   });
 }
