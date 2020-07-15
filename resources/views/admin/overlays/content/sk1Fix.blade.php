@@ -1,4 +1,4 @@
-<div class="passwordFix">
+<div class="sk1Fix">
   <div class="headWrapper">
     <div class="mainHead">
       <h5>PASSWORD FIX</h5>
@@ -9,7 +9,7 @@
   </div>
   <div class="mainContent">
     <div class="fixCountLabel">
-      FIXES NEEDED <span class="theCount">{{$passHashCount}}</span>
+      FIXES NEEDED <span class="theCount">{{$sk1_fixCount}}</span>
     </div>
     <div class="progressDiv">
       <div class="progressWait">
@@ -27,7 +27,7 @@
         </small>
       </div>
       <div class="startNow scriptStartButton"
-      data-fixcount="{{$passHashCount}}">
+      data-fixcount="{{$sk1_fixCount}}">
         <span class="ticon">
           <i class="ti-reload"></i>
         </span>Run Script
