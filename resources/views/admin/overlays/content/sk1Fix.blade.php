@@ -7,7 +7,7 @@
       <div>
         Replaces problematic SK1 IDs
       </div>
-      <div style="padding-bottom:15px;">
+      <div style="padding-bottom:15px;margin-bottom:15px;">
         Remote, Local & Archives
       </div>
     </div>
