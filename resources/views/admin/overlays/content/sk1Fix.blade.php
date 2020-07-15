@@ -4,9 +4,12 @@
       <h5>SK1 Fix</h5>
     </div>
     <div class="subHead">
-       Replaces problematic SK1
-       <br>
-       Remote, Local & Archives
+      <div>
+        Replaces problematic SK1 IDs
+      </div>
+      <div style="padding-bottom:15px;">
+        Remote, Local & Archives
+      </div>
     </div>
   </div>
   <div class="mainContent">
