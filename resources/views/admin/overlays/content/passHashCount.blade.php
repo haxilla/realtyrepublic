@@ -1,4 +1,4 @@
-<div class="passwordFix">
+<div class="fix passwordFix">
   <div class="headWrapper">
     <div class="mainHead">
       <h5>PASSWORD FIX</h5>

@@ -1,10 +1,11 @@
-<div class="sk1Fix">
+<div class="fix sk1Fix">
   <div class="headWrapper">
     <div class="mainHead">
-      <h5>PASSWORD FIX</h5>
+      <h5>SK1 Fix</h5>
     </div>
     <div class="subHead">
-       Adds bcrypted password from agtPswd to passHash
+       Replaces problematic SK1 with new code
+       remote,local & archives
     </div>
   </div>
   <div class="mainContent">
