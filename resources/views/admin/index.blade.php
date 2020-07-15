@@ -56,8 +56,8 @@
                         <div class="slickRight slickDark hidden">
                         </div>
                         <div class="listingSlide">
-                            @include('admin.includes.mostViews')
-			</div>
+                          @include('admin.includes.mostViews')
+			                  </div>
                     </div>
                 </div>
             </div>

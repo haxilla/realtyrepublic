@@ -4,8 +4,9 @@
       <h5>SK1 Fix</h5>
     </div>
     <div class="subHead">
-       Replaces problematic SK1 with new code
-       remote,local & archives
+       Replaces problematic SK1
+       <br>
+       Remote, Local & Archives
     </div>
   </div>
   <div class="mainContent">
