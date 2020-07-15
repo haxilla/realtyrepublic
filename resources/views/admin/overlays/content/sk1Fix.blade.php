@@ -1,4 +1,4 @@
-<div class="fix sk1Fix">
+<div class="fix sk1Fix" data-fixtype="sk1">
   <div class="headWrapper">
     <div class="mainHead">
       <h5>SK1 Fix</h5>

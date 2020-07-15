@@ -1,4 +1,4 @@
-<div class="fix passwordFix">
+<div class="fix passwordFix" data-fixtype="password">
   <div class="headWrapper">
     <div class="mainHead">
       <h5>PASSWORD FIX</h5>
