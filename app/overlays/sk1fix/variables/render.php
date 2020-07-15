@@ -40,7 +40,7 @@ foreach($fixSK1 as $the){
   ->update([
     'sk1'=>$sk1,]);
   //archives
-  remailflyersmaster::where('propflyer_id','=',"$the->propflyer_id")
+  remailflyersmaster::where('ufid','=',"$the->propflyer_id")
   ->update([
     'sk1'=>$sk1,]);
   //old server
