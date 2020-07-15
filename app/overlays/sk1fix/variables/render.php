@@ -3,12 +3,14 @@
 //get models
 use App\models\core\propmeta;
 use App\models\oldsite\oldFlyer;
-/*
+
 //remote server with bad sk1
-$fixOldFlyerSK1=oldFlyer::select('ufid')
+$oldSK1=oldFlyer::select('ufid')
 ->where('sk1','like','%'.'='.'%')
-->get();
-*/
+->orWhereNull('sk1');
+
+$oldSK1count=$oldSK1->count();
+
 
 //query
 $fixSK1=propmeta::select('propflyer_id')
@@ -42,7 +44,7 @@ foreach($fixSK1 as $the){
       'sk1'=>$sk1,
    ]);}
 
-dd($fixCount);
+dd($fixCount,$oldSK1count);
 /*
 //scan remote realtyemails.com
 foreach($fixOldFlyerSK1 as $the){
