@@ -38,10 +38,11 @@ foreach($fixSK1 as $the){
   ->first();
   $dupOld=oldFlyer::where('sk1','=',$sk1)
   ->first();
-
   //if dups then exit
   if($dupMeta||$dupArchive||$dupOld){
     //setup response array
+    //dup status causes it to rerun
+    //with no changes
     $idArray = array(
       'status'        => 'dup',);
     //echo & exit

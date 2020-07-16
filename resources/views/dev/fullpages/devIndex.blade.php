@@ -10,7 +10,7 @@
 <body class="devIndex">
 	<div style="background:rgba(239, 237, 255, .5)">
 		<div>
-			@include('admin.navigation.adminNavTop')
+			@include('admin.navigation.mainServer.adminNavTop')
 		</div>
 		<div class="devTask container-fluid">
 			<div class="row">
