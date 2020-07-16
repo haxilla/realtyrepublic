@@ -14,7 +14,7 @@ function generatePassword($length){
     $length = 8;
   }
 
-  srand(make_seed());
+  //srand(make_seed());
 
   $i = 0;
   $password = "";
