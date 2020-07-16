@@ -38,12 +38,13 @@ foreach($fixSK1 as $the){
   ->first();
   $dupOld=oldFlyer::where('sk1','=',$sk1)
   ->first();
-  //if dups
+
+  //if dups then exit
   if($dupMeta||$dupArchive||$dupOld){
-    //output json & exit
+    //setup response array
     $idArray = array(
       'status'        => 'dup',);
-
+    //echo & exit
     echo json_encode($idArray);
     exit();}
 
