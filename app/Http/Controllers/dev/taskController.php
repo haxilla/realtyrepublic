@@ -21,7 +21,7 @@ class taskController extends Controller
       ->select('authLevel')
       ->first();
       $authLevel=$adminInfo['authLevel'];
-      
+
       //get url vars
       $taskstatus=request('taskstatus');
       $sectionFilter=request('sectionFilter');
@@ -48,6 +48,7 @@ class taskController extends Controller
          'taskDisplay'     => $taskDisplay,
          'sectionFilter'   => $sectionFilter,
          'filter'          => $filter,
+         'adminInfo'       => $adminInfo,
       ]);
    }
 

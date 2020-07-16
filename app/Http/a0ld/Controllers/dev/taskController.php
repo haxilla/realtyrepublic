@@ -1,7 +1,7 @@
 <?php
 
-namespace App\Http\Controllers\dev;
-use App\Http\Controllers\Controller;
+namespace App\Http\a0ld\Controllers\dev;
+use App\Http\a0ld\Controllers\Controller;
 use App\models\admin\adminTable;
 use Auth;
 
@@ -21,7 +21,7 @@ class taskController extends Controller
       ->select('authLevel')
       ->first();
       $authLevel=$adminInfo['authLevel'];
-      
+
       //get url vars
       $taskstatus=request('taskstatus');
       $sectionFilter=request('sectionFilter');
