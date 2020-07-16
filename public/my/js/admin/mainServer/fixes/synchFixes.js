@@ -65,8 +65,10 @@ function theFix(theURL){
       }else{
         alert('Fixes Complete!');}
 
+    }else if(data.status=='dup'){
+      theFix(theURL);
     }else{
-      alert('error-line69-synchFixes.js');
+      alert('error-line71-synchFixes.js');
     }
   })
 

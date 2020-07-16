@@ -30,6 +30,23 @@ foreach($fixSK1 as $the){
   $digits=rand(10,20);
   $genPswd=generatePassword($digits);
   $sk1=$genPswd;
+
+  //dupCheck
+  $dupMeta=propmeta::where('sk1','=',$sk1)
+  ->first();
+  $dupArchive=remailflyersmaster::where('sk1','=',$sk1)
+  ->first();
+  $dupOld=oldFlyer::where('sk1','=',$sk1)
+  ->first();
+  //if dups
+  if($dupMeta||$dupArchive||$dupOld){
+    //output json & exit
+    $idArray = array(
+      'status'        => 'dup',);
+
+    echo json_encode($idArray);
+    exit();}
+
   //update current
   propmeta::where('propflyer_id','=',"$the->propflyer_id")
   ->update([
