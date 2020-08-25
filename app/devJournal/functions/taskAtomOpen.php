@@ -8,5 +8,5 @@ dd($output);
 */
 
 $output = array();
-exec('/var/www/html/larasites/realtyemails/app/devJournal/scripts/atomOpen.bin', $output);
+exec('/var/www/html/larasites/realtyemails/app/devJournal/scripts/atomOpen.bin', $output)2>&1;
 dd($output);
