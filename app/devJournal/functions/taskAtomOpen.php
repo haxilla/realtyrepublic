@@ -8,5 +8,5 @@ dd($output);
 */
 
 $output = array();
-exec('/path/to/calibrate', $output);
+exec('/var/www/html/larasites/realtyemails/app/devJournal/scripts/atomOpen.bin', $output);
 dd($output);
