@@ -4,7 +4,7 @@ $(function(){
 	// * New task
 	$(".devTask.fixedMenu").on("keypress",".taskaddField", function(e){
 		//if enter key, exit
-		if (e.keyCode == 13){	
+		if (e.keyCode == 13){
 			e.preventDefault();
 			$('.taskadd.inlineBlock').addClass('circle');
 			$('.taskadd.dropMenuBox').hide();
@@ -79,7 +79,7 @@ $(function(){
 		taskAjax(url,formVal);});
 
 // * Deletes
-	// using mousedown stops screen from disappearing when 
+	// using mousedown stops screen from disappearing when
 	// clicking delete otherwise blur hides the edit div
 
 	// * commentDeleteButton
@@ -116,7 +116,7 @@ $(function(){
 		taskID=$(this).closest('.taskboxFrame').data("taskid");
 		thisTaskBoxFrame=$(this).closest('.taskboxFrame');
 		thisTaskBox=$('.taskBox'+taskID);
-		
+
 		if(taskClick=='commentadd'){
 			$('.commentAdd'+taskID).show();
 			$('.commentAddField').val("");
@@ -157,6 +157,10 @@ $(function(){
 			theURL='/dev/taskAjax?taskBump=1&taskID='+taskID;
 			taskAjax(theURL);}
 
+		if(taskClick=="taskatomopen"){
+			theURL='/dev/taskAjax?taskAtomOpen=1&taskID='+taskID;
+			taskAjax(theURL);}
+			
 		if(taskClick=='taskwizard'){
 			//remove all but this div
 			$('.taskboxFrame').not(thisTaskBoxFrame).remove();
@@ -182,7 +186,7 @@ $(function(){
 			.addClass('text-center');}});
 
 // * taskComments
-	// * commentShow click 
+	// * commentShow click
 	$(".taskBox").on("click",".commentShow", function(e){
 		commentID=$(this).closest('.taskComment').data("commentid");
 		$(this).closest('.taskComment').removeClass('roundedResponsive');
@@ -237,7 +241,7 @@ $(function(){
 		taskID=$(this).closest('.taskboxFrame').data("taskid");
 		theclass=$(this).closest('.frame').data("theclass");
 		formVal=$('.'+theclass+'AddForm'+taskID).serialize();
-		theURL='/dev/'+theclass+'Ajax?taskID='+taskID;		
+		theURL='/dev/'+theclass+'Ajax?taskID='+taskID;
 		//submit form
 		if(theclass=='comment'){
 			//send ajax request
@@ -316,9 +320,9 @@ $(function(){
 
 	// * comment checkboxes
 	$(".taskBox").on("change","input:checkbox", function(e){
-		//find closest id 
+		//find closest id
 		taskDiv=$(this).closest('.taskComment').attr("id");
-		taskID=$(this).closest('.taskComment').data("taskid");		
+		taskID=$(this).closest('.taskComment').data("taskid");
 		commentID=$(this).closest('.taskComment').data("commentid");
 		//if checked or not
 		if ($(this).is(':checked')) {
@@ -450,7 +454,7 @@ $(function(){
 	});
 
 // * Scroll
-	// * scroll to top when clicked 
+	// * scroll to top when clicked
 	$('.devTask .scrollTop').click(function(e){
 		$(document).scrollTop('0');});
 
@@ -462,9 +466,9 @@ $(function(){
 		var taskRounder=$('.tasksection .lighter2, .tasktype .dropMenu');
 		var taskCircle=$('.taskOptions .small, .taskauthlevel .small');
 
-		// * if the target of the click isn't the container 
+		// * if the target of the click isn't the container
 		// * nor a descendant of the container
-		if (!container.is(e.target) 
+		if (!container.is(e.target)
 		&& container.has(e.target).length === 0){
 			container.hide();
 			taskRounder.addClass('rounder');
@@ -474,7 +478,7 @@ $(function(){
 	});
 
 
-// * FUNCTIONS 
+// * FUNCTIONS
 // * taskAjax
 	// * handles all task modifications
 	function taskAjax(theURL,formVal){
@@ -557,7 +561,7 @@ $(function(){
 		data:       formVal,
 		headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
 			success: function(data) {
-				
+
 				//stringify to decode object and make it parseable
 				var response=JSON.stringify(data);
 				//Parse response
@@ -579,7 +583,7 @@ $(function(){
 
 					//append div
 					$('.ajaxNewComment'+taskID).prepend("<div "+
-					"class='taskComment taskCommentNew roundedResponsive' "+ 
+					"class='taskComment taskCommentNew roundedResponsive' "+
 					"id='taskComment"+commentID+"' data-taskid='"+taskID+"'"+
 					"data-commentid='"+commentID+"'>"+
 						"<div class='commentShow commentShow"+commentID+"'>"+
@@ -600,7 +604,7 @@ $(function(){
 						"<div class='commentEdit commentEdit"+commentID+"'>"+
 							"<div class='commentEditDiv'>"+
 								"<form class='commentEditForm"+commentID+"' id='"+commentID+"'>"+
-									"<textarea name='taskComment' class='commentEditField"+ 
+									"<textarea name='taskComment' class='commentEditField"+
 									" noScroll noResize'>"+taskComment+"</textarea>"+
 								"</form>"+
 							"</div>"+
@@ -653,7 +657,7 @@ $(function(){
 		data:       formVal,
 		headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
 			success: function(data) {
-				
+
 				//stringify to decode object and make it parseable
 				var response=JSON.stringify(data);
 				//Parse response
@@ -668,7 +672,7 @@ $(function(){
 					.append(
 						'<div class="tasklinkDiv tasklink'+linkID+'"'+
 						'data-menuclick="tasklink" data-linkid='+linkID+'>'+
-							'<div class="inlineBlock smaller circle '+ 
+							'<div class="inlineBlock smaller circle '+
 							'linkEdit bg-white m5 ml0" style="color:#223e94;'+
 							'font-size:.80em;">'+
 								'<i class="ti-link"></i>'+

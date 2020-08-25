@@ -1,5 +1,5 @@
 @if($taskstatus!="Tips" && $taskstatus!="Excuses")
-	<div class="small circle lighter2 inlineBlock"
+	<div class="small circle lighter2 inlineBlock"re
 	data-toggle="tooltip" title="Open Atom"
 	data-taskclick="taskatomopen">
 		<i class="ti-book"></i>
