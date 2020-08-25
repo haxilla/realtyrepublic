@@ -1,4 +1,3 @@
 <?php
 
-
-dd('hello?');
+echo exec('whoami');
