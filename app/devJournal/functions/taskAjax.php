@@ -4,6 +4,7 @@
 $newTaskID=null;
 $taskID=request('taskID');
 $taskType=request('taskType');
+$taskAtomOpen=request('taskAtomOpen');
 $taskSection=request('taskSection');
 $taskDeleteSoft=request('taskDeleteSoft');
 $taskDeleteRestore=request('taskDeleteRestore');
@@ -67,3 +68,6 @@ if($taskFlag && $taskID){
 
 if($taskUnflag && $taskID){
 	include('taskUnflag.php');}
+
+if($taskAtomOpen && $taskID){
+	include('taskAtomOpen.php');}
