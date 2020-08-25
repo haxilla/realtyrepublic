@@ -1,5 +1,7 @@
 #!/bin/bash
 
+whoami
+
 cd /var/www/larasites/remstage
 
 atom $1
