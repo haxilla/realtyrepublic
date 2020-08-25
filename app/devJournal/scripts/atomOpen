@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cd /var/www/larasites/remstage
+
+atom $1
