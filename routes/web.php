@@ -23,6 +23,6 @@ include(app_path().'/routeIncludes/retsRoutes.php');
 //mdbxMemberRoutes
 include(app_path().'/routeIncludes/memberRoutes.php');
 //mainServer
-include(app_path().'/mainServer/routeIncludes/adminRoutes.php');
+//include(app_path().'/mainServer/routeIncludes/adminRoutes.php');
 //public routes
 include(app_path().'/routeIncludes/mdbxPublicRoutes.php');
