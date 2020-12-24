@@ -6,7 +6,8 @@ $output = shell_exec('atomOpen.bin .env-dev');
 //chdir($old_path);
 dd($output);
 */
+$appPath=app_path();
 
 $output = array();
-exec('/var/www/html/larasites/realtyemails/app/devJournal/scripts/atomOpen.bin .env-dev 2>&1', $output);
+exec("$appPath/devJournal/scripts/atomOpen.bin .env-dev 2>&1", $output);
 dd($output);
