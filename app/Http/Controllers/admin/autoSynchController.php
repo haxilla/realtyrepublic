@@ -26,11 +26,11 @@ class autoSynchController extends Controller
 	}
 
 	public function agtPswdFix(){
-		include(app_path().'/mainServer/memberfix/agtPswdFix.php');
+		include(app_path().'/autosynch/memberfix/agtPswdFix.php');
 	}
 
 	public function sk1Fix(){
-		include(app_path().'/mainServer/memberfix/sk1Fix.php');
+		include(app_path().'/autosynch/memberfix/sk1Fix.php');
 	}
 
 
