@@ -48,7 +48,7 @@ if(!$oldMeta||!$oldZipDir||(!$oldMlsDir && $oldMlsDir !=0)){
 
 // final fail = error 
 if(!$oldMeta||!$oldZipDir||(!$oldMlsDir && $oldMlsDir !=0)){
-    dd('error-line49-autosynch/downloads/functions/fixMetaFail '.$flyerID);}
+    dd($oldMeta,$oldZipDir,$oldMlsDir,'error-line49-autosynch/downloads/functions/fixMetaFail '.$flyerID);}
 
 // if it works on 2nd attempt
 // update the archive
