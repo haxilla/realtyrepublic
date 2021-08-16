@@ -25,7 +25,7 @@ php artisan -v queue:restart
 
 # update database
 php artisan migrate --force
-	# --force		Required to run when in production.
+# --force		Required to run when in production.
 
 # stop maintenance mode
 #php artisan up
