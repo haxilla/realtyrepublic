@@ -51,3 +51,4 @@ $completeCamps=propflyer::select('id',
 $completeCampCount=$completeCampaigns->count();
 $completeCampaigns=$completeCampaigns->get()->take(15);
 $completeFlyers=$completeCampaigns->groupBy('id');
+*/
