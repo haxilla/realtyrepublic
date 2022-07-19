@@ -46,12 +46,12 @@ foreach($checkPhoto as $the){
   if(isset($oldMeta['zipDir'])){
     $oldZipDir=$oldMeta['zipDir'];
   }else{
-    $oldZipDir="zipDirError-line49-app/autosynch/downloads";};
+    $oldZipDir="zipDirError";};
 
   if(isset($oldMeta['mlsDir'])){
     $oldMlsDir=$oldMeta['mlsDir'];
   }else{
-    $oldZipDir="mlsDirError-line54-app/autosynch/downloads";};
+    $oldMlsDir="mlsDirError";};
 
   if(!$oldZipDir||!$oldMlsDir){
     include('functions/fixMetaFail.php');}
