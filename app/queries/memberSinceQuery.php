@@ -50,6 +50,7 @@ WHERE propagents.id=propflyerstats.propagent_id
 AND xLastDeliveryDate > '2019-03-01'
 AND agtPhoto IS NOT NULL
 ORDER BY startDate;
+*/
 
 /* make query to check theAgentCleanup
 @if($the->theAgent->theAgentCleanup)
