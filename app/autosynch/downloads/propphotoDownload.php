@@ -42,8 +42,17 @@ foreach($checkPhoto as $the){
   $oldMeta=propflyerOld::where('ufid','=',$the->propflyer_id)
   ->select('zipDir','mlsDir')
   ->first();
-  $oldZipDir=$oldMeta['zipDir'];
-  $oldMlsDir=$oldMeta['mlsDir'];
+
+  if(isset($oldMeta['zipDir'])){
+    $oldZipDir=$oldMeta['zipDir'];
+  }else{
+    $oldZipDir="zipDirError-line49-app/autosynch/downloads";};
+
+  if(isset($oldMeta['mlsDir'])){
+    $oldMlsDir=$oldMeta['mlsDir'];
+  }else{
+    $oldZipDir="mlsDirError-line54-app/autosynch/downloads";};
+
   if(!$oldZipDir||!$oldMlsDir){
     include('functions/fixMetaFail.php');}
   //set vars
