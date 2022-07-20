@@ -49,7 +49,7 @@ if(!$synchID){
 
 	//error if none
 	}else{
-		dd('error-line18-synchProgress.php');}
+		dd('error-line52-app/autosynch/variables/synchID.php');}
 }
 
 //query for synch info
@@ -58,14 +58,14 @@ $synchLog=synchLog::where('synchID','=',$synchID)
 
 //error if none
 if(!$synchLog){
-	dd('error-line19-autosynch/synchProgress.php');}
+	dd('error-line61-app/autosynch/variables/synchID.php');}
 
 //query for synch info
 $synchLog=synchLog::where('synchID','=',$synchID)
 ->first();
 //error if none
 if(!$synchLog){
-	dd('error-line19-autosynch/synchProgress.php');}
+	dd('error-line68-app/autosynch/variables/synchID.php');}
 
 //get name of synch
 $currentSynch=$synchLog['currentSynch'];
