@@ -48,8 +48,12 @@ foreach($nullRemID as $the){
 		->where('propagent_id','=',$thisID)
 		->first();
 		// set it
-		$newRemID=$theAgentMeta['newRemID'];
-		$foundIn='theAgentMeta';
+		if(isset($theAgentMeta['newRemID'])){
+			$newRemID=$theAgentMeta['newRemID'];
+			$foundIn='theAgentMeta';
+		}else{
+			$newRemID=null;};
+		
 		// if one is found its strange
 		// error out
 		if($newRemID){
