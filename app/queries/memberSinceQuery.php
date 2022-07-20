@@ -25,6 +25,7 @@ $memberSince=propagent::select('startDate','agtFullName',
 ->orderBy('startDate')
 ->take(36)
 ->get();
+
 /* starting with stats example
 $memberSince=propflyerstat::select('xLastDeliveryDate','propagent_id')
 ->with(['theAgent'=>function($q){

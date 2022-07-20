@@ -12,10 +12,12 @@ use App\models\core\propagentmeta;
 // if newRemID created in loop
 $setNew=0;
 $foundIn='none';
+
 // main query for null newRemID
 $nullRemID=agtOffices::select('propagent_id')
 ->whereNull('newRemID')
 ->get();
+
 // run loop
 foreach($nullRemID as $the){
 	//determine current record
@@ -24,11 +26,20 @@ foreach($nullRemID as $the){
 	$theAgentCleanup=propagentcleanup::select('newRemID')
 	->where('propagent_id','=',$thisID)
 	->first();
-	//set newRemID
-	$newRemID=$theAgentCleanup['newRemID'];
-	//set where found
-	if($newRemID){
-		$foundIn='theAgentCleanup';}
+
+	//check that key exists
+	if(isset($theAgentCleanup['newRemID'])){
+		
+		//set newRemID
+		$newRemID=$theAgentCleanup['newRemID'];
+		
+		//set where found
+		if($newRemID){
+			$foundIn='theAgentCleanup';};
+
+	//key does not exist
+	}else{
+		$newRemID=null;};
 
 	//if not found check more
 	if(!$newRemID){
