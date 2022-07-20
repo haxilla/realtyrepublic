@@ -31,7 +31,11 @@ if(!$synchID){
 			dd('error-line28-synchID.php');}
 
 		//set synchID
-		$synchID=$synchLog['synchID'];
+		//make sure key exists
+		if(isset($synchLog['synchID'])){
+			$synchID=$synchLog['synchID'];
+		}else{
+			$synchID=null;};
 		
 		//exit if not found yet
 		if(!$synchID){
