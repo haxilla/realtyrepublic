@@ -3,8 +3,6 @@
 //model
 Use App\autosynch\models\agtoffice\agtoffices;
 
-dd($the);
-
 //variables
 $thisAgent=$the->umid;
 $thisPhoto=$the->agentPhoto;
@@ -15,7 +13,7 @@ $remoteFound=0;
 
 // remote server defaults 
 // to OID if null
-
+// 23256
 
 //get localOfficeID
 $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
