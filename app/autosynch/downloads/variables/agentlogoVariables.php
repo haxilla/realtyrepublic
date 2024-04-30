@@ -3,8 +3,6 @@
 //model
 Use App\autosynch\models\agtoffice\agtoffices;
 
-dd($the);
-
 //variables
 $thisAgent=$the->umid;
 $thisLogo=$the->logo;
