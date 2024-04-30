@@ -27,7 +27,7 @@ if(!$localOfficeID){
 
 //error if any missing
 if(!$thisAgent||!$thisLogo){
-  dd('error-line22-agentlogoVariables.php '.$thisAgent.' '.$thisLogo);}
+  dd('error-line30-agentlogoVariables.php '.$thisAgent.' '.$thisLogo);}
 
 //set local path
 $localPath="officeLogos/$localOfficeID/$thisLogo";

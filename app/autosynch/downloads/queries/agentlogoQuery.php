@@ -5,7 +5,9 @@ Use App\autosynch\models\propagent\propagentOld;
 //logo
 $agentlogoQuery=propagentOld::whereNull('agtLogoCheck')
 ->select('logo','officeID','umid')
+->whereNotNull('officeID')
 ->whereNotNull('logo')
+->whereNotNull('umid')
 ->where('logo','!=','logosample.gif')
 ->orWhere(function($q){
    $q->whereRaw('last_login > agtLogoCheck')
