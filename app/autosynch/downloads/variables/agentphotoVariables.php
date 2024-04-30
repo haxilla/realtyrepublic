@@ -3,6 +3,8 @@
 //model
 Use App\autosynch\models\agtoffice\agtoffices;
 
+dd($the);
+
 //variables
 $thisAgent=$the->umid;
 $thisPhoto=$the->agentPhoto;
@@ -21,9 +23,6 @@ $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
 ->first();
 $localOfficeID=$getLocalOffice['officeID'];
 
-dd($getLocalOffice);
-
-//
 if(!$officeID){
 	$officeID='OID';}
 //
