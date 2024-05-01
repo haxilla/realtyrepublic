@@ -2,7 +2,7 @@
 
 $connectTo="oldremails"
 $password="juT5mMg7YmGzwDCLUiob";
-$connectString="mysql://$connectTo:$password@www.realtyemails.com:3306/maindata/$tableOld";
+$connectString="mysql://$connectTo:".$password."@www.realtyemails.com:3306/maindata/$tableOld";
 
 //create new federated table
 //first need to get by original field names
