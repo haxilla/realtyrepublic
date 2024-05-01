@@ -3,7 +3,7 @@
 //model
 Use App\autosynch\models\agtoffice\agtoffices;
 
-dd($the);
+
 
 //variables
 $thisAgent=$the->umid;
@@ -11,6 +11,8 @@ $thisLogo=$the->logo;
 $officeID=rawurlencode($the->officeID);
 $localFound=0;
 $remoteFound=0;
+
+dd($the);
 
 //query localOfficeID
 $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
