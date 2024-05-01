@@ -2,7 +2,6 @@
 
 $source="oldremails"
 $password="juT5mMg7YmGzwDCLUiob";
-$connectTo=$source.":".$password;
 $connectString="$connectTo@www.realtyemails.com:3306/maindata/$tableOld";
 
 //create new federated table
