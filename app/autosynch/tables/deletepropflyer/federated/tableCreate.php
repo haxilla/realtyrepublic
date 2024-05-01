@@ -1,5 +1,5 @@
 <?php
-include("msyqlconn.php");
+include(app_path().'/autosynch/tables/mysqlconn.php');
 
 //create federated table
 //first need to get by original field names

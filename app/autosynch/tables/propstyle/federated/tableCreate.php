@@ -1,6 +1,6 @@
 <?php
 
-include("mysqlconn.php");
+include(app_path().'/autosynch/tables/mysqlconn.php');
 
 //create federated table
 //first need to get by original field names
@@ -26,7 +26,7 @@ $results=DB::select( DB::raw("
   )
   ENGINE=FEDERATED
   DEFAULT CHARSET=latin1
-  CONNECTION='mysql://oldsiteuser:D4vidB0wi3!@()@www.realtyemails.com:3306/maindata/$tableOld';
+  CONNECTION='$connectString';
 "));
 // **  connection string reference
 // **  scheme://user_name[:password]@host_name[:port_num]/db_name/tbl_name

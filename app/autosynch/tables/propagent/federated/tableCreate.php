@@ -1,6 +1,6 @@
 <?php
 
-include("mysqlconn.php");
+include(app_path().'/autosynch/tables/mysqlconn.php');
 
 $results=DB::select( DB::raw("
   CREATE TABLE remailsynch.$tableFed (

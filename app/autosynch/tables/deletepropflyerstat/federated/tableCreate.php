@@ -1,6 +1,6 @@
 <?php
 
-include("mysqlconn.php")
+include(app_path().'/autosynch/tables/mysqlconn.php');
 
 //create federated table
 //get by original field names
