@@ -1,5 +1,5 @@
 <?php
-$password="D4vidB0wizzzzz\!\@\(\)";
+$password=urlencode('D4vidB0wi3!@()');
 
 $results=DB::select( DB::raw("
   CREATE TABLE remailsynch.$tableFed (
