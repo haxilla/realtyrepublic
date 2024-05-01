@@ -45,8 +45,8 @@ foreach($newAdds as $the){
 foreach($mostViews as $the){
 	//set flyer variables
 	$flyerAddress=$the->xFullStreet;
-	$zipDir=$the->theMeta->zipDir;
-	$mlsDir=$the->theMeta->mlsDir;
+	$zipDir=$the->theMeta?->zipDir;
+	$mlsDir=$the->theMeta?->mlsDir;
 	$flyerID=$the->id;
 	$agentID=$the->propagent_id;
 	$section='mostViews';
