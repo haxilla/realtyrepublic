@@ -22,7 +22,7 @@ $results=DB::select( DB::raw("
   )
   ENGINE=FEDERATED
   DEFAULT CHARSET=latin1
-  $connectString';
+  CONNECTION=$connectString';
 "));
 // **  connection string reference
 // **  scheme://user_name[:password]@host_name[:port_num]/db_name/tbl_name
