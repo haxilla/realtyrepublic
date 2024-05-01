@@ -1,4 +1,5 @@
 <?php
+include("msyqlconn.php");
 
 //create federated table
 //first need to get by original field names
@@ -32,7 +33,7 @@ $results=DB::select( DB::raw("
   )
   ENGINE=FEDERATED
   DEFAULT CHARSET=latin1
-  CONNECTION='mysql://oldsiteuser:D4vidB0wi3\!\@\(\)@www.realtyemails.com:3306/maindata/$tableOld';
+  CONNECTION='$connectString';
 "));
 
 // **  connection string reference

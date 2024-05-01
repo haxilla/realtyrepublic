@@ -1,5 +1,7 @@
 <?php
 
+include("mysqlconn.php");
+
 //create federated table
 //first need to get by original field names
 $results=DB::select( DB::raw("

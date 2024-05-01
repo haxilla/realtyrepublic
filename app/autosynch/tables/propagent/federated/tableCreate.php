@@ -1,6 +1,6 @@
 <?php
-$connectTo="oldremails"
-$password="juT5mMg7YmGzwDCLUiob";
+
+include("mysqlconn.php");
 
 $results=DB::select( DB::raw("
   CREATE TABLE remailsynch.$tableFed (
@@ -38,7 +38,7 @@ $results=DB::select( DB::raw("
   )
   ENGINE=FEDERATED
   DEFAULT CHARSET=latin1
-  CONNECTION='mysql://$connectTo:$password@www.realtyemails.com:3306/maindata/$tableOld';
+  CONNECTION='$connectString';
 "));
 // **  connection string reference
 // **  scheme://user_name[:password]@host_name[:port_num]/db_name/tbl_name

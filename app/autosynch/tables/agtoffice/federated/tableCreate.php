@@ -1,8 +1,6 @@
 <?php
 
-$source="oldremails";
-$password="juT5mMg7YmGzwDCLUiob";
-$connectString="mysql://$source:$password@www.realtyemails.com:3306/maindata/$tableOld";
+include('mysqlconn.php');
 
 //create new federated table
 //first need to get by original field names
