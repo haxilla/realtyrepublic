@@ -12,7 +12,7 @@ $officeID=rawurlencode($the->officeID);
 $localFound=0;
 $remoteFound=0;
 
-dd($the);
+;
 
 //query localOfficeID
 $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
@@ -21,6 +21,8 @@ $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
 
 //set localOfficeID
 $localOfficeID=$getLocalOffice['officeID'];
+
+dd($the);
 
 //
 if(!$officeID && $officeID != 0){
