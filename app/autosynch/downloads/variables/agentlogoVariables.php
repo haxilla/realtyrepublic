@@ -15,8 +15,6 @@ $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
 ->select('officeID')
 ->first();
 
-dd($getLocalOffice);
-
 //set localOfficeID
 $localOfficeID=$getLocalOffice['officeID'];
 
