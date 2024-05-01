@@ -3,8 +3,6 @@
 //model
 Use App\autosynch\models\agtoffice\agtoffices;
 
-
-
 //variables
 $thisAgent=$the->umid;
 $thisLogo=$the->logo;
@@ -12,19 +10,17 @@ $officeID=rawurlencode($the->officeID);
 $localFound=0;
 $remoteFound=0;
 
-;
-
 //query localOfficeID
 $getLocalOffice=agtoffices::where('propagent_id','=',$thisAgent)
 ->select('officeID')
 ->first();
 
 //set localOfficeID
-$localOfficeID=$getLocalOffice['officeID'];
+if($getLocalOffice){
+	$localOfficeID=$getLocalOffice['officeID'];
+}else{
+	$localOfficeID=null;}
 
-dd($the);
-
-//
 if(!$officeID && $officeID != 0){
 	$officeID='OID';}
 //
