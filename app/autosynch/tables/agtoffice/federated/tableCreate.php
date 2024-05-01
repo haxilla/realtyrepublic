@@ -3,6 +3,7 @@
 $source="oldremails";
 $password="juT5mMg7YmGzwDCLUiob";
 $connectString="mysql://$source:$password@www.realtyemails.com:3306/maindata/$tableOld";
+  CONNECTION='mysql://$connectTo:$password@www.realtyemails.com:3306/maindata/$tableOld';
 
 //create new federated table
 //first need to get by original field names
@@ -22,7 +23,7 @@ $results=DB::select( DB::raw("
   )
   ENGINE=FEDERATED
   DEFAULT CHARSET=latin1
-  CONNECTION=$connectString';
+  CONNECTION='$connectString';
 "));
 // **  connection string reference
 // **  scheme://user_name[:password]@host_name[:port_num]/db_name/tbl_name
