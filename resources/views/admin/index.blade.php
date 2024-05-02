@@ -29,7 +29,7 @@
                                 color:#464555">
                                     New Adds
 
-                                    <a href="https://maps.googleapis.com/maps/api/place/textsearch/json?query=winegar+law+injury+lawyers&location=26.7684,80.1278&key=AIzaSyCUjLllnOmbNMoHGgT93u7Kn9xsPRNLWEI">TEST MAP</a>
+                                    <a href="https://maps.googleapis.com/maps/api/place/textsearch/json?query=winegar+law+injury+lawyers&location=26.3956,80.1228&key=AIzaSyCUjLllnOmbNMoHGgT93u7Kn9xsPRNLWEI">TEST MAP</a>
 
                                 </div>
                             </div>
