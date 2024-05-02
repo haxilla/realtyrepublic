@@ -28,6 +28,9 @@
                                 font-weight:bold;padding:0 1rem;
                                 color:#464555">
                                     New Adds
+
+                                    <a href="https://maps.googleapis.com/maps/api/place/textsearch/json?query=winegar+law+injury+lawyers&location=26.7684,80.1278&key=AIzaSyCUjLllnOmbNMoHGgT93u7Kn9xsPRNLWEI">TEST MAP</a>
+
                                 </div>
                             </div>
                         </div>
@@ -36,7 +39,6 @@
                         <div class="slickRight slickDark hidden">
                         </div>
                         <div class="listingSlide">
-   
                         </div>
                     </div>
                 </div>
