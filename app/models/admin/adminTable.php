@@ -17,5 +17,4 @@ class adminTable extends \App\Model
 		//send
 		return $adminInfo;
 	}
-
 }

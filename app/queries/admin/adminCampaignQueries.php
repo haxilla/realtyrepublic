@@ -36,15 +36,24 @@ $completeCamps=propflyer::select('id',
 ->with(['thePhotos'=>function($q){
    $q->select('propflyer_id','photoName',
       'resized','width','height','orient')
-      ->where('def','=','1');
+      ->where('def','=','1')
+      ->where('photoName','!=','')
+      ->whereRaw("TRIM(photoName) != ''")
+      ->whereNotNull('photoName');
 }])
+->whereHas('thePhotos', function($q){
+    $q->where('def', '1')
+      ->whereNotNull('photoName')
+      ->where('photoName', '!=', '')
+      ->whereRaw("TRIM(photoName) != ''");
+})
 ->with(['theMeta'=>function($q){
    $q->select('propflyer_id','zipDir','mlsDir','sk1');
 }])
 ->leftJoin('propflyerstats','propflyer_id','id')
 ->orderBy('xLastDeliveryDate','desc')
-->get()
-->take(20);
+->take(20)
+->get();
 
 //set completeCamp variables
 /*
