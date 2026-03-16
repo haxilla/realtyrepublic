@@ -68,7 +68,8 @@
 
 	//propdelivnow
 	$propdelivnowCur=App\autosynch\models\propdelivnow\propdelivnowCur::count();
-	$propdelivnowOld=App\autosynch\models\propdelivnow\propdelivnowOld::whereNull('emailfinished')->whereNotNull('emailrequested')->count();
+	$propdelivnowOld=App\autosynch\models\propdelivnow\propdelivnowOld::count();
+	//$propdelivnowOld=App\autosynch\models\propdelivnow\propdelivnowOld::whereNull('emailfinished')->whereNotNull('emailrequested')->count();
 	$propdelivnowDif=$propdelivnowOld-$propdelivnowCur;
 	//propflyer
 	$propflyerCur=App\autosynch\models\propflyer\propflyerCur::count();
