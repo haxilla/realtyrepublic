@@ -104,7 +104,6 @@ DB::select( DB::raw("
     server,
     free
   FROM  remailsynch.$tableFed
-
 "));
 
 //revert back to default
