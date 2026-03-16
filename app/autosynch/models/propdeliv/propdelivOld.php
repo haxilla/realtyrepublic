@@ -6,7 +6,7 @@ class propdelivOld extends \App\Model
 {
 
 	protected $connection = 'oldsite';
-	protected $table='remaildeliveries2019';
+	protected $table='remaildeliveries';
 	protected $primaryKey = 'campaignID';
 
 }
