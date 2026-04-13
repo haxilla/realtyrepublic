@@ -19,7 +19,7 @@ INSERT INTO $tableMains
     sysID,
     zipDir,
     mlsDir,
-    manual
+    `manual`
   )
 SELECT
   e_proptype,
@@ -29,7 +29,7 @@ SELECT
   sysid,
   zipDir,
   mlsDir,
-  manual
+  `manual`
 FROM  remarchives.$tableArchive
 "));
 
