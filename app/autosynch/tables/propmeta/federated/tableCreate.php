@@ -14,7 +14,6 @@ $results = DB::statement("
         sysID varchar(255),
         zipDir varchar(255),
         mlsDir varchar(255),
-        `manual` tinyint(1),
         PRIMARY KEY (ufid)
     )
     ENGINE=FEDERATED

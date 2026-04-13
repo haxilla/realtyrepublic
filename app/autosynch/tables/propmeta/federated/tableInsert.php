@@ -19,7 +19,6 @@ INSERT INTO $tableMains
     sysID,
     zipDir,
     mlsDir,
-    manual
   )
 SELECT
   e_proptype,
@@ -29,7 +28,6 @@ SELECT
   sysID,
   zipDir,
   mlsDir,
-  manual
 FROM  remailsynch.$tableFed
 "));
 
