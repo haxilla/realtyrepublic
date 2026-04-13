@@ -13,7 +13,7 @@ $results=DB::select( DB::raw("
     sysID       varchar(255),
     zipDir      varchar(255),
     mlsDir      varchar(255),
-    manual      boolean,
+    `manual`    boolean,
     PRIMARY KEY  (ufid)
   )
   ENGINE=FEDERATED
