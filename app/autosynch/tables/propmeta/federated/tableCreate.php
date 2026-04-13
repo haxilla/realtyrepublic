@@ -22,6 +22,8 @@ $results = DB::statement("
     CONNECTION='$connectString'
 ");
 
+/* testing connection */
+
 /*
 $results=DB::select( DB::raw("
   CREATE TABLE remailsynch.$tableFed (
