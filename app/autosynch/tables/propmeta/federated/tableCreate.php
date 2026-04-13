@@ -22,7 +22,7 @@ $results = DB::statement("
     CONNECTION='$connectString'
 ");
 
-/* testing connection */
+/* testing connection 2 */
 
 /*
 $results=DB::select( DB::raw("
