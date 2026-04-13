@@ -11,14 +11,18 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
-    {
-        view()->composer(['admin.navigation.adminNavTop','dev.includes.taskMenu'],
-        function($view){
-            $view
-            ->with('adminInfo',\App\models\admin\adminTable::adminInfo());
-        });
-    }
+
+
+public function boot()
+{
+    error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
+    
+    view()->composer(['admin.navigation.adminNavTop','dev.includes.taskMenu'],
+    function($view) {
+        $view
+        ->with('adminInfo',\App\models\admin\adminTable::adminInfo());
+    });
+}
 
     /**
      * Register any application services.
