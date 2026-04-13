@@ -6,15 +6,16 @@ include(app_path().'/autosynch/tables/mysqlconn.php');
 //first need to get by original field names
 
 $results = DB::statement("
-    CREATE TABLE remailsynch.$tableFed (
-        e_proptype varchar(255),
-        ufid int,
-        umid int,
-        sk1 varchar(255),
-        sysID varchar(255),
-        zipDir varchar(255),
-        mlsDir varchar(255),
-        PRIMARY KEY (ufid)
+    CREATE TABLE `remailsynch`.`$tableFed` (
+        `e_proptype` varchar(255),
+        `ufid` int,
+        `umid` int,
+        `sk1` varchar(255),
+        `sysID` varchar(255),
+        `zipDir` varchar(255),
+        `mlsDir` varchar(255),
+        `manual` tinyint(1),
+        PRIMARY KEY (`ufid`)
     )
     ENGINE=FEDERATED
     DEFAULT CHARSET=latin1
