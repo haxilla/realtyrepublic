@@ -19,7 +19,7 @@ INSERT INTO deletes.$tableMains
     sysID,
     zipDir,
     mlsDir,
-    manual
+    `manual`
   )
 SELECT
   e_proptype,
@@ -29,7 +29,7 @@ SELECT
   sysID,
   zipDir,
   mlsDir,
-  manual
+  `manual`
 FROM  remailsynch.$tableFed
 "));
 
