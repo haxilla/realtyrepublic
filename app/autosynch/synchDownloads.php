@@ -13,7 +13,7 @@ if($currentSynch=='propphotoDownload'){
 
 }elseif($currentSynch=='agentphotoDownload'){
 
-	include("downloads/agentphotoLoop.php");
+	//include("downloads/agentphotoLoop.php");
 
 }elseif($currentSynch=='agentlogoDownload'){
 

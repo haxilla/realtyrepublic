@@ -2,7 +2,7 @@
 
 //set remotes
 $remoteSite="http://www.realtyemails.com";
-$remoteURL=$remoteSite."/HQoffice/$officeID/$thisPhoto";
+$remoteURL=$remoteSite."/agentPhotos/$newRemID/$thisPhoto";
 
 //set header
 $header_response = get_headers($remoteURL, 1);
