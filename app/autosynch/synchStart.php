@@ -37,9 +37,9 @@ if($synchType=='synchOne'
 $idArray = array(
   'status'          => $status,
   'synchID'         => $synchID,
-  'synchType'	 			=> $synchType,
-  'currentSynch' 		=> $currentSynch,
-  'page'						=> 'synchStart'
+  'synchType'	 	=> $synchType,
+  'currentSynch' 	=> $currentSynch,
+  'page'			=> 'synchStart'
 );
 
 echo json_encode($idArray);
