@@ -12,8 +12,8 @@ if($currentSynch=='complete'){
 //update query
 synchLog::where('synchID','=',$synchID)
 ->update([
-	"$column"					=> \Carbon\Carbon::now(),
-	'lastSynch'				=> $currentSynch,
+	"$column"			=> \Carbon\Carbon::now(),
+	'lastSynch'			=> $currentSynch,
 	'progressMessage'	=> "$currentSynch Complete"
 ]);
 

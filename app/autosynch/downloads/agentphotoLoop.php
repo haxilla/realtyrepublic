@@ -1,5 +1,7 @@
 <?php
 
+include(app_path().'/autosynch/log/completeLog.php');
+/*
 //check for newRemID
 include('functions/synchNewRemID.php');
 
@@ -31,3 +33,5 @@ foreach($agentphotoQuery as $the){
 	}
 
 }//end of foreach loop
+
+*/

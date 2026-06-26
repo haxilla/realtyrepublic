@@ -1,5 +1,7 @@
 <?php
 
+include(app_path().'/autosynch/log/completeLog.php');
+/*
 //agentPhotoQuery
 include('queries/agentlogoQuery.php');
 
@@ -29,3 +31,4 @@ foreach($agentlogoQuery as $the){
 
 
 }//end of foreach loop
+*/

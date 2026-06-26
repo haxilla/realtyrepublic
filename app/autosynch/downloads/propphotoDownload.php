@@ -1,4 +1,8 @@
 <?php
+
+include(app_path().'/autosynch/log/completeLog.php');
+
+/*
 //get models
 use App\autosynch\models\propphoto\propphotos;
 use App\autosynch\models\propphoto\propphotoOld;
@@ -120,3 +124,5 @@ foreach($checkPhoto as $the){
      'remoteFound'  => $remoteFound,
   ]);
 }
+
+*/
