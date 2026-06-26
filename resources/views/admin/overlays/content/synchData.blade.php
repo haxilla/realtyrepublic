@@ -476,6 +476,7 @@
 	        </div>
 	    </div>
 	</div>
+	<!--
 	<div class="row" style="margin-top:15px;margin-bottom:15px;">
 	    <div class="col-12">
 	        <div class="table-responsive">
@@ -640,6 +641,7 @@
 	        </div>
 	    </div>
 	</div>
+	-->
 	<div class="row">
 		<div class="col-12 bg-charcoal">
 			<div style="text-align:center;padding:15px 0;">
