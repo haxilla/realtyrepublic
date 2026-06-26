@@ -1,5 +1,8 @@
 <?php
 
+include(app_path().'/autosynch/log/completeLog.php');
+
+/*
 include('queries/resizeQuery.php');
 
 //get totalRecords
@@ -54,3 +57,4 @@ foreach($resizePhoto as $the){
 
 }
 
+*/
