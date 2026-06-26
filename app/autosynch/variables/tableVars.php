@@ -15,7 +15,7 @@ if($currentSynch=='complete'){
 
 //error if none
 if(!$getVars){
-	dd('error-line9-autosynch/tableVars.php '.$currentSynch);}
+	dd('error-line18-autosynch/tableVars.php '.$currentSynch);}
 
 //main vars
 $tableMain=$currentSynch;

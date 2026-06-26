@@ -5,11 +5,11 @@ include("variables/predownloadCounts.php");
 
 if($currentSynch=='propphotoDownload'){
 
-	include("downloads/propphotoDownload.php");
+	//include("downloads/propphotoDownload.php");
 
 }elseif($currentSynch=='propphotoResize'){
 
-	include("resize/resizeIndex.php");
+	//include("resize/resizeIndex.php");
 
 }elseif($currentSynch=='agentphotoDownload'){
 
@@ -17,7 +17,7 @@ if($currentSynch=='propphotoDownload'){
 
 }elseif($currentSynch=='agentlogoDownload'){
 
-	include("downloads/agentlogoLoop.php");
+	//include("downloads/agentlogoLoop.php");
 
 }else{
 
