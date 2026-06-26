@@ -48,13 +48,13 @@ elseif(!$findNext['deletepropflyerstatSynch']){
 }elseif(!$findNext['deletepropstyleSynch']){
 	$currentSynch="deletepropstyle";
 }elseif(!$findNext['propphotoDownloadSynch']){
-	$currentSynch="propphotoDownload";
+	//$currentSynch="propphotoDownload";
 }elseif(!$findNext['propphotoResizeSynch']){
-	$currentSynch="propphotoResize";
+	//$currentSynch="propphotoResize";
 }elseif(!$findNext['agentphotoDownloadSynch']){
-	$currentSynch="agentphotoDownload";
+	//$currentSynch="agentphotoDownload";
 }elseif(!$findNext['agentlogoDownloadSynch']){
-	$currentSynch="agentlogoDownload";
+	//$currentSynch="agentlogoDownload";
 }else{
 	$currentSynch="complete";
 }
